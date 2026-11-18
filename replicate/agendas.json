@@ -1,0 +1,470 @@
+{
+ "_note": "The 45 merged agendas of our labeller and the agenda-counts registry, in the order the labeller prompt lists them, then the four special labels. ids, names, groups and label_rule texts are ours. shallow_review_leaves names the 2025 Shallow Review agendas merged into each id; the labeller prompt also carried the first ~120 characters of each leaf's Shallow Review description, which is third-party text and is not included (fill description_by_leaf yourself to rebuild the exact prompt). See EXPERIMENTS.md, 'Agenda labeller'.",
+ "agendas": [
+  {
+   "id": "iter_align",
+   "name": "Iterative alignment / post-training methods",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Iterative alignment (generic post-training)",
+    "Iterative alignment at pretrain-time",
+    "Iterative alignment at post-train-time",
+    "Inoculation prompting",
+    "Inference-time: In-context learning"
+   ]
+  },
+  {
+   "id": "bb_ai_solve",
+   "name": "Black-box use of AI to improve alignment",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Black-box make-AI-solve-it"
+   ]
+  },
+  {
+   "id": "act_steer",
+   "name": "Activation / inference-time steering",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Inference-time: Steering",
+    "Activation engineering"
+   ]
+  },
+  {
+   "id": "unlearning",
+   "name": "Capability removal and unlearning",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Capability removal: unlearning"
+   ]
+  },
+  {
+   "id": "control",
+   "name": "AI control",
+   "group": "Black-box safety",
+   "label_rule": "Runtime monitors and protocols that catch or contain possibly-scheming agents; misuse and jailbreak defenses go to safeguards; monitors that read the chain of thought go to cot_monitor.",
+   "shallow_review_leaves": [
+    "Control"
+   ]
+  },
+  {
+   "id": "safeguards",
+   "name": "Safeguards: classifiers and monitors against misuse",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Safeguards (inference-time auxiliaries)"
+   ]
+  },
+  {
+   "id": "cot_monitor",
+   "name": "Chain-of-thought monitoring",
+   "group": "Black-box safety",
+   "label_rule": "Stated reasoning or chain of thought not matching the computation that drives the output (CoT faithfulness, legibility) goes here, even when it is checked with probes or other internals; the method goes in secondary, not primary.",
+   "shallow_review_leaves": [
+    "Chain of thought monitoring"
+   ]
+  },
+  {
+   "id": "model_values",
+   "name": "Model values and preferences",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Model values / model preferences"
+   ]
+  },
+  {
+   "id": "character_specs",
+   "name": "Character training, personas, model specs",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Character training and persona steering",
+    "Model specs and constitutions"
+   ]
+  },
+  {
+   "id": "model_psych",
+   "name": "Model psychology phenomena (emergent misalignment, glitches)",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Emergent misalignment",
+    "Model psychopathology"
+   ]
+  },
+  {
+   "id": "pretrain_data",
+   "name": "Pretraining data interventions (filtering, poisoning defense, hyperstition)",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Data filtering",
+    "Hyperstition studies",
+    "Data poisoning defense"
+   ]
+  },
+  {
+   "id": "align_data",
+   "name": "Alignment data (synthetic and human preference data quality)",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Synthetic data for alignment",
+    "Data quality for alignment"
+   ]
+  },
+  {
+   "id": "goal_robust",
+   "name": "Goal robustness: RL safety, mild optimisation, assistance games",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Mild optimisation",
+    "RL safety",
+    "Assistance games, assistive agents"
+   ]
+  },
+  {
+   "id": "open_weights",
+   "name": "Tamper-resistance for open weights",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Harm reduction for open weights"
+   ]
+  },
+  {
+   "id": "neglected",
+   "name": "Neglected approaches (agenda-agnostic scouting)",
+   "group": "Black-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "The “Neglected Approaches” Approach"
+   ]
+  },
+  {
+   "id": "circuits",
+   "name": "Circuit-level reverse engineering",
+   "group": "White-box safety",
+   "label_rule": "Use when circuits, patching or causal reverse-engineering is the named method and no narrow problem category applies; CoT faithfulness (cot_monitor) and eval awareness (sa_evals) still win, with circuits as secondary.",
+   "shallow_review_leaves": [
+    "Reverse engineering"
+   ]
+  },
+  {
+   "id": "probing",
+   "name": "Latent knowledge, lie and deception detection",
+   "group": "White-box safety",
+   "label_rule": "White-box detection of deception, lies, hidden goals or latent knowledge, including 'interpretability to detect deception' with no specific method. CoT faithfulness goes to cot_monitor and eval awareness to sa_evals even when probes are used; behavioural tests for deception go to scheming_evals.",
+   "shallow_review_leaves": [
+    "Extracting latent knowledge",
+    "Lie and deception detectors"
+   ]
+  },
+  {
+   "id": "diffing",
+   "name": "Model diffing",
+   "group": "White-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Model diffing"
+   ]
+  },
+  {
+   "id": "sae",
+   "name": "Sparse coding / SAEs",
+   "group": "White-box safety",
+   "label_rule": "Use when SAEs or learned sparse features are the named method and no narrow problem category applies; CoT faithfulness (cot_monitor) and eval awareness (sa_evals) still win, with sae as secondary.",
+   "shallow_review_leaves": [
+    "Sparse Coding"
+   ]
+  },
+  {
+   "id": "formal_interp",
+   "name": "Formal interpretability (causal abstraction, heuristic explanations)",
+   "group": "White-box safety",
+   "label_rule": "Proofs, causal abstractions or heuristic explanations of network internals; verifying outputs or behaviour against a spec goes to gsai.",
+   "shallow_review_leaves": [
+    "Causal Abstractions",
+    "Heuristic explanations"
+   ]
+  },
+  {
+   "id": "data_attr",
+   "name": "Data attribution",
+   "group": "White-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Data attribution"
+   ]
+  },
+  {
+   "id": "pragmatic_interp",
+   "name": "Pragmatic and concept-based interpretability",
+   "group": "White-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Pragmatic interpretability",
+    "Monitoring concepts"
+   ]
+  },
+  {
+   "id": "other_interp",
+   "name": "Other interpretability",
+   "group": "White-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Other interpretability"
+   ]
+  },
+  {
+   "id": "dev_interp",
+   "name": "Learning dynamics and developmental interpretability",
+   "group": "White-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Learning dynamics and developmental interpretability"
+   ]
+  },
+  {
+   "id": "rep_geometry",
+   "name": "Representation structure, geometry, human inductive biases",
+   "group": "White-box safety",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Representation structure and geometry",
+    "Human inductive biases"
+   ]
+  },
+  {
+   "id": "gsai",
+   "name": "Guaranteed-Safe AI / formal verification against a spec",
+   "group": "Safety by construction",
+   "label_rule": "Verifying a system's outputs or behaviour against a formal spec goes here; proofs or abstractions about network internals go to formal_interp.",
+   "shallow_review_leaves": [
+    "Guaranteed-Safe AI"
+   ]
+  },
+  {
+   "id": "scientist_ai",
+   "name": "Scientist AI",
+   "group": "Safety by construction",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Scientist AI"
+   ]
+  },
+  {
+   "id": "brainlike",
+   "name": "Brainlike-AGI safety",
+   "group": "Safety by construction",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Brainlike-AGI Safety"
+   ]
+  },
+  {
+   "id": "w2sg",
+   "name": "Weak-to-strong generalization",
+   "group": "Make AI solve it",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Weak-to-strong generalization"
+   ]
+  },
+  {
+   "id": "auto_oversight",
+   "name": "Scalable oversight (AI supervising or explaining AI)",
+   "group": "Make AI solve it",
+   "label_rule": "A generic 'scalable oversight' pick goes here; use debate only when debate between AIs is the stated mechanism.",
+   "shallow_review_leaves": [
+    "Supervising AIs improving AIs",
+    "AI explanations of AIs",
+    "LLM introspection training"
+   ]
+  },
+  {
+   "id": "debate",
+   "name": "Debate",
+   "group": "Make AI solve it",
+   "label_rule": "Only when debate between AIs is the stated mechanism; generic scalable oversight goes to auto_oversight.",
+   "shallow_review_leaves": [
+    "Debate"
+   ]
+  },
+  {
+   "id": "agent_found",
+   "name": "Agent foundations (incl. tiling, high-actuation spaces)",
+   "group": "Theory",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Agent foundations",
+    "Tiling agents",
+    "High-Actuation Spaces"
+   ]
+  },
+  {
+   "id": "asymptotic",
+   "name": "Asymptotic guarantees",
+   "group": "Theory",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Asymptotic guarantees"
+   ]
+  },
+  {
+   "id": "corrigibility",
+   "name": "Corrigibility theory",
+   "group": "Theory",
+   "label_rule": "Systems that recognise their own unreliability and escalate, defer or accept correction or interruption go here, not to auto_oversight or control.",
+   "shallow_review_leaves": [
+    "Behavior alignment theory",
+    "Other corrigibility"
+   ]
+  },
+  {
+   "id": "ontology",
+   "name": "Ontology identification: natural abstractions, learning-theoretic agenda",
+   "group": "Theory",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Natural abstractions",
+    "The Learning-Theoretic Agenda"
+   ]
+  },
+  {
+   "id": "pluralistic",
+   "name": "Pluralistic and social alignment (context, social contract, aligned-to-who)",
+   "group": "Multi-agent first",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Aligning to context",
+    "Aligning to the social contract",
+    "Aligned to who?",
+    "Aligning what?"
+   ]
+  },
+  {
+   "id": "multi_agent",
+   "name": "Multi-agent theory and tools",
+   "group": "Multi-agent first",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Theory for aligning multiple AIs",
+    "Tools for aligning multiple AIs"
+   ]
+  },
+  {
+   "id": "cap_evals",
+   "name": "Capability, autonomy and general-progress evals",
+   "group": "Evals",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "AGI metrics",
+    "Capability evals",
+    "Autonomy evals"
+   ]
+  },
+  {
+   "id": "wmd_evals",
+   "name": "CBRN / WMD evals",
+   "group": "Evals",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "WMD evals (Weapons of Mass Destruction)"
+   ]
+  },
+  {
+   "id": "sa_evals",
+   "name": "Situational awareness evals",
+   "group": "Evals",
+   "label_rule": "A model recognising it is being tested, or evaluation vs deployment awareness, goes here whatever the method (probes, circuits, causal tests); the method goes in secondary.",
+   "shallow_review_leaves": [
+    "Situational awareness and self-awareness evals"
+   ]
+  },
+  {
+   "id": "stego_evals",
+   "name": "Steganography evals",
+   "group": "Evals",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Steganography evals"
+   ]
+  },
+  {
+   "id": "scheming_evals",
+   "name": "Deception, scheming and sandbagging evals",
+   "group": "Evals",
+   "label_rule": "Behavioural tests, audits or evals for deception, scheming, sandbagging or alignment faking. Deception detection with no means stated and no mention of internals goes here; detection from internals goes to probing; runtime monitors on deployed agents go to control.",
+   "shallow_review_leaves": [
+    "AI deception evals",
+    "AI scheming evals",
+    "Sandbagging evals"
+   ]
+  },
+  {
+   "id": "selfrep_evals",
+   "name": "Self-replication evals",
+   "group": "Evals",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Self-replication evals"
+   ]
+  },
+  {
+   "id": "redteam",
+   "name": "Red-teaming of frontier models",
+   "group": "Evals",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Various Redteams"
+   ]
+  },
+  {
+   "id": "other_evals",
+   "name": "Other propensity evals (honesty, shutdown resistance, sycophancy)",
+   "group": "Evals",
+   "label_rule": null,
+   "shallow_review_leaves": [
+    "Other evals"
+   ]
+  }
+ ],
+ "special": [
+  {
+   "id": "governance_policy",
+   "name": "Governance, policy or strategy work",
+   "group": "Outside technical safety",
+   "label_rule": null,
+   "shallow_review_leaves": []
+  },
+  {
+   "id": "other",
+   "name": "Other / does not fit any category",
+   "group": "Other",
+   "label_rule": null,
+   "shallow_review_leaves": []
+  },
+  {
+   "id": "several_directions",
+   "name": "Proposes several unrelated directions, no single main one",
+   "group": "Special",
+   "label_rule": null,
+   "shallow_review_leaves": []
+  },
+  {
+   "id": "no_direction",
+   "name": "No research direction stated (refusal, question, off-topic)",
+   "group": "Special",
+   "label_rule": null,
+   "shallow_review_leaves": []
+  }
+ ]
+}

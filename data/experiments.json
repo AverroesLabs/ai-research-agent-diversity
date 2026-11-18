@@ -1,0 +1,4429 @@
+{
+ "experiments": {
+  "frontier_max": {
+   "description": "Frontier setup, each agent choosing on its own with search and no added tool (Figure 4's Max).",
+   "figures": [
+    "2",
+    "4",
+    "6",
+    "8",
+    "9",
+    "12",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A7"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-16"
+   ],
+   "n_agents": 120,
+   "n_pairs": 7140,
+   "n_duplicates": 113,
+   "judging": "every_pair",
+   "files": [
+    "agents_frontier_max.jsonl",
+    "pairs_frontier_max.jsonl",
+    "labels_frontier_max.jsonl",
+    "reading_frontier_max.jsonl",
+    "corpus_docs.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "all pairs, every pair judged",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_frontier_max.jsonl",
+     "duplicates": "pairs_frontier_max.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 63.1858407079646,
+      "ci95": [
+       43.72839506172839,
+       95.74324324324324
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 113
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_no_search": {
+   "description": "Frontier setup's same 120 combinations of model, launch prompt and harness, with no search tools (answering from memory). Exploratory extension, preregistered before running.",
+   "figures": [
+    "6"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-17"
+   ],
+   "n_agents": 120,
+   "n_pairs": 7140,
+   "n_duplicates": 214,
+   "judging": "every_pair",
+   "files": [
+    "agents_frontier_no_search.jsonl",
+    "pairs_frontier_no_search.jsonl",
+    "labels_frontier_no_search.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "all pairs, every pair judged",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_frontier_no_search.jsonl",
+     "duplicates": "pairs_frontier_no_search.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 33.36448598130841,
+      "ci95": [
+       24.783216783216783,
+       47.577181208053695
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 214
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_novelty": {
+   "description": "Frontier setup with search plus the sentence asking for the most novel direction. Exploratory extension, preregistered before running.",
+   "figures": [
+    "12",
+    "appendix: Where did agents go when asked for novelty?"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-17"
+   ],
+   "n_agents": 120,
+   "n_pairs": 7140,
+   "n_duplicates": 139,
+   "judging": "every_pair",
+   "files": [
+    "agents_frontier_novelty.jsonl",
+    "pairs_frontier_novelty.jsonl",
+    "labels_frontier_novelty.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "all pairs, every pair judged",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_frontier_novelty.jsonl",
+     "duplicates": "pairs_frontier_novelty.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 51.36690647482014,
+      "ci95": [
+       31.833333333333332,
+       89.50632911392405
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 139
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_tree_take_best": {
+   "description": "Frontier setup with search and the tree protocol, but the agent takes the option it judges best at each level instead of drawing. Exploratory extension, preregistered before running.",
+   "figures": [
+    "12"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-17"
+   ],
+   "n_agents": 120,
+   "n_pairs": 7140,
+   "n_duplicates": 93,
+   "judging": "every_pair",
+   "files": [
+    "agents_frontier_tree_take_best.jsonl",
+    "pairs_frontier_tree_take_best.jsonl",
+    "labels_frontier_tree_take_best.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "all pairs, every pair judged",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_frontier_tree_take_best.jsonl",
+     "duplicates": "pairs_frontier_tree_take_best.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 76.7741935483871,
+      "ci95": [
+       50.40714285714286,
+       131.0
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 93
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_tree": {
+   "description": "Frontier setup with search and the tree protocol: each agent draws its project down a tree of its own weighted options with a random-draw tool (Figure 4's Weighted random). Preregistered against the placebo arm of the 20-agent registry test.",
+   "figures": [
+    "4",
+    "10",
+    "12",
+    "A7",
+    "A9"
+   ],
+   "preregistered": true,
+   "run_dates": [
+    "2026-11-16"
+   ],
+   "n_agents": 120,
+   "n_pairs": 7140,
+   "n_duplicates": 8,
+   "judging": "every_pair",
+   "files": [
+    "agents_frontier_tree.jsonl",
+    "pairs_frontier_tree.jsonl",
+    "tree_draws_frontier_tree.jsonl",
+    "labels_frontier_tree.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "all pairs, every pair judged",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_frontier_tree.jsonl",
+     "duplicates": "pairs_frontier_tree.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 892.5,
+      "ci95": [
+       337.04761904761904,
+       14154.0
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 8
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ],
+   "reported_ratios": {
+    "tree_over_placebo_20": {
+     "ratio": 18.875,
+     "ci95": [
+      6.28,
+      306.0
+     ],
+     "method": "joint agent bootstrap over matched slots",
+     "check": {
+      "numerator": "frontier_tree",
+      "denominator": "frontier_registry_20_placebo",
+      "rule": "every_pair",
+      "scope": "all_pairs",
+      "key_order": "run_order",
+      "bootstrap_seed": 20261116,
+      "bootstrap_draws": 2000
+     }
+    }
+   }
+  },
+  "frontier_registry_20_placebo": {
+   "description": "Frontier registry test, placebo arm: agents read a registry tool that lists unrelated off-topic projects; 6 populations of 20.",
+   "figures": [
+    "Result 2 text",
+    "Result 3 text",
+    "A7",
+    "A8"
+   ],
+   "preregistered": true,
+   "run_dates": [
+    "2026-11-14"
+   ],
+   "n_agents": 120,
+   "n_pairs": {
+    "screened": 1140,
+    "every_pair": 7140
+   },
+   "n_duplicates": {
+    "screened": 24,
+    "every_pair": 151
+   },
+   "judging": "every pair among all 120 agents; screened within populations; screened across populations (duplicate pairs only)",
+   "files": [
+    "agents_frontier_registry_20_placebo.jsonl",
+    "pairs_frontier_registry_20_placebo.jsonl",
+    "twin_pairs_frontier_registry_20_placebo.jsonl",
+    "labels_frontier_registry_20_placebo.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "within populations of 20, screened judging (preregistered)",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "screened",
+     "agents": "agents_frontier_registry_20_placebo.jsonl",
+     "duplicates": "pairs_frontier_registry_20_placebo.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 47.5,
+      "ci95": [
+       27.563818054765488,
+       171.64968789811195
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": null
+     },
+     "ci_method": "t interval over the 6 population means (preregistered); reproduce.py reports an agent bootstrap beside it",
+     "bootstrap_seed": 0,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "within populations of 20, every pair judged",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_20_placebo.jsonl",
+     "duplicates": "pairs_frontier_registry_20_placebo.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 49.56521739130435,
+      "ci95": [
+       26.707317073170735,
+       133.5
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": 23
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20261224,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "all 120 agents across populations, screened judging",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "agents": "agents_frontier_registry_20_placebo.jsonl",
+     "duplicates": "twin_pairs_frontier_registry_20_placebo.jsonl",
+     "duplicate_rule": "screened_all_pairs",
+     "reported": {
+      "effective_number": 48.24324324324324,
+      "ci95": [
+       32.008823467028655,
+       78.67833318038389
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 148
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261111,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "all 120 agents across populations, every pair judged",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_20_placebo.jsonl",
+     "duplicates": "pairs_frontier_registry_20_placebo.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 47.28476821192053,
+      "ci95": [
+       31.72645739910314,
+       75.37234042553192
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 151
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "run_order",
+     "only_analysed": false
+    }
+   ],
+   "twin_pairs_note": "twin_pairs_ holds only the duplicate pairs of the screened judging across populations, whose other verdicts were not exported",
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "frontier_registry_20_projects": {
+   "description": "Frontier registry test: agents read a shared registry of earlier agents' projects (PROJECT: QUESTION); 6 populations of 20, each pick added before the next agent starts.",
+   "figures": [
+    "Result 2 text",
+    "A7",
+    "A8"
+   ],
+   "preregistered": true,
+   "run_dates": [
+    "2026-11-14"
+   ],
+   "n_agents": 120,
+   "n_pairs": {
+    "screened": 1140,
+    "every_pair": 1140
+   },
+   "n_duplicates": {
+    "screened": 0,
+    "every_pair": 0
+   },
+   "judging": "every pair within populations; screened within populations; screened across populations (duplicate pairs only)",
+   "files": [
+    "agents_frontier_registry_20_projects.jsonl",
+    "pairs_frontier_registry_20_projects.jsonl",
+    "twin_pairs_frontier_registry_20_projects.jsonl",
+    "labels_frontier_registry_20_projects.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "within populations of 20, screened judging (preregistered)",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "screened",
+     "agents": "agents_frontier_registry_20_projects.jsonl",
+     "duplicates": "pairs_frontier_registry_20_projects.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": null,
+      "ci95": [
+       null,
+       null
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": null
+     },
+     "ci_method": "t interval over the 6 population means (preregistered); reproduce.py reports an agent bootstrap beside it",
+     "bootstrap_seed": 0,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "note": "no duplicate: the preregistered bound is the rule of three, > 380.0",
+     "only_analysed": false
+    },
+    {
+     "name": "within populations of 20, every pair judged",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_20_projects.jsonl",
+     "duplicates": "pairs_frontier_registry_20_projects.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": null,
+      "ci95": [
+       2134.0,
+       2194.0
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": 0
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20261124,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "all 120 agents across populations, screened judging",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "agents": "agents_frontier_registry_20_projects.jsonl",
+     "duplicates": "twin_pairs_frontier_registry_20_projects.jsonl",
+     "duplicate_rule": "screened_all_pairs",
+     "reported": {
+      "effective_number": 285.59999999999997,
+      "ci95": [
+       141.57949993112487,
+       884.8843711279067
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 25
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261111,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ],
+   "twin_pairs_note": "twin_pairs_ holds only the duplicate pairs of the screened judging across populations, whose other verdicts were not exported",
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "frontier_registry_20_agenda_counts": {
+   "description": "Frontier registry test, agenda-counts arm: the registry lists only how many earlier agents work in each agenda (labelled live by a language model); 6 populations of 20. Exploratory extension run two days after the other two arms.",
+   "figures": [
+    "Result 2 text",
+    "A7",
+    "A8"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-16"
+   ],
+   "n_agents": 120,
+   "n_pairs": 1140,
+   "n_duplicates": 19,
+   "judging": "every_pair within populations; screened within and across",
+   "files": [
+    "agents_frontier_registry_20_agenda_counts.jsonl",
+    "twin_pairs_frontier_registry_20_agenda_counts.jsonl",
+    "labels_frontier_registry_20_agenda_counts.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "within populations of 20, every pair judged",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_20_agenda_counts.jsonl",
+     "duplicates": "twin_pairs_frontier_registry_20_agenda_counts.jsonl",
+     "duplicate_rule": "every_pair_within_population",
+     "reported": {
+      "effective_number": 60.0,
+      "ci95": [
+       29.351351351351347,
+       214.00000000000003
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": null
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20262129,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "all 120 agents across populations, screened judging",
+     "condition": null,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "agents": "agents_frontier_registry_20_agenda_counts.jsonl",
+     "duplicates": "twin_pairs_frontier_registry_20_agenda_counts.jsonl",
+     "duplicate_rule": "screened_all_pairs",
+     "reported": {
+      "effective_number": 69.32038834951456,
+      "ci95": [
+       41.44254045438965,
+       138.58921541586741
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 103
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261111,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ],
+   "twin_pairs_note": "only the duplicate pairs are released; the per-pair verdicts of this arm were not recovered from the judge's cache"
+  },
+  "frontier_registry_100_placebo": {
+   "description": "Frontier setup, placebo registry list, 3 populations of 100 agents choosing in sequence. Exploratory extension, preregistered before any session.",
+   "figures": [
+    "8",
+    "9"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-17"
+   ],
+   "n_agents": 300,
+   "n_pairs": 14850,
+   "n_duplicates": 292,
+   "judging": "every pair within populations",
+   "files": [
+    "agents_frontier_registry_100_placebo.jsonl",
+    "pairs_frontier_registry_100_placebo.jsonl",
+    "labels_frontier_registry_100_placebo.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "within populations of 100, every pair judged",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_100_placebo.jsonl",
+     "duplicates": "pairs_frontier_registry_100_placebo.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 50.85616438356164,
+      "ci95": [
+       38.481675392670155,
+       71.0
+      ],
+      "n_agents": 300,
+      "n_pairs": 14850,
+      "n_duplicates": 292
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20261130,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_registry_100_projects": {
+   "description": "Frontier setup, registry of earlier projects, 3 populations of 100 agents choosing in sequence (Figure 4's Max with registry). Exploratory extension, preregistered before any session.",
+   "figures": [
+    "4",
+    "8",
+    "9"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-17"
+   ],
+   "n_agents": 300,
+   "n_pairs": 14850,
+   "n_duplicates": 4,
+   "judging": "every pair within populations",
+   "files": [
+    "agents_frontier_registry_100_projects.jsonl",
+    "pairs_frontier_registry_100_projects.jsonl",
+    "labels_frontier_registry_100_projects.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "within populations of 100, every pair judged",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_100_projects.jsonl",
+     "duplicates": "pairs_frontier_registry_100_projects.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 3712.5,
+      "ci95": [
+       1050.5714285714287,
+       29418.0
+      ],
+      "n_agents": 300,
+      "n_pairs": 14850,
+      "n_duplicates": 4
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20261130,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_registry_100_agenda_counts": {
+   "description": "Frontier setup, agenda-counts registry, 3 populations of 100 agents choosing in sequence. Exploratory extension, preregistered before any session.",
+   "figures": [
+    "8",
+    "9"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-17"
+   ],
+   "n_agents": 300,
+   "n_pairs": 14850,
+   "n_duplicates": 141,
+   "judging": "every pair within populations",
+   "files": [
+    "agents_frontier_registry_100_agenda_counts.jsonl",
+    "pairs_frontier_registry_100_agenda_counts.jsonl",
+    "labels_frontier_registry_100_agenda_counts.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "within populations of 100, every pair judged",
+     "condition": null,
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_frontier_registry_100_agenda_counts.jsonl",
+     "duplicates": "pairs_frontier_registry_100_agenda_counts.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 105.31914893617021,
+      "ci95": [
+       67.82027649769586,
+       176.90361445783134
+      ],
+      "n_agents": 300,
+      "n_pairs": 14850,
+      "n_duplicates": 141
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20261130,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ]
+  },
+  "frontier_assigned_reading": {
+   "description": "Frontier setup with search; each agent's first search returns one assigned paper at the top, already opened (4 papers x 40 agents). Exploratory, preregistered before any session.",
+   "figures": [
+    "A5 text (appendix: What do searching agents read?)"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-18"
+   ],
+   "n_agents": 160,
+   "n_pairs": 1753,
+   "n_duplicates": 120,
+   "assigned_documents": {
+    "A": "arxiv:2610.29734",
+    "B": "arxiv:2607.19321",
+    "Z2": "arxiv:2609.15803",
+    "Z": "arxiv:2607.11070"
+   },
+   "files": [
+    "agents_frontier_assigned_reading.jsonl",
+    "pairs_frontier_assigned_reading.jsonl"
+   ],
+   "reported": {
+    "same_vs_different_paper_duplicate_ratio": {
+     "mh_ratio": 6.873,
+     "ci": [
+      2.454,
+      42.133
+     ],
+     "same": 363,
+     "cross": 402,
+     "same_twins": 62,
+     "cross_twins": 10
+    }
+   },
+   "measures": [],
+   "judging": "every pair of agents that ran on the same model, among the 120 agents handed the most-read, sabotage or on-topic theory paper (1,753 pairs); pairs across models, and the 40 agents handed the off-topic paper, were not judged for duplicates"
+  },
+  "frontier_earlier_groups": {
+   "description": "The frontier setup's earlier groups of 80 (four frontier models, launch prompts and harnesses, with search), with our AI safety brief and with the brief narrowed to mechanistic interpretability. Run on 11 November, before the 120-agent frontier runs. Exploratory.",
+   "figures": [
+    "A13"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-11"
+   ],
+   "n_agents": 160,
+   "judging": "screened",
+   "files": [
+    "agents_frontier_earlier_groups.jsonl",
+    "pairs_frontier_earlier_groups.jsonl",
+    "labels_frontier_earlier_groups.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "ai_safety, 80 agents, screened",
+     "agents": "agents_frontier_earlier_groups.jsonl",
+     "condition": "ai_safety",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_frontier_earlier_groups.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 60.76923076923077,
+      "ci95": [
+       38.50158509546944,
+       96.25893205983817
+      ],
+      "n_agents": 80,
+      "n_pairs": 3160,
+      "n_duplicates": 52
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      37.1886871259897,
+      111.46517829258723
+     ],
+     "reported_bootstrap_seed": 20261111,
+     "figures": [
+      "A13 (bottom rows)"
+     ]
+    },
+    {
+     "name": "mech_interp, 80 agents, screened",
+     "agents": "agents_frontier_earlier_groups.jsonl",
+     "condition": "mech_interp",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_frontier_earlier_groups.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 15.265700483091788,
+      "ci95": [
+       9.302930392381796,
+       25.5106487295151
+      ],
+      "n_agents": 80,
+      "n_pairs": 3160,
+      "n_duplicates": 207
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      9.490740319022592,
+      26.84633290766119
+     ],
+     "reported_bootstrap_seed": 20261111,
+     "figures": [
+      "A13 (bottom rows)"
+     ]
+    }
+   ],
+   "n_pairs": 562,
+   "n_duplicates": 259,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_step_one": {
+   "description": "Step one, the simple setup's first preregistered experiment: GLM-5.3-flash in our minimal loop with our brief (AI safety, or narrowed to mechanistic interpretability), reading nothing, an assigned list of 88 papers and posts (skewed or uniform across topics, one list per group of 20), or searching our copy of the literature with no, moderate or high randomness in the results. Groups of 20; 120 agents per cell, 240 in two search cells. The numbers released here count every valid pair (an exploratory recount); the preregistered within-group analysis gives the same picture with wider intervals.",
+   "figures": [
+    "A11",
+    "A13",
+    "A15"
+   ],
+   "preregistered": "design yes; the every-pair recount reported here is exploratory",
+   "run_dates": [
+    "2026-11-09",
+    "2026-11-11"
+   ],
+   "n_agents": 1692,
+   "judging": "screened",
+   "files": [
+    "agents_simple_step_one.jsonl",
+    "pairs_simple_step_one.jsonl",
+    "labels_simple_step_one.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "ai_safety, from_memory, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/from_memory",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 21.061946902654867,
+      "ci95": [
+       14.976375861373578,
+       32.66428514424564
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 339
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A15 (screened row, no tool)"
+     ]
+    },
+    {
+     "name": "ai_safety, skewed_list (pairs within each group, which read one list), screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 7.549668874172186,
+      "ci95": [
+       5.517708909532706,
+       10.802180548040498
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": 151
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "ai_safety, uniform_list (pairs within each group, which read one list), screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.555555555555555,
+      "ci95": [
+       7.458485012252481,
+       15.926837904607634
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": 108
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "populations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 66.11111111111111,
+      "ci95": [
+       40.9354036484851,
+       122.05344732651392
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 108
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 93.94736842105263,
+      "ci95": [
+       58.42162838744945,
+       172.68414600567328
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 76
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "populations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 83.02325581395348,
+      "ci95": [
+       50.61285556860704,
+       147.77506638650323
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 86
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "ai_safety, search_no_randomness, all 240 agents, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 96.56565656565657,
+      "ci95": [
+       68.83825296064018,
+       141.4508662986291
+      ],
+      "n_agents": 240,
+      "n_pairs": 28680,
+      "n_duplicates": 297
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13 caption and text (all twelve groups)"
+     ]
+    },
+    {
+     "name": "ai_safety, search_high_randomness, all 240 agents, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 94.65346534653466,
+      "ci95": [
+       68.13608574153923,
+       140.05969559954286
+      ],
+      "n_agents": 240,
+      "n_pairs": 28680,
+      "n_duplicates": 303
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13 caption and text (all twelve groups)"
+     ]
+    },
+    {
+     "name": "mech_interp, from_memory, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "mech_interp/from_memory",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 11.516129032258064,
+      "ci95": [
+       8.441368637834659,
+       15.968524767032733
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 620
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "mech_interp, skewed_list (pairs within each group, which read one list), screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "mech_interp/skewed_list",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.08849557522124,
+      "ci95": [
+       7.159947353328286,
+       15.142597685895439
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": 113
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "mech_interp, uniform_list (pairs within each group, which read one list), screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "mech_interp/uniform_list",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 17.272727272727273,
+      "ci95": [
+       11.836684539098068,
+       28.289473684210524
+      ],
+      "n_agents": 120,
+      "n_pairs": 1140,
+      "n_duplicates": 66
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "mech_interp, search_no_randomness, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "mech_interp/search_no_randomness",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.421412300683371,
+      "ci95": [
+       4.246176649213666,
+       7.212415791615084
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 1317
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "mech_interp, search_moderate_randomness, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "mech_interp/search_moderate_randomness",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 7.263479145473041,
+      "ci95": [
+       5.537403592644607,
+       9.906500341060678
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 983
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "mech_interp, search_high_randomness, screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "mech_interp/search_high_randomness",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 7.7608695652173925,
+      "ci95": [
+       5.848186212862184,
+       11.062812156099213
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 920
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "ai_safety, from_memory, first 40 agents (groups 0 and 1), screened",
+     "agents": "agents_simple_step_one.jsonl",
+     "condition": "ai_safety/from_memory",
+     "populations": [
+      0,
+      1
+     ],
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_step_one.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 26.0,
+      "ci95": [
+       11.301203636774678,
+       61.672521584641544
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 30
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "stratum then id",
+     "reported_bootstrap_ci95": [
+      12.582683118529017,
+      76.75031981085951
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11 (baseline row)"
+     ]
+    }
+   ],
+   "n_pairs": 15604,
+   "n_duplicates": 5293,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_reading_models": {
+   "description": "Step one's reading conditions (AI safety brief) for GLM-5.3, DeepSeek V4.1 Flash, Claude Sonnet 5.5 and Claude Opus 5.5 in our minimal loop, 40 agents per cell in two groups of 20. Exploratory.",
+   "figures": [
+    "A3 (text)",
+    "A11",
+    "A13"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-11",
+    "2026-11-13"
+   ],
+   "n_agents": 961,
+   "judging": "screened",
+   "files": [
+    "agents_simple_reading_models.jsonl",
+    "pairs_simple_reading_models.jsonl",
+    "labels_simple_reading_models.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "glm-5.3, ai_safety, from_memory, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "z-ai/glm-5.3",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 32.5,
+      "ci95": [
+       14.91959774267653,
+       109.14285714285715
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 24
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A11 (model rows)"
+     ]
+    },
+    {
+     "name": "glm-5.3, ai_safety, skewed_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "model": "z-ai/glm-5.3",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 13.571428571428573,
+      "ci95": [
+       7.4691109952031205,
+       32.82044842373595
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 28
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "glm-5.3, ai_safety, uniform_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "model": "z-ai/glm-5.3",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.440677966101695,
+      "ci95": [
+       3.91304347826087,
+       12.536971663009256
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 59
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "glm-5.3, ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "model": "z-ai/glm-5.3",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 70.9090909090909,
+      "ci95": [
+       31.75,
+       380.0
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 11
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "glm-5.3, ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "model": "z-ai/glm-5.3",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 52.0,
+      "ci95": [
+       23.523164871734526,
+       251.0
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 15
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "glm-5.3, ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "model": "z-ai/glm-5.3",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 78.0,
+      "ci95": [
+       31.74791132162359,
+       762.0249680526885
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 10
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "deepseek-v4.1-flash, ai_safety, from_memory, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "deepseek/deepseek-v4.1-flash",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.5,
+      "ci95": [
+       3.937876541866697,
+       12.032931931739302
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 120
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A11 (model rows)"
+     ]
+    },
+    {
+     "name": "deepseek-v4.1-flash, ai_safety, skewed_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "model": "deepseek/deepseek-v4.1-flash",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 9.5,
+      "ci95": [
+       5.714285714285714,
+       21.50770333213902
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 40
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "deepseek-v4.1-flash, ai_safety, uniform_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "model": "deepseek/deepseek-v4.1-flash",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.129032258064516,
+      "ci95": [
+       3.6732990121051907,
+       11.833467682421462
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 62
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "deepseek-v4.1-flash, ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "model": "deepseek/deepseek-v4.1-flash",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 33.91304347826087,
+      "ci95": [
+       17.340340182110467,
+       95.125
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 23
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "deepseek-v4.1-flash, ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "model": "deepseek/deepseek-v4.1-flash",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 41.05263157894737,
+      "ci95": [
+       19.863326756072844,
+       151.80499358531532
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 19
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "deepseek-v4.1-flash, ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "model": "deepseek/deepseek-v4.1-flash",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 86.66666666666666,
+      "ci95": [
+       39.94605093916151,
+       384.0
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 9
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-sonnet-5.5, ai_safety, from_memory, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "anthropic/claude-sonnet-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 14.716981132075473,
+      "ci95": [
+       8.987797234208164,
+       26.426422579161812
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 53
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A11 (model rows)"
+     ]
+    },
+    {
+     "name": "claude-sonnet-5.5, ai_safety, skewed_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "model": "anthropic/claude-sonnet-5.5",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.042553191489362,
+      "ci95": [
+       2.7845736189943584,
+       6.241594537742681
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 94
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-sonnet-5.5, ai_safety, uniform_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "model": "anthropic/claude-sonnet-5.5",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.1404958677685952,
+      "ci95": [
+       2.0632183908045976,
+       5.409248073452547
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 121
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-sonnet-5.5, ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "model": "anthropic/claude-sonnet-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 25.161290322580648,
+      "ci95": [
+       14.803921568627452,
+       58.00192059339713
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 31
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-sonnet-5.5, ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "model": "anthropic/claude-sonnet-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 17.333333333333332,
+      "ci95": [
+       8.521944090887665,
+       50.66833119791496
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 45
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-sonnet-5.5, ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "model": "anthropic/claude-sonnet-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 32.5,
+      "ci95": [
+       17.15852199257922,
+       94.25312096427035
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 24
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-opus-5.5, ai_safety, from_memory, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "anthropic/claude-opus-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 15.918367346938776,
+      "ci95": [
+       10.159666239611052,
+       28.185185185185183
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 49
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A11 (model rows)"
+     ]
+    },
+    {
+     "name": "claude-opus-5.5, ai_safety, skewed_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "model": "anthropic/claude-opus-5.5",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 2.638888888888889,
+      "ci95": [
+       1.9888857675992349,
+       3.6400526019162123
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 144
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-opus-5.5, ai_safety, uniform_list, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "model": "anthropic/claude-opus-5.5",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 2.638888888888889,
+      "ci95": [
+       1.9196859774751718,
+       3.880466913416873
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 144
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-opus-5.5, ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "model": "anthropic/claude-opus-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.199999999999999,
+      "ci95": [
+       3.285652928983586,
+       9.257098291890946
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 150
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-opus-5.5, ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "model": "anthropic/claude-opus-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 18.13953488372093,
+      "ci95": [
+       8.746176830393402,
+       50.8016645368459
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 43
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "claude-opus-5.5, ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_reading_models.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "model": "anthropic/claude-opus-5.5",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_models.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 8.863636363636363,
+      "ci95": [
+       4.553436807095345,
+       28.1861099263245
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 88
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    }
+   ],
+   "reported_cells": [
+    {
+     "cell": "seven models pooled (mixed), ai_safety, from_memory",
+     "effective_number": 36.779661016949156,
+     "ci95": [
+      30.77024175860324,
+      45.317733562648556
+     ],
+     "n_agents": 280,
+     "n_pairs": null,
+     "n_duplicates": null
+    },
+    {
+     "cell": "seven models pooled (mixed), ai_safety, skewed_list",
+     "effective_number": 14.757198640597053,
+     "ci95": [
+      12.768503805682508,
+      17.874620927891854
+     ],
+     "n_agents": 280,
+     "n_pairs": null,
+     "n_duplicates": null
+    },
+    {
+     "cell": "seven models pooled (mixed), ai_safety, uniform_list",
+     "effective_number": 13.463444125482834,
+     "ci95": [
+      11.447714654608863,
+      16.45689364957475
+     ],
+     "n_agents": 280,
+     "n_pairs": null,
+     "n_duplicates": null
+    },
+    {
+     "cell": "seven models pooled (mixed), ai_safety, search_no_randomness",
+     "effective_number": 41.11925214754926,
+     "ci95": [
+      32.1959382851753,
+      54.72524842827434
+     ],
+     "n_agents": 280,
+     "n_pairs": null,
+     "n_duplicates": null
+    },
+    {
+     "cell": "seven models pooled (mixed), ai_safety, search_moderate_randomness",
+     "effective_number": 46.11871814340779,
+     "ci95": [
+      35.52203570349031,
+      63.17470586376055
+     ],
+     "n_agents": 280,
+     "n_pairs": null,
+     "n_duplicates": null
+    },
+    {
+     "cell": "seven models pooled (mixed), ai_safety, search_high_randomness",
+     "effective_number": 49.444723043141686,
+     "ci95": [
+      37.76542772667937,
+      68.53109489953434
+     ],
+     "n_agents": 280,
+     "n_pairs": null,
+     "n_duplicates": null
+    }
+   ],
+   "reported_cells_note": "Figure A13's mixed row pools 40 agents of each of the seven models from simple_step_one, simple_reading_models and simple_reading_gpt; pairs between agents of different experiments were not kept, so it cannot be recomputed from the released files.",
+   "n_pairs": 6823,
+   "n_duplicates": 1980,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_reading_gpt": {
+   "description": "Step one's reading conditions for GPT-6 Astra and GPT-6.1 Sol in our minimal loop, with our AI safety brief and the brief narrowed to mechanistic interpretability, 40 agents per cell in two groups of 20; plus 80 more GPT-6 Astra agents from memory that bring that cell to 120 (Figure 2's 'one model'). Exploratory.",
+   "figures": [
+    "2",
+    "A11",
+    "A13"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-10",
+    "2026-11-13"
+   ],
+   "n_agents": 1040,
+   "judging": "screened",
+   "files": [
+    "agents_simple_reading_gpt.jsonl",
+    "pairs_simple_reading_gpt.jsonl",
+    "labels_simple_reading_gpt.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "gpt-6-astra, ai_safety, from_memory, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "openai/gpt-6-astra",
+     "populations": [
+      0,
+      1
+     ],
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.9000000000000004,
+      "ci95": [
+       2.861316055578443,
+       5.540328233040705
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 200
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A11 (model rows)"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, ai_safety, skewed_list, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 2.4358974358974357,
+      "ci95": [
+       1.828282828282828,
+       3.5392156862745097
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 156
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, ai_safety, uniform_list, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.277777777777778,
+      "ci95": [
+       3.5046109931686256,
+       8.548212673499153
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 72
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.457142857142857,
+      "ci95": [
+       2.923076923076923,
+       7.401960784313726
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 175
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.571428571428571,
+      "ci95": [
+       3.6650076781880156,
+       9.317170992749883
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 140
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.661971830985916,
+      "ci95": [
+       2.473573303259495,
+       6.300144498727035
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 213
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, ai_safety, from_memory, all 120 agents, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.513274336283186,
+      "ci95": [
+       3.669900043525517,
+       5.651433163393116
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 1582
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "2 (one model)"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, ai_safety, from_memory, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/from_memory",
+     "model": "openai/gpt-6.1-sol",
+     "populations": [
+      0,
+      1
+     ],
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 8.478260869565217,
+      "ci95": [
+       5.634210794403594,
+       14.902450352327927
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 92
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13",
+      "A11 (model rows)"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, ai_safety, skewed_list, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/skewed_list",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.634146341463414,
+      "ci95": [
+       3.007916144227236,
+       8.000554054989959
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 82
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, ai_safety, uniform_list, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/uniform_list",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 8.444444444444445,
+      "ci95": [
+       4.8517160946351305,
+       16.138623947840923
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 45
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, ai_safety, search_no_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/search_no_randomness",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.777777777777778,
+      "ci95": [
+       3.5875395654139903,
+       10.271614722459073
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 135
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, ai_safety, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/search_moderate_randomness",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.735294117647059,
+      "ci95": [
+       3.523092666204221,
+       10.914998181529938
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 136
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, ai_safety, search_high_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "ai_safety/search_high_randomness",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.54054054054054,
+      "ci95": [
+       6.253229019109369,
+       21.058319114494466
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 74
+     },
+     "ci_method": "stratified_agent_bootstrap",
+     "bootstrap_seed": 20261110,
+     "bootstrap_draws": 2000,
+     "agent_order": "stratum then id",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, mech_interp, from_memory, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/from_memory",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.833333333333332,
+      "ci95": [
+       5.693907798729135,
+       21.59998802503625
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 72
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      6.12,
+      22.472055079620468
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, mech_interp, skewed_list (pairs that read the same list), screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/skewed_list",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 2.923076923076923,
+      "ci95": [
+       2.218716012315988,
+       4.196100910086526
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 130
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, mech_interp, uniform_list (pairs that read the same list), screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/uniform_list",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 7.037037037037037,
+      "ci95": [
+       3.924731182795699,
+       16.182951441723066
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 54
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, mech_interp, search_no_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/search_no_randomness",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.9000000000000004,
+      "ci95": [
+       2.5288575851672475,
+       6.500839372870693
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 200
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      2.5397032447415624,
+      6.487392888261338
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, mech_interp, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/search_moderate_randomness",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.431818181818182,
+      "ci95": [
+       3.0173086121147197,
+       6.838162769112344
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 176
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      3.0318725099601593,
+      7.191052285801273
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6-astra, mech_interp, search_high_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/search_high_randomness",
+     "model": "openai/gpt-6-astra",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.105263157894737,
+      "ci95": [
+       2.782332137444307,
+       6.410136010679266
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 190
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      2.7673648459174744,
+      6.644056004869989
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, mech_interp, from_memory, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/from_memory",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.985915492957748,
+      "ci95": [
+       6.3582183957917,
+       19.610385181539375
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 71
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      6.74001611490464,
+      22.41176470588235
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, mech_interp, skewed_list (pairs that read the same list), screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/skewed_list",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.6893203883495143,
+      "ci95": [
+       2.614661485900519,
+       5.8196721311475414
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 103
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, mech_interp, uniform_list (pairs that read the same list), screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/uniform_list",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "within_population",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 19.0,
+      "ci95": [
+       9.810679360777266,
+       52.21812854157239
+      ],
+      "n_agents": 40,
+      "n_pairs": 380,
+      "n_duplicates": 20
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, mech_interp, search_no_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/search_no_randomness",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.554621848739496,
+      "ci95": [
+       4.108315336896882,
+       10.926220649574251
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 119
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      4.2441759507206385,
+      11.545454545454545
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, mech_interp, search_moderate_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/search_moderate_randomness",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.610169491525424,
+      "ci95": [
+       4.1289368669350175,
+       11.059008238946454
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 118
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      4.20405677667988,
+      11.34341355564224
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    },
+    {
+     "name": "gpt-6.1-sol, mech_interp, search_high_randomness, screened",
+     "agents": "agents_simple_reading_gpt.jsonl",
+     "condition": "mech_interp/search_high_randomness",
+     "model": "openai/gpt-6.1-sol",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_reading_gpt.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.4977578475336326,
+      "ci95": [
+       2.576538252519267,
+       4.957274271617839
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 223
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      2.558912704171932,
+      5.086681206432648
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A13"
+     ]
+    }
+   ],
+   "n_pairs": 10960,
+   "n_duplicates": 5254,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_one_change": {
+   "description": "One change at a time from step one's memory cell (GLM-5.3-flash, our brief, minimal loop), 40 agents each: the most-novel sentence, the Claude Code prompt (V01), AI Scientist's prompt (V08), Codex CLI and opencode; and 120 agents each drawing model, instruction and harness at random. The model rows of Figure A11 are the first 40 agents of the from-memory cells of simple_step_one, simple_reading_models and simple_reading_gpt. Exploratory.",
+   "figures": [
+    "A6",
+    "A11"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-11",
+    "2026-11-14"
+   ],
+   "n_agents": 320,
+   "judging": "screened",
+   "files": [
+    "agents_simple_one_change.jsonl",
+    "pairs_simple_one_change.jsonl",
+    "labels_simple_one_change.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "GLM-5.3-flash with the most-novel sentence, screened",
+     "agents": "agents_simple_one_change.jsonl",
+     "condition": "novelty_sentence",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_one_change.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 111.42857142857143,
+      "ci95": [
+       25.62902849228054,
+       496.12587926792213
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 7
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      38.0,
+      null
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11"
+     ]
+    },
+    {
+     "name": "GLM-5.3-flash with the Claude Code prompt (V01), screened",
+     "agents": "agents_simple_one_change.jsonl",
+     "condition": "claude_code_prompt",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_one_change.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 15.600000000000001,
+      "ci95": [
+       6.936566474194554,
+       36.9062769576619
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 50
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      7.665651348607254,
+      47.06406047945887
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11"
+     ]
+    },
+    {
+     "name": "GLM-5.3-flash with AI Scientist's prompt (V08), screened",
+     "agents": "agents_simple_one_change.jsonl",
+     "condition": "ai_scientist_prompt",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_one_change.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 27.857142857142858,
+      "ci95": [
+       12.065885433817558,
+       66.18286555223621
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 28
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      14.018054958500054,
+      84.22222222222223
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11"
+     ]
+    },
+    {
+     "name": "GLM-5.3-flash with Codex CLI, screened",
+     "agents": "agents_simple_one_change.jsonl",
+     "condition": "codex_cli",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_one_change.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 20.0,
+      "ci95": [
+       9.241483383042453,
+       44.8027941356756
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 39
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      10.408775323257522,
+      54.0749908237885
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11"
+     ]
+    },
+    {
+     "name": "GLM-5.3-flash with opencode, screened",
+     "agents": "agents_simple_one_change.jsonl",
+     "condition": "opencode",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_one_change.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 86.66666666666666,
+      "ci95": [
+       26.282838170690628,
+       291.2671657442844
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 9
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      34.40795307995467,
+      763.0
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11"
+     ]
+    },
+    {
+     "name": "every change at once (model, instruction and harness drawn per agent), screened",
+     "agents": "agents_simple_one_change.jsonl",
+     "condition": "every_change_at_once",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_one_change.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 66.72897196261682,
+      "ci95": [
+       41.775647793081994,
+       106.95289073483349
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 107
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      43.11142449154117,
+      117.91666666666667
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11 (right panel)"
+     ]
+    }
+   ],
+   "reported_cells": [
+    {
+     "cell": "seven models pooled (mixed), minimal loop",
+     "effective_number": 36.779661016949156,
+     "ci95": [
+      30.980673264863295,
+      45.111541386446525
+     ],
+     "n_agents": 280,
+     "n_pairs": 39060,
+     "n_duplicates": 1062
+    },
+    {
+     "cell": "four instructions pooled (mixed)",
+     "effective_number": 34.65940054495913,
+     "ci95": [
+      23.988235059820912,
+      52.924999927450806
+     ],
+     "n_agents": 160,
+     "n_pairs": 12720,
+     "n_duplicates": 367
+    },
+    {
+     "cell": "three harnesses pooled (mixed)",
+     "effective_number": 31.875,
+     "ci95": [
+      20.465245654789644,
+      55.600390986377555
+     ],
+     "n_agents": 120,
+     "n_pairs": 7140,
+     "n_duplicates": 224
+    },
+    {
+     "cell": "every one-change group without the GPT models, pooled",
+     "effective_number": 48.30508474576271,
+     "ci95": [
+      38.02659978792433,
+      62.64729183973597
+     ],
+     "n_agents": 400,
+     "n_pairs": 79800,
+     "n_duplicates": 1652
+    }
+   ],
+   "reported_cells_note": "The pooled rows of Figure A11 mix agents from several released experiments; pairs between agents of different experiments were not exported, so these pools cannot be recomputed from the released files.",
+   "n_pairs": 2436,
+   "n_duplicates": 592,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_pilot_brief": {
+   "description": "The pilot setup: the same simple setup with an earlier brief that had one more paragraph, on the computing resources available. Seven models answering from memory (the Claude models in Claude Code and in our loop, the GPT models in our loop and in Codex CLI), GLM-5.3-flash under three other instructions and in Codex CLI and opencode (twice), the GPT models under three other instructions, and 119 agents drawing model, instruction and harness at random. 40 agents per cell. Exploratory pilots, reported in the appendix only for comparison.",
+   "figures": [
+    "A6 (pilot-brief chart)",
+    "A11 text",
+    "A16",
+    "judge appendix"
+   ],
+   "preregistered": false,
+   "run_dates": [
+    "2026-11-08",
+    "2026-11-10"
+   ],
+   "n_agents": 1045,
+   "judging": "screened",
+   "files": [
+    "agents_simple_pilot_brief.jsonl",
+    "pairs_simple_pilot_brief.jsonl",
+    "labels_simple_pilot_brief.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "pilot_brief, glm-5.3-flash, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:glm-5.3-flash:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.782608695652174,
+      "ci95": [
+       3.7883958093917824,
+       12.992043315516927
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 115
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "judge appendix",
+      "A11 text",
+      "A6 (pilot-brief chart)"
+     ]
+    },
+    {
+     "name": "pilot_brief, glm-5.3, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:glm-5.3:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 9.873417721518987,
+      "ci95": [
+       6.194458447525629,
+       16.157988624988178
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 79
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "judge appendix",
+      "A6 (pilot-brief chart)"
+     ]
+    },
+    {
+     "name": "pilot_brief, deepseek-v4.1-flash, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:deepseek-v4.1-flash:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 11.304347826086955,
+      "ci95": [
+       5.691987892965439,
+       23.6299782828031
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 69
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "judge appendix",
+      "A6 (pilot-brief chart)"
+     ]
+    },
+    {
+     "name": "pilot_brief, claude-sonnet-5.5, claude_code, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:claude-sonnet-5.5:claude_code",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.0625,
+      "ci95": [
+       2.676359277276216,
+       6.59480677986824
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 192
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "judge appendix",
+      "A6 (pilot-brief chart)"
+     ]
+    },
+    {
+     "name": "pilot_brief, claude-opus-5.5, claude_code, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:claude-opus-5.5:claude_code",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.735294117647059,
+      "ci95": [
+       3.4857919191165525,
+       10.02046957679062
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 136
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "judge appendix",
+      "A6 (pilot-brief chart)"
+     ]
+    },
+    {
+     "name": "pilot_brief, gpt-6-astra, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:gpt-6-astra:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.82089552238806,
+      "ci95": [
+       4.512163410494641,
+       7.617298491389971
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 134
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "pilot_brief, gpt-6.1-sol, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:gpt-6.1-sol:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.032258064516129,
+      "ci95": [
+       3.2650007571984587,
+       8.178410447405753
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 155
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "pilot_brief, gpt-6-astra, codex_cli, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:gpt-6-astra:codex_cli",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.263157894736842,
+      "ci95": [
+       7.041710099124587,
+       15.202285904988772
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 76
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "pilot_brief, gpt-6.1-sol, codex_cli, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:gpt-6.1-sol:codex_cli",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 9.512195121951219,
+      "ci95": [
+       5.715022444111828,
+       16.367363920962
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 82
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "pilot_brief, claude-sonnet-5.5, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:claude-sonnet-5.5:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.262295081967213,
+      "ci95": [
+       2.6683744038689072,
+       7.379005322275196
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 183
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      2.7354648633638163,
+      7.500862451333104
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11 text"
+     ]
+    },
+    {
+     "name": "pilot_brief, claude-opus-5.5, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:claude-opus-5.5:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.1578947368421053,
+      "ci95": [
+       2.039987012045469,
+       5.477469085053605
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 247
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      2.070776479254587,
+      5.624871961106931
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11 text"
+     ]
+    },
+    {
+     "name": "novelty_sentence, glm-5.3-flash, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "novelty_sentence:glm-5.3-flash:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 60.0,
+      "ci95": [
+       30.015635236118907,
+       120.96980151124946
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 13
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A11 text"
+     ]
+    },
+    {
+     "name": "claude_code_prompt, glm-5.3-flash, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "claude_code_prompt:glm-5.3-flash:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.454545454545455,
+      "ci95": [
+       3.388032564527358,
+       9.309340291822572
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 143
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A11 text (pilot-brief pools)"
+     ]
+    },
+    {
+     "name": "ai_scientist_prompt, glm-5.3-flash, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "ai_scientist_prompt:glm-5.3-flash:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 13.928571428571429,
+      "ci95": [
+       7.627994982381665,
+       26.21848004230255
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 56
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A11 text (pilot-brief pools)"
+     ]
+    },
+    {
+     "name": "novelty_sentence, gpt-6-astra, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "novelty_sentence:gpt-6-astra:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 5.611510791366906,
+      "ci95": [
+       3.6872818425468368,
+       8.913584441421602
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 139
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      3.719158326369056,
+      9.383024295910177
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "novelty_sentence, gpt-6.1-sol, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "novelty_sentence:gpt-6.1-sol:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.431818181818182,
+      "ci95": [
+       3.1122490063746295,
+       6.575751721276472
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 176
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      3.0603772520217887,
+      6.561544974055202
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "claude_code_prompt, gpt-6-astra, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "claude_code_prompt:gpt-6-astra:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.446280991735537,
+      "ci95": [
+       4.79833407015747,
+       8.80920690309636
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 121
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      4.754598942429434,
+      9.280487804878048
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "claude_code_prompt, gpt-6.1-sol, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "claude_code_prompt:gpt-6.1-sol:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 6.341463414634147,
+      "ci95": [
+       4.260893877809205,
+       9.749512397209156
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 123
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      4.312455843956382,
+      10.026999568378764
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "ai_scientist_prompt, gpt-6-astra, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "ai_scientist_prompt:gpt-6-astra:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 2.142857142857143,
+      "ci95": [
+       1.593854368859073,
+       3.1993985688594746
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 364
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      1.5822825188727212,
+      3.1297565856980953
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "ai_scientist_prompt, gpt-6.1-sol, minimal_loop, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "ai_scientist_prompt:gpt-6.1-sol:minimal_loop",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 3.5779816513761467,
+      "ci95": [
+       2.3567058880977703,
+       5.898622061816497
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 218
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      2.357714465770425,
+      5.993313583543697
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A16"
+     ]
+    },
+    {
+     "name": "pilot_brief, glm-5.3-flash, codex_cli, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:glm-5.3-flash:codex_cli",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 11.818181818181818,
+      "ci95": [
+       7.5453820973545564,
+       18.88024841185985
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 66
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A11 text (pilot-brief pools)"
+     ]
+    },
+    {
+     "name": "pilot_brief, glm-5.3-flash, opencode, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:glm-5.3-flash:opencode",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 28.888888888888886,
+      "ci95": [
+       12.231321965764248,
+       70.25187665598763
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 27
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "figures": [
+      "A11 text"
+     ]
+    },
+    {
+     "name": "every_change_at_once_pilot, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "every_change_at_once_pilot",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 33.274881516587676,
+      "ci95": [
+       20.98094025746194,
+       53.133081000568005
+      ],
+      "n_agents": 119,
+      "n_pairs": 7021,
+      "n_duplicates": 211
+     },
+     "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
+     "agent_order": "as analysed",
+     "reported_bootstrap_ci95": [
+      21.408614693987783,
+      55.160315680882526
+     ],
+     "reported_bootstrap_seed": 20261110,
+     "figures": [
+      "A11 text (pilot-brief pools)"
+     ]
+    },
+    {
+     "name": "pilot_brief, glm-5.3-flash, opencode, repeat group, screened",
+     "agents": "agents_simple_pilot_brief.jsonl",
+     "condition": "pilot_brief:glm-5.3-flash:opencode_repeat",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_pilot_brief.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 9.069767441860465,
+      "ci95": null,
+      "n_agents": 40,
+      "n_pairs": null,
+      "n_duplicates": null
+     },
+     "ci_method": "point only (no interval reported)",
+     "agent_order": "file order",
+     "figures": [
+      "A11 text"
+     ]
+    }
+   ],
+   "n_pairs": 14632,
+   "n_duplicates": 4617,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_interp_overview_removed": {
+   "description": "GLM-5.3-flash searching with the interpretability brief and no randomness (step one's cell), re-run for 60 agents with the same seeds after removing from our copy of the literature the overview post that most searchers opened first and a second page that drew the same agents. Exploratory follow-up, preregistered before running. Judged with screening, judge pinned to DeepInfra.",
+   "figures": [
+    "A13 text"
+   ],
+   "preregistered": "exploratory follow-up, preregistered before running",
+   "run_dates": [
+    "2026-11-15"
+   ],
+   "n_agents": 60,
+   "judging": "screened (judge pinned to DeepInfra)",
+   "files": [
+    "agents_simple_interp_overview_removed.jsonl",
+    "pairs_simple_interp_overview_removed.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "pages removed, screened",
+     "agents": "agents_simple_interp_overview_removed.jsonl",
+     "condition": "mech_interp/search_no_randomness/overview_pages_removed",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_interp_overview_removed.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 28.049180327868854,
+      "ci95": [
+       16.0,
+       56.23416618532068
+      ],
+      "n_agents": 59,
+      "n_pairs": 1711,
+      "n_duplicates": 61
+     },
+     "ci_method": "agent bootstrap (seed not recorded); reproduce.py prints its own bootstrap beside it",
+     "agent_order": "file order",
+     "figures": [
+      "A13 text"
+     ]
+    }
+   ],
+   "reported_extra": {
+    "control_same_seeds": {
+     "effective_number": 5.765472312703583,
+     "ci95": [
+      4.027719874961864,
+      8.892563814537374
+     ],
+     "n_agents": 60,
+     "n_duplicates": 307,
+     "note": "step one's first 60 agents of this cell (simple_step_one, mech_interp/search_no_randomness, groups 0 to 2), re-judged with the judge pinned to DeepInfra; those re-judged verdicts were not exported, so this control is reported only"
+    }
+   },
+   "n_pairs": 130,
+   "n_duplicates": 61,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_sonnet_claude_code_texts_removed": {
+   "description": "Claude Sonnet 5.5 in Claude Code searching our copy of the literature on the pilot brief: 40 agents after removing the two texts that most such agents read on chain-of-thought monitoring, and 40 control agents run the same day with the texts in place. Exploratory follow-up, preregistered before running. Judged with screening, judge pinned to DeepInfra.",
+   "figures": [
+    "A13 text"
+   ],
+   "preregistered": "exploratory follow-up, preregistered before running",
+   "run_dates": [
+    "2026-11-15"
+   ],
+   "n_agents": 80,
+   "judging": "screened (judge pinned to DeepInfra)",
+   "reported_counts": {
+    "cot_monitor_agenda": {
+     "texts_removed": 31,
+     "texts_in_place": 34,
+     "of": 40
+    }
+   },
+   "files": [
+    "agents_simple_sonnet_claude_code_texts_removed.jsonl",
+    "pairs_simple_sonnet_claude_code_texts_removed.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "texts_removed, screened",
+     "agents": "agents_simple_sonnet_claude_code_texts_removed.jsonl",
+     "condition": "texts_removed",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_sonnet_claude_code_texts_removed.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 4.508670520231214,
+      "ci95": [
+       3.0354561177529713,
+       7.411907374256511
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 173
+     },
+     "ci_method": "agent bootstrap (seed not recorded); reproduce.py prints its own bootstrap beside it",
+     "agent_order": "file order",
+     "figures": [
+      "A13 text"
+     ]
+    },
+    {
+     "name": "texts_in_place, screened",
+     "agents": "agents_simple_sonnet_claude_code_texts_removed.jsonl",
+     "condition": "texts_in_place",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "screened",
+     "duplicates": "pairs_simple_sonnet_claude_code_texts_removed.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 10.985915492957748,
+      "ci95": [
+       6.754626112632059,
+       19.711351551799417
+      ],
+      "n_agents": 40,
+      "n_pairs": 780,
+      "n_duplicates": 71
+     },
+     "ci_method": "agent bootstrap (seed not recorded); reproduce.py prints its own bootstrap beside it",
+     "agent_order": "file order",
+     "figures": [
+      "A13 text"
+     ]
+    }
+   ],
+   "n_pairs": 922,
+   "n_duplicates": 244,
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_registry_stage1": {
+   "description": "Simple setup (GLM-5.3-flash, minimal loop, from memory), the registry's first preregistered stage: registry of earlier projects and agenda counts in 4 populations of 100 each, and 200 placebo agents choosing independently.",
+   "figures": [
+    "A15"
+   ],
+   "preregistered": true,
+   "run_dates": [
+    "2026-11-12",
+    "2026-11-13"
+   ],
+   "run_dates_note": "per-agent dates are not in the released records; the run started on 12 November and finished on 13 November",
+   "n_agents": 1000,
+   "n_pairs": {
+    "screened": 59500,
+    "every_pair": 19800
+   },
+   "n_duplicates": {
+    "screened": 1676,
+    "every_pair": 2
+   },
+   "judging": "screened (preregistered); every pair for the registry of earlier projects",
+   "files": [
+    "agents_simple_registry_stage1.jsonl",
+    "pairs_simple_registry_stage1.jsonl",
+    "labels_simple_registry_stage1.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "placebo, all 200 agents, screened judging (preregistered)",
+     "condition": "placebo_list",
+     "scope": "all_pairs",
+     "judging": "screened",
+     "agents": "agents_simple_registry_stage1.jsonl",
+     "duplicates": "pairs_simple_registry_stage1.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 14.653902798232695,
+      "ci95": null,
+      "n_agents": 200,
+      "n_pairs": 19900,
+      "n_duplicates": 1358
+     },
+     "ci_method": "jackknife (preregistered); reproduce.py reports an agent bootstrap beside it",
+     "bootstrap_seed": 0,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "registry of earlier projects, within populations of 100, screened judging (preregistered)",
+     "condition": "registry_of_earlier_projects",
+     "scope": "within_population",
+     "judging": "screened",
+     "agents": "agents_simple_registry_stage1.jsonl",
+     "duplicates": "pairs_simple_registry_stage1.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 9900.0,
+      "ci95": null,
+      "n_agents": 400,
+      "n_pairs": 19800,
+      "n_duplicates": 2
+     },
+     "ci_method": "mean over populations of the duplicate share (preregistered); reproduce.py reports an agent bootstrap beside it",
+     "bootstrap_seed": 0,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "agenda counts, within populations of 100, screened judging (preregistered)",
+     "condition": "agenda_counts",
+     "scope": "within_population",
+     "judging": "screened",
+     "agents": "agents_simple_registry_stage1.jsonl",
+     "duplicates": "pairs_simple_registry_stage1.jsonl",
+     "duplicate_rule": "screened",
+     "reported": {
+      "effective_number": 62.658227848101255,
+      "ci95": null,
+      "n_agents": 400,
+      "n_pairs": 19800,
+      "n_duplicates": 316
+     },
+     "ci_method": "mean over populations of the duplicate share (preregistered); reproduce.py reports an agent bootstrap beside it",
+     "bootstrap_seed": 0,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    },
+    {
+     "name": "registry of earlier projects, within populations of 100, every pair judged",
+     "condition": "registry_of_earlier_projects",
+     "scope": "within_population",
+     "judging": "every_pair",
+     "agents": "agents_simple_registry_stage1.jsonl",
+     "duplicates": "pairs_simple_registry_stage1.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 9900.0,
+      "ci95": [
+       2449.25,
+       39244.0
+      ],
+      "n_agents": 400,
+      "n_pairs": 19800,
+      "n_duplicates": 2
+     },
+     "ci_method": "agent_bootstrap_within_populations",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": false
+    }
+   ],
+   "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
+  },
+  "simple_tree_glm": {
+   "description": "Simple setup (GLM-5.3-flash, minimal loop, from memory), with and without the tree protocol and the random-draw tool. Preregistered on the first 120 tree agents; all 299 usable tree agents were judged afterwards (exploratory extension).",
+   "figures": [
+    "A9",
+    "A15"
+   ],
+   "preregistered": true,
+   "run_dates": [
+    "2026-11-13 (no protocol)",
+    "2026-11-14 (tree)"
+   ],
+   "n_agents": 420,
+   "n_pairs": 51691,
+   "n_duplicates": 625,
+   "judging": "every pair (judge pinned to DeepInfra)",
+   "files": [
+    "agents_simple_tree_glm.jsonl",
+    "pairs_simple_tree_glm.jsonl",
+    "tree_draws_simple_tree_glm.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "tree protocol, first 120 agents, every pair judged",
+     "condition": "tree_random_draw",
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_simple_tree_glm.jsonl",
+     "duplicates": "pairs_simple_tree_glm.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 375.7894736842105,
+      "ci95": [
+       181.46153846153845,
+       1179.5
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 19
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261115,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": true,
+     "batch": "first_120"
+    },
+    {
+     "name": "no protocol (Max), 120 agents, every pair judged",
+     "condition": "max",
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_simple_tree_glm.jsonl",
+     "duplicates": "pairs_simple_tree_glm.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 13.395872420262664,
+      "ci95": [
+       9.414666666666665,
+       19.940845070422537
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 533
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261118,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": true
+    },
+    {
+     "name": "tree protocol, all 299 usable agents, every pair judged",
+     "agents": "agents_simple_tree_glm.jsonl",
+     "condition": "tree_random_draw",
+     "only_analysed": true,
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "duplicates": "pairs_simple_tree_glm.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 484.25,
+      "ci95": [
+       304.1164383561644,
+       854.0576923076923
+      ],
+      "n_agents": 299,
+      "n_pairs": 44551,
+      "n_duplicates": 92
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261116,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "figures": [
+      "A15 text"
+     ]
+    }
+   ],
+   "reported_ratios": {
+    "tree_over_max": {
+     "ratio": 28.052631578947366,
+     "ci95": [
+      12.061101804388414,
+      90.20581592320723
+     ],
+     "method": "independent agent bootstraps"
+    }
+   }
+  },
+  "simple_tree_sonnet": {
+   "description": "Repeat of the simple-setup tree test with Claude Sonnet 5.5 in place of GLM-5.3-flash. Preregistered.",
+   "figures": [
+    "A9",
+    "A15"
+   ],
+   "preregistered": true,
+   "run_dates": [
+    "2026-11-14"
+   ],
+   "n_agents": 240,
+   "n_pairs": 14280,
+   "n_duplicates": 461,
+   "judging": "every pair (judge pinned to DeepInfra)",
+   "files": [
+    "agents_simple_tree_sonnet.jsonl",
+    "pairs_simple_tree_sonnet.jsonl",
+    "tree_draws_simple_tree_sonnet.jsonl"
+   ],
+   "measures": [
+    {
+     "name": "tree protocol, first 120 agents, every pair judged",
+     "condition": "tree_random_draw",
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_simple_tree_sonnet.jsonl",
+     "duplicates": "pairs_simple_tree_sonnet.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 549.2307692307693,
+      "ci95": [
+       252.82142857142858,
+       2361.6666666666665
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 13
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261115,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": true,
+     "batch": "first_120"
+    },
+    {
+     "name": "no protocol (Max), 120 agents, every pair judged",
+     "condition": "max",
+     "scope": "all_pairs",
+     "judging": "every_pair",
+     "agents": "agents_simple_tree_sonnet.jsonl",
+     "duplicates": "pairs_simple_tree_sonnet.jsonl",
+     "duplicate_rule": "every_pair",
+     "reported": {
+      "effective_number": 15.9375,
+      "ci95": [
+       11.92087542087542,
+       21.188622754491018
+      ],
+      "n_agents": 120,
+      "n_pairs": 7140,
+      "n_duplicates": 448
+     },
+     "ci_method": "agent_bootstrap",
+     "bootstrap_seed": 20261118,
+     "bootstrap_draws": 2000,
+     "agent_order": "file order",
+     "only_analysed": true
+    }
+   ],
+   "reported_ratios": {
+    "tree_over_max": {
+     "ratio": 34.46153846153847,
+     "ci95": [
+      14.878145320893413,
+      169.83211060948082
+     ],
+     "method": "independent agent bootstraps"
+    }
+   }
+  }
+ },
+ "people": {
+  "papers": {
+   "label": "AI safety papers, 2025-26",
+   "figures": [
+    "A1"
+   ],
+   "n_items_in_pool": 5980,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 2,
+   "pooled_duplicate_share": 0.00016025641025641026,
+   "reported": {
+    "effective_number": 6240.0,
+    "range95": [
+     780.0,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_papers.jsonl",
+    "people/groups_papers.jsonl",
+    "people/pairs_papers.jsonl"
+   ]
+  },
+  "posts": {
+   "label": "LessWrong posts, 2025-26",
+   "figures": [
+    "A1"
+   ],
+   "n_items_in_pool": 2660,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 1,
+   "pooled_duplicate_share": 8.012820512820513e-05,
+   "reported": {
+    "effective_number": 12480.0,
+    "range95": [
+     1248.0,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_posts.jsonl",
+    "people/groups_posts.jsonl",
+    "people/pairs_posts.jsonl"
+   ]
+  },
+  "spar_proposals": {
+   "label": "SPAR mentor project proposals, fall 2026",
+   "figures": [
+    "2",
+    "4",
+    "A1"
+   ],
+   "n_items_in_pool": 227,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 3,
+   "pooled_duplicate_share": 0.0002403846153846154,
+   "reported": {
+    "effective_number": 4160.0,
+    "range95": [
+     780.0,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_spar_proposals.jsonl",
+    "people/groups_spar_proposals.jsonl",
+    "people/pairs_spar_proposals.jsonl"
+   ]
+  },
+  "hackathon_one_theme": {
+   "label": "Apart hackathon teams, one theme (AI control, 2026)",
+   "figures": [
+    "A1"
+   ],
+   "n_items_in_pool": 125,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 22,
+   "pooled_duplicate_share": 0.0017628205128205126,
+   "reported": {
+    "effective_number": 567.2727272727274,
+    "range95": [
+     297.1428571428571,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_hackathon_one_theme.jsonl",
+    "people/groups_hackathon_one_theme.jsonl",
+    "people/pairs_hackathon_one_theme.jsonl"
+   ]
+  },
+  "hackathon_same_models": {
+   "label": "Apart hackathon teams, one theme and the same models to audit (secret loyalty, 2026)",
+   "figures": [
+    "A1"
+   ],
+   "n_items_in_pool": 177,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 258,
+   "pooled_duplicate_share": 0.020673076923076926,
+   "reported": {
+    "effective_number": 48.37209302325581,
+    "range95": [
+     29.023255813953494,
+     113.45454545454545
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_hackathon_same_models.jsonl",
+    "people/groups_hackathon_same_models.jsonl",
+    "people/pairs_hackathon_same_models.jsonl"
+   ]
+  },
+  "hackathon_global_south": {
+   "label": "Apart Global South AI Safety hackathon 2026 (broad theme)",
+   "figures": [
+    "4 (pooled)",
+    "A1 (pooled)",
+    "A1 text"
+   ],
+   "n_items_in_pool": 216,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 6,
+   "pooled_duplicate_share": 0.0004807692307692308,
+   "reported": {
+    "effective_number": 2080.0,
+    "range95": [
+     780.0,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_hackathon_global_south.jsonl",
+    "people/groups_hackathon_global_south.jsonl",
+    "people/duplicates_hackathon_global_south.jsonl"
+   ],
+   "note": "only the duplicate pairs are released: the judge's verdicts on the other pairs of this event were cached after our last archive and are lost"
+  },
+  "hackathon_defacc": {
+   "label": "Apart def/acc hackathon 2025 (broad theme)",
+   "figures": [
+    "4 (pooled)",
+    "A1 (pooled)",
+    "A1 text"
+   ],
+   "n_items_in_pool": 81,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 15,
+   "pooled_duplicate_share": 0.001201923076923077,
+   "reported": {
+    "effective_number": 832.0,
+    "range95": [
+     297.1428571428571,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_hackathon_defacc.jsonl",
+    "people/groups_hackathon_defacc.jsonl",
+    "people/duplicates_hackathon_defacc.jsonl"
+   ],
+   "note": "only the duplicate pairs are released: the judge's verdicts on the other pairs of this event were cached after our last archive and are lost"
+  },
+  "hackathon_manipulation": {
+   "label": "Apart AI Manipulation hackathon 2026 (broad theme)",
+   "figures": [
+    "4 (pooled)",
+    "A1 (pooled)",
+    "A1 text"
+   ],
+   "n_items_in_pool": 70,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 35,
+   "pooled_duplicate_share": 0.0028044871794871795,
+   "reported": {
+    "effective_number": 356.57142857142856,
+    "range95": [
+     168.64864864864865,
+     2080.0
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_hackathon_manipulation.jsonl",
+    "people/groups_hackathon_manipulation.jsonl",
+    "people/duplicates_hackathon_manipulation.jsonl"
+   ],
+   "note": "only the duplicate pairs are released: the judge's verdicts on the other pairs of this event were cached after our last archive and are lost"
+  },
+  "hackathon_digital_minds": {
+   "label": "Apart Digital Minds hackathon 2026 (broad theme)",
+   "figures": [
+    "4 (pooled)",
+    "A1 (pooled)",
+    "A1 text"
+   ],
+   "n_items_in_pool": 232,
+   "n_groups": 16,
+   "group_size": 40,
+   "n_duplicates": 38,
+   "pooled_duplicate_share": 0.003044871794871795,
+   "reported": {
+    "effective_number": 328.42105263157896,
+    "range95": [
+     113.45454545454545,
+     null
+    ],
+    "range_method": "middle 95% of the 16 groups' own values"
+   },
+   "files": [
+    "people/items_hackathon_digital_minds.jsonl",
+    "people/groups_hackathon_digital_minds.jsonl",
+    "people/duplicates_hackathon_digital_minds.jsonl"
+   ],
+   "note": "only the duplicate pairs are released: the judge's verdicts on the other pairs of this event were cached after our last archive and are lost"
+  },
+  "hackathon_broad_theme": {
+   "label": "Four broad-theme Apart hackathons pooled, each event weighted equally",
+   "figures": [
+    "4",
+    "A1"
+   ],
+   "members": [
+    "hackathon_global_south",
+    "hackathon_defacc",
+    "hackathon_manipulation",
+    "hackathon_digital_minds"
+   ],
+   "n_groups": 64,
+   "group_size": 40,
+   "reported": {
+    "effective_number": 531.0638297872341,
+    "range95": [
+     156.0,
+     null
+    ],
+    "range_method": "middle 95% of all 64 groups' own values"
+   }
+  }
+ }
+}

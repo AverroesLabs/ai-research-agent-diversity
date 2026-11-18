@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Do AI Research Agents All Choose the Same Safety Project?"
+type: dataset
+authors:
+  - family-names: Fantl
+    given-names: Jason
+    affiliation: Averroes Labs
+date-released: 2026-11-18
+year: 2026
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - AI safety
+  - research agents
+  - diversity
+  - homogeneity
+  - effective number
+abstract: >-
+  Agents of four frontier models, run in the harnesses people use and given
+  launch prompts people use, each chose an AI safety research project. A
+  language-model judge marked duplicate pairs, and the effective number of
+  projects (one over the share of duplicate pairs) measured how spread out the
+  choices were, with and without a shared registry of earlier projects and a
+  random-draw tree protocol. This repository holds the agents' answers, the
+  duplicate pairs, labels, quality ratings, the prompts and code that
+  recomputes every reported effective number.

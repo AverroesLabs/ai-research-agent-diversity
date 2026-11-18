@@ -1,0 +1,240 @@
+{"agent_id": "N0_pop05_a02", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop04_a10", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a13", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a08", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop00_a11", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a05", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a01", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a07", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a16", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "other_evals"}
+{"agent_id": "N0_pop05_a03", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "probing"}
+{"agent_id": "N0_pop02_a16", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop01_a15", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "pretrain_data"}
+{"agent_id": "N0_pop03_a04", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop00_a15", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a07", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a06", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a02", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop04_a05", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop03_a12", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a16", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop02_a02", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop04_a12", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cap_evals"}
+{"agent_id": "N0_pop00_a05", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop04_a17", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a01", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a18", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a05", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a15", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop02_a03", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a10", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a02", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "other_evals"}
+{"agent_id": "N0_pop03_a05", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a19", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a18", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop03_a09", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "other_evals"}
+{"agent_id": "N0_pop01_a16", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cap_evals"}
+{"agent_id": "N0_pop03_a07", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop01_a09", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a10", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop02_a04", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop02_a18", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a12", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a02", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop04_a03", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "model_psych"}
+{"agent_id": "N0_pop01_a11", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "stego_evals"}
+{"agent_id": "N0_pop03_a14", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a00", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a18", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop04_a08", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "other_evals"}
+{"agent_id": "N0_pop01_a19", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a13", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a19", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop02_a00", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "probing"}
+{"agent_id": "N0_pop04_a04", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a17", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a00", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "other_evals"}
+{"agent_id": "N0_pop02_a19", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop01_a14", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop04_a01", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a03", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a14", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a00", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop02_a09", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a15", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a06", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a11", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a10", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "other_evals"}
+{"agent_id": "N0_pop01_a05", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a00", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a13", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop02_a17", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a06", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "probing"}
+{"agent_id": "N0_pop00_a06", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a13", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a17", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a14", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop02_a08", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a16", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a15", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "corrigibility"}
+{"agent_id": "N0_pop00_a12", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a10", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop00_a17", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "stego_evals"}
+{"agent_id": "N0_pop05_a08", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop00_a08", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a12", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "probing"}
+{"agent_id": "N0_pop01_a01", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a01", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop05_a10", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a08", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a04", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "probing"}
+{"agent_id": "N0_pop04_a02", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop01_a13", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a03", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop04_a11", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a06", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a09", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a17", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop03_a13", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a03", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop02_a14", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop04_a18", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "iter_align"}
+{"agent_id": "N0_pop03_a19", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop00_a07", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a16", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop02_a11", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a18", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a04", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop05_a12", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a07", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a09", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a01", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop03_a15", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "sa_evals"}
+{"agent_id": "N0_pop05_a04", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop00_a09", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a11", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "corrigibility"}
+{"agent_id": "N0_pop03_a00", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a06", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a07", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "stego_evals"}
+{"agent_id": "N0_pop04_a14", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a19", "labeller": "z-ai/glm-5.3-flash (Z.AI pin), majority of 3 batchings", "agenda": "control"}
+{"agent_id": "N0_pop05_a02", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop04_a10", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop05_a13", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop03_a08", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop00_a11", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a05", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a01", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop01_a07", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a16", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop05_a03", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "probing"}
+{"agent_id": "N0_pop02_a16", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop01_a15", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop03_a04", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop00_a15", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a07", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop01_a06", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a02", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a05", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop03_a12", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop03_a16", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop02_a02", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop04_a12", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop00_a05", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a17", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a01", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop01_a18", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a05", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a15", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop02_a03", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a10", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop01_a02", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop03_a05", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a19", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a18", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop03_a09", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "model_psych"}
+{"agent_id": "N0_pop01_a16", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "model_psych"}
+{"agent_id": "N0_pop03_a07", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop01_a09", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a10", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop02_a04", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop02_a18", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop01_a12", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop00_a02", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop04_a03", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other"}
+{"agent_id": "N0_pop01_a11", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop03_a14", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a00", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a18", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a08", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop01_a19", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a13", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop00_a19", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop02_a00", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "pragmatic_interp"}
+{"agent_id": "N0_pop04_a04", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a17", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a00", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop02_a19", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop01_a14", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop04_a01", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a03", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a14", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a00", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop02_a09", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a15", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a06", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a11", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a10", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop01_a05", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a00", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a13", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop02_a17", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a06", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "pragmatic_interp"}
+{"agent_id": "N0_pop00_a06", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a13", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a17", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop00_a14", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop02_a08", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "auto_oversight"}
+{"agent_id": "N0_pop05_a16", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a15", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "corrigibility"}
+{"agent_id": "N0_pop00_a12", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop00_a10", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop00_a17", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop05_a08", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop00_a08", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a12", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "probing"}
+{"agent_id": "N0_pop01_a01", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop03_a01", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop05_a10", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop01_a08", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop00_a04", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a02", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop01_a13", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop00_a03", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "scheming_evals"}
+{"agent_id": "N0_pop04_a11", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a06", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop05_a09", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a17", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop03_a13", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop03_a03", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop02_a14", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop04_a18", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "iter_align"}
+{"agent_id": "N0_pop03_a19", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "other_evals"}
+{"agent_id": "N0_pop00_a07", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop04_a16", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop02_a11", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a18", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop01_a04", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop05_a12", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop05_a07", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a09", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop00_a01", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop03_a15", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "sa_evals"}
+{"agent_id": "N0_pop05_a04", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "control"}
+{"agent_id": "N0_pop00_a09", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop03_a11", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "corrigibility"}
+{"agent_id": "N0_pop03_a00", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop02_a06", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a07", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "cot_monitor"}
+{"agent_id": "N0_pop04_a14", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
+{"agent_id": "N0_pop05_a19", "labeller": "openai/gpt-6.1-terra (second labeller)", "agenda": "safeguards"}
