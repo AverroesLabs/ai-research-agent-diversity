@@ -1,4 +1,4 @@
-"""Where the frontier field's spread comes from (appendix Figure A5).
+"""Where the frontier field's spread comes from (appendix Figure A4).
 
 Splits every pair of the frontier setup's 120 agents choosing alone (searching: frontier_max; without search:
 frontier_no_search) by what its two agents share, and gives the effective number of projects among the pairs of each
