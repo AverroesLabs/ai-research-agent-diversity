@@ -100,7 +100,7 @@ We call a group of agents each choosing a project a field.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={The experiment, read left to right. An agent is a model, given instructions, running in a harness. It may search the AI safety literature and read a registry of what other agents chose before naming one project. In the frontier setup, described below, each agent was given one of four frontier models, one of eleven launch prompts (our own brief or one of ten prompts people use to start research agents), and one of the harnesses its model runs in. The GPT models do not run in Claude Code. The bold ``random'' box at the bottom of each part marks that every agent was given one option of that part at random. A judge reads every pair of projects and marks it as duplicate work (\textbackslash approx) or not (\textbackslash not\textbackslash approx), and the share of duplicate pairs becomes one number, drawn as a circle in later figures. Each part keeps its colour in every figure. Shaded boxes vary between agents. A bold outline marks a part that adds randomness of its own, such as a model sampling its answer, search results in random order, or a random draw. In later figures, a dashed grey box is a tool or addition that the comparison condition leaves out.}]{figures/fig-01-design.png}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={The experiment, read left to right. An agent is a model, given instructions, running in a harness. It may search the AI safety literature and read a registry of what other agents chose before naming one project. In the frontier setup, described below, each agent was given one of four frontier models, one of eleven launch prompts (our own brief or one of ten prompts people use to start research agents), and one of the harnesses its model runs in. The GPT models do not run in Claude Code. ``Drawn per agent'' under a column means each agent was given one of its options at random. A judge reads every pair of projects and marks it as duplicate work (\textbackslash approx) or not (\textbackslash not\textbackslash approx), and the share of duplicate pairs becomes one number, drawn as a circle in later figures. Each part keeps its colour in every figure. Shaded boxes vary between agents. A bold outline marks a part that adds randomness of its own, such as a model sampling its answer, search results in random order, or a random draw. In later figures, a dashed grey box is a tool or addition that the comparison condition leaves out.}]{figures/fig-01-design.png}}
 \caption{The experiment, read left to right. An agent is a model, given
 instructions, running in a harness. It may search the AI safety
 literature and read a registry of what other agents chose before naming
@@ -108,16 +108,16 @@ one project. In the frontier setup, described below, each agent was
 given one of four frontier models, one of eleven launch prompts (our own
 brief or one of ten prompts people use to start research agents), and
 one of the harnesses its model runs in. The GPT models do not run in
-Claude Code. The bold ``random'' box at the bottom of each part marks
-that every agent was given one option of that part at random. A judge
-reads every pair of projects and marks it as duplicate work
-(\(\approx\)) or not (\(\not\approx\)), and the share of duplicate pairs
-becomes one number, drawn as a circle in later figures. Each part keeps
-its colour in every figure. Shaded boxes vary between agents. A bold
-outline marks a part that adds randomness of its own, such as a model
-sampling its answer, search results in random order, or a random draw.
-In later figures, a dashed grey box is a tool or addition that the
-comparison condition leaves out.}\label{fig:1}
+Claude Code. ``Drawn per agent'' under a column means each agent was
+given one of its options at random. A judge reads every pair of projects
+and marks it as duplicate work (\(\approx\)) or not (\(\not\approx\)),
+and the share of duplicate pairs becomes one number, drawn as a circle
+in later figures. Each part keeps its colour in every figure. Shaded
+boxes vary between agents. A bold outline marks a part that adds
+randomness of its own, such as a model sampling its answer, search
+results in random order, or a random draw. In later figures, a dashed
+grey box is a tool or addition that the comparison condition leaves
+out.}\label{fig:1}
 \end{figure}
 
 Each agent is a model running in a harness, the program that gives the
