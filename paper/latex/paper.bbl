@@ -1,0 +1,525 @@
+\begin{thebibliography}{71}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Audran-Reiss et~al.(2025)Audran-Reiss, Armengol-Estap{\'e},
+  Hambardzumyan, Budhiraja, Josifoski, Toledo, et~al.]{audranreiss2025}
+Alexis Audran-Reiss, Jordi Armengol-Estap{\'e}, Karen Hambardzumyan, Amar
+  Budhiraja, Martin Josifoski, Edan Toledo, et~al.
+\newblock What does it take to be a good {AI} research agent? {S}tudying the
+  role of ideation diversity, 2025.
+\newblock URL \url{https://arxiv.org/abs/2511.15593}.
+
+\bibitem[Avin(2019)]{avin2019}
+Shahar Avin.
+\newblock Mavericks and lotteries.
+\newblock \emph{Studies in History and Philosophy of Science Part A},
+  76:\penalty0 13--23, 2019.
+\newblock \doi{10.1016/j.shpsa.2018.11.006}.
+\newblock URL \url{https://doi.org/10.1016/j.shpsa.2018.11.006}.
+
+\bibitem[Baig et~al.(2026)Baig, Joren, and Benton]{baig2026taste}
+Hasan Baig, Hailey Joren, and Joe Benton.
+\newblock {TASTE}: Can {AI} models judge {AI} safety research proposals?
+\newblock Anthropic Alignment Science Blog, 2026.
+\newblock URL \url{https://alignment.anthropic.com/2026/taste/}.
+
+\bibitem[Ballestero et~al.(2026)Ballestero, Hosseini, Khanna, and
+  Shorrer]{ballestero2026}
+Gonzalo Ballestero, Hadi Hosseini, Samarth Khanna, and Ran~I. Shorrer.
+\newblock Strategic algorithmic monoculture: Experimental evidence from
+  coordination games, 2026.
+\newblock URL \url{https://arxiv.org/abs/2604.09502}.
+
+\bibitem[Bao et~al.(2026)Bao, Wu, Liu, Li, Cao, and Evans]{bao2026}
+Honglin Bao, Siyang Wu, Xiao Liu, Sida Li, Shiyun Cao, and James~A. Evans.
+\newblock Contemporary {AI} lacks the imagination to diverge or negate in
+  science, 2026.
+\newblock URL \url{https://arxiv.org/abs/2606.08251}.
+
+\bibitem[Bikhchandani et~al.(1992)Bikhchandani, Hirshleifer, and
+  Welch]{bikhchandani1992}
+Sushil Bikhchandani, David Hirshleifer, and Ivo Welch.
+\newblock A theory of fads, fashion, custom, and cultural change as
+  informational cascades.
+\newblock \emph{Journal of Political Economy}, 100\penalty0 (5):\penalty0
+  992--1026, 1992.
+\newblock \doi{10.1086/261849}.
+\newblock URL \url{https://doi.org/10.1086/261849}.
+
+\bibitem[Bisht et~al.(2026)Bisht, Kumar, Jablonka, {Mausam}, and
+  Krishnan]{bisht2026agentic}
+Harshit Bisht, Vinay Kumar, Kevin~Maik Jablonka, {Mausam}, and N.~M.~Anoop
+  Krishnan.
+\newblock Agentic {AI} scientists are not built for autonomous scientific
+  discovery.
+\newblock In \emph{Advances in Neural Information Processing Systems (Position
+  Paper Track)}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.08956}.
+
+\bibitem[Bommasani et~al.(2022)Bommasani, Creel, Kumar, Jurafsky, and
+  Liang]{bommasani2022}
+Rishi Bommasani, Kathleen~A. Creel, Ananya Kumar, Dan Jurafsky, and Percy
+  Liang.
+\newblock Picking on the same person: Does algorithmic monoculture lead to
+  outcome homogenization?
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~35, 2022.
+\newblock URL \url{https://arxiv.org/abs/2211.13972}.
+
+\bibitem[Carlon et~al.(2026)Carlon, Verbeken, Ginis, and
+  Algaba]{carlon2026methods}
+Francesca Carlon, Brecht~F. Verbeken, Vincent Ginis, and Andres Algaba.
+\newblock Thinking like a scientist? {A} structural study of {LLM}-generated
+  research methods, 2026.
+\newblock URL \url{https://arxiv.org/abs/2606.26130}.
+
+\bibitem[Chen et~al.(2026{\natexlab{a}})Chen, Tong, Yang, He, Zhang, Zou,
+  et~al.]{chen2026}
+Nuo Chen, Yicheng Tong, Yuzhe Yang, Yufei He, Xueyi Zhang, Qingyun Zou, et~al.
+\newblock Diversity collapse in multi-agent {LLM} systems: Structural coupling
+  and collective failure in open-ended idea generation, 2026{\natexlab{a}}.
+\newblock URL \url{https://arxiv.org/abs/2604.18005}.
+
+\bibitem[Chen et~al.(2026{\natexlab{b}})Chen, Zhao, and Cohan]{chenzhao2026gap}
+Ziyu Chen, Yilun Zhao, and Arman Cohan.
+\newblock Measuring the gap between human and {LLM} research ideas,
+  2026{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2607.01233}.
+
+\bibitem[{Chen Yueh-Han} et~al.(2026){Chen Yueh-Han}, Wen, and
+  Kirchner]{chenyh2026}
+{Chen Yueh-Han}, Jiaxin Wen, and Jan~Hendrik Kirchner.
+\newblock Automated researchers can mitigate well-characterized alignment
+  failures, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.28945}.
+
+\bibitem[Cho et~al.(2025)Cho, Guntuku, and Ungar]{cho2025}
+Young-Min Cho, Sharath~Chandra Guntuku, and Lyle Ungar.
+\newblock Herd behavior: Investigating peer influence in {LLM}-based
+  multi-agent systems, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.21588}.
+
+\bibitem[Creel and Hellman(2022)]{creel2022}
+Kathleen Creel and Deborah Hellman.
+\newblock The algorithmic leviathan: Arbitrariness, fairness, and opportunity
+  in algorithmic decision-making systems.
+\newblock \emph{Canadian Journal of Philosophy}, 52\penalty0 (1):\penalty0
+  26--43, 2022.
+\newblock \doi{10.1017/can.2022.3}.
+\newblock URL \url{https://doi.org/10.1017/can.2022.3}.
+
+\bibitem[Dasgupta and Maskin(1987)]{dasgupta1987}
+Partha Dasgupta and Eric Maskin.
+\newblock The simple economics of research portfolios.
+\newblock \emph{The Economic Journal}, 97\penalty0 (387):\penalty0 581--595,
+  1987.
+\newblock \doi{10.2307/2232925}.
+\newblock URL \url{https://doi.org/10.2307/2232925}.
+
+\bibitem[Doshi and Hauser(2024)]{doshi2024}
+Anil~R. Doshi and Oliver~P. Hauser.
+\newblock Generative {AI} enhances individual creativity but reduces the
+  collective diversity of novel content.
+\newblock \emph{Science Advances}, 10\penalty0 (28):\penalty0 eadn5290, 2024.
+\newblock \doi{10.1126/sciadv.adn5290}.
+\newblock URL \url{https://doi.org/10.1126/sciadv.adn5290}.
+
+\bibitem[Fang and Casadevall(2016)]{fang2016}
+Ferric~C. Fang and Arturo Casadevall.
+\newblock Research funding: the case for a modified lottery.
+\newblock \emph{mBio}, 7\penalty0 (2):\penalty0 e00422--16, 2016.
+\newblock \doi{10.1128/mBio.00422-16}.
+\newblock URL \url{https://doi.org/10.1128/mBio.00422-16}.
+
+\bibitem[Fazelpour et~al.(2026)Fazelpour, O'Brien, and Rubin]{fazelpour2026}
+Sina Fazelpour, Joseph O'Brien, and Hannah Rubin.
+\newblock Navigating epistemic monocultures in {AI}-driven science: A
+  simulation study, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.19390}.
+
+\bibitem[Foster et~al.(2015)Foster, Rzhetsky, and Evans]{foster2015}
+Jacob~G. Foster, Andrey Rzhetsky, and James~A. Evans.
+\newblock Tradition and innovation in scientists' research strategies.
+\newblock \emph{American Sociological Review}, 80\penalty0 (5):\penalty0
+  875--908, 2015.
+\newblock \doi{10.1177/0003122415601618}.
+\newblock URL \url{https://doi.org/10.1177/0003122415601618}.
+
+\bibitem[Gao and Xiao(2026)]{gao2026}
+Ruijiang Gao and Steven~Chong Xiao.
+\newblock Nonstandard errors in {AI} agents, 2026.
+\newblock URL \url{https://arxiv.org/abs/2603.16744}.
+
+\bibitem[Gaven{\v{c}}iak et~al.(2025)]{shallow2025}
+Tom{\'a}{\v{s}} Gaven{\v{c}}iak et~al.
+\newblock Shallow review of technical {AI} safety, 2025.
+\newblock LessWrong, 2025.
+\newblock URL
+  \url{https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2}.
+
+\bibitem[Hadfield et~al.(2025)Hadfield, Zhang, Lien, Scholz, Fox, and
+  Ford]{anthropic2025multiagent}
+Jeremy Hadfield, Barry Zhang, Kenneth Lien, Florian Scholz, Jeremy Fox, and
+  Daniel Ford.
+\newblock How we built our multi-agent research system.
+\newblock Anthropic Engineering blog, June 2025.
+\newblock URL
+  \url{https://www.anthropic.com/engineering/multi-agent-research-system}.
+
+\bibitem[Hao et~al.(2026)Hao, Xu, Li, and Evans]{hao2026}
+Qianyue Hao, Fengli Xu, Yong Li, and James Evans.
+\newblock Artificial intelligence tools expand scientists' impact but contract
+  science's focus.
+\newblock \emph{Nature}, 649\penalty0 (8099):\penalty0 1237--1243, 2026.
+\newblock \doi{10.1038/s41586-025-09922-y}.
+\newblock URL \url{https://doi.org/10.1038/s41586-025-09922-y}.
+\newblock Preprint arXiv:2412.07727.
+
+\bibitem[Hashemi et~al.(2026)Hashemi, Ji, Chen, and Macy]{hashemi2026}
+Farnoosh Hashemi, Shiyu Ji, Joice Chen, and Michael~W. Macy.
+\newblock {LLM} multi-agent systems are vulnerable to herding and runaway
+  cascades, 2026.
+\newblock URL \url{https://arxiv.org/abs/2610.30769}.
+
+\bibitem[He et~al.(2026)He, Zhang, Jin, and Liu]{he2026beneath}
+Bowei He, Weixu Zhang, Yili Jin, and Xue Liu.
+\newblock Beneath the diff: Diagnosing and mitigating algorithmic mode collapse
+  in code-level autonomous research loops.
+\newblock In \emph{Proceedings of the 2026 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2609.00077}.
+
+\bibitem[Heyard et~al.(2022)Heyard, Ott, Salanti, and Egger]{heyard2022}
+Rachel Heyard, Manuela Ott, Georgia Salanti, and Matthias Egger.
+\newblock Rethinking the funding line at the swiss national science foundation:
+  Bayesian ranking and lottery.
+\newblock \emph{Statistics and Public Policy}, 9\penalty0 (1):\penalty0
+  110--121, 2022.
+\newblock \doi{10.1080/2330443X.2022.2086190}.
+\newblock URL \url{https://doi.org/10.1080/2330443X.2022.2086190}.
+
+\bibitem[Hill(1973)]{hill1973}
+M.~O. Hill.
+\newblock Diversity and evenness: A unifying notation and its consequences.
+\newblock \emph{Ecology}, 54\penalty0 (2):\penalty0 427--432, 1973.
+\newblock \doi{10.2307/1934352}.
+\newblock URL \url{https://doi.org/10.2307/1934352}.
+
+\bibitem[Holzner et~al.(2025)Holzner, Maier, and
+  Feuerriegel]{holzner2025metaanalysis}
+Niklas Holzner, Sebastian Maier, and Stefan Feuerriegel.
+\newblock Generative {AI} and creativity: A systematic literature review and
+  meta-analysis, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.17241}.
+
+\bibitem[Ibrahim et~al.(2026)Ibrahim, Azad, and Baten]{ibrahim2026anchorless}
+Fares~Nabil Ibrahim, Nafis~Saami Azad, and Raiyan~Abdul Baten.
+\newblock Anchorless diversification for parallel {LLM} ideation, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.30150}.
+
+\bibitem[Jiang et~al.(2025)Jiang, Chai, Li, Liu, Fok, Dziri, Tsvetkov, Sap,
+  Albalak, and Choi]{jiang2025hivemind}
+Liwei Jiang, Yuanjun Chai, Margaret Li, Mickel Liu, Raymond Fok, Nouha Dziri,
+  Yulia Tsvetkov, Maarten Sap, Alon Albalak, and Yejin Choi.
+\newblock Artificial hivemind: The open-ended homogeneity of language models
+  (and beyond).
+\newblock In \emph{Advances in Neural Information Processing Systems (Datasets
+  and Benchmarks Track)}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.22954}.
+
+\bibitem[Jost(2006)]{jost2006}
+Lou Jost.
+\newblock Entropy and diversity.
+\newblock \emph{Oikos}, 113\penalty0 (2):\penalty0 363--375, 2006.
+\newblock \doi{10.1111/j.2006.0030-1299.14714.x}.
+
+\bibitem[Kim et~al.(2025)Kim, Garg, Peng, and Garg]{kim2025correlated}
+Elliot Kim, Avi Garg, Kenny Peng, and Nikhil Garg.
+\newblock Correlated errors in large language models.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning (ICML)}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.07962}.
+
+\bibitem[Kirk et~al.(2023)Kirk, Mediratta, Nalmpantis, Luketina, Hambro,
+  Grefenstette, and Raileanu]{kirk2024rlhf}
+Robert Kirk, Ishita Mediratta, Christoforos Nalmpantis, Jelena Luketina, Eric
+  Hambro, Edward Grefenstette, and Roberta Raileanu.
+\newblock Understanding the effects of {RLHF} on {LLM} generalisation and
+  diversity, 2023.
+\newblock URL \url{https://arxiv.org/abs/2310.06452}.
+
+\bibitem[Kitcher(1990)]{kitcher1990}
+Philip Kitcher.
+\newblock The division of cognitive labor.
+\newblock \emph{The Journal of Philosophy}, 87\penalty0 (1):\penalty0 5--22,
+  1990.
+\newblock \doi{10.2307/2026796}.
+\newblock URL \url{https://doi.org/10.2307/2026796}.
+
+\bibitem[Kleinberg and Oren(2011)]{kleinberg2011}
+Jon Kleinberg and Sigal Oren.
+\newblock Mechanisms for (mis)allocating scientific credit.
+\newblock In \emph{Proceedings of the 43rd Annual ACM Symposium on Theory of
+  Computing (STOC)}, pages 529--538, 2011.
+\newblock \doi{10.1145/1993636.1993707}.
+\newblock URL \url{https://doi.org/10.1145/1993636.1993707}.
+\newblock Journal version: Algorithmica 84:344--378, 2022,
+  doi:10.1007/s00453-021-00902-y.
+
+\bibitem[Kleinberg and Raghavan(2021)]{kleinberg2021}
+Jon Kleinberg and Manish Raghavan.
+\newblock Algorithmic monoculture and social welfare.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 118\penalty0
+  (22):\penalty0 e2018340118, 2021.
+\newblock \doi{10.1073/pnas.2018340118}.
+\newblock URL \url{https://doi.org/10.1073/pnas.2018340118}.
+
+\bibitem[Li et~al.(2026)Li, Zoumpoulis, Puranam, et~al.]{li2026}
+Ke~Li, Spyros~I. Zoumpoulis, Phanish Puranam, et~al.
+\newblock Artificial intelligences and human scientists exhibit complementary
+  strengths in theory building, 2026.
+\newblock URL \url{https://arxiv.org/abs/2609.32562}.
+
+\bibitem[Lu et~al.(2024)Lu, Lu, Lange, Foerster, Clune, and Ha]{lu2024}
+Chris Lu, Cong Lu, Robert~Tjarko Lange, Jakob Foerster, Jeff Clune, and David
+  Ha.
+\newblock The {AI} {Scientist}: Towards fully automated open-ended scientific
+  discovery, 2024.
+\newblock URL \url{https://arxiv.org/abs/2408.06292}.
+
+\bibitem[Meincke et~al.(2024)Meincke, Mollick, and
+  Terwiesch]{meincke2024prompting}
+Lennart Meincke, Ethan~R. Mollick, and Christian Terwiesch.
+\newblock Prompting diverse ideas: Increasing {AI} idea variance, 2024.
+\newblock URL \url{https://arxiv.org/abs/2402.01727}.
+
+\bibitem[Messeri and Crockett(2024)]{messeri2024}
+Lisa Messeri and M.~J. Crockett.
+\newblock Artificial intelligence and illusions of understanding in scientific
+  research.
+\newblock \emph{Nature}, 627\penalty0 (8002):\penalty0 49--58, 2024.
+\newblock \doi{10.1038/s41586-024-07146-0}.
+\newblock URL \url{https://doi.org/10.1038/s41586-024-07146-0}.
+
+\bibitem[Mori and Johnson(2026)]{mori2026}
+Dhwanil~M. Mori and Neil~F. Johnson.
+\newblock Three {AI}-agents walk into a bar\ldots\ `{Lord of the Flies}'
+  tribalism emerges among smart {AI}-agents, 2026.
+\newblock URL \url{https://arxiv.org/abs/2602.23093}.
+
+\bibitem[Parikh(2026)]{parikh2026}
+Tapan Parikh.
+\newblock The one-word census: Answer-choice conformity across 105 language
+  models, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.12796}.
+
+\bibitem[Patel et~al.(2026)Patel, Crossman, Aggarwal, and Wenger]{patel2026}
+Nirav Patel, Josiah Crossman, Eva Aggarwal, and Emily Wenger.
+\newblock Are {LLMs} becoming similarly creative? {E}vidence from three years
+  of models, 2026.
+\newblock URL \url{https://arxiv.org/abs/2608.19437}.
+
+\bibitem[Qiu et~al.(2026)Qiu, Hu, Ding, and Underwood]{qiu2026homogeneity}
+Ziliang Qiu, Renfen Hu, Yi~Ding, and Ted Underwood.
+\newblock Revisiting {LLM} homogeneity through a multidimensional lens, 2026.
+\newblock URL \url{https://arxiv.org/abs/2611.01549}.
+
+\bibitem[Ren et~al.(2026)Ren, Zang, Wang, Deb, Yang, Forder,
+  et~al.]{ren2026coral}
+Xinxing Ren, Qianbo Zang, Ziyan Wang, Suman Deb, Qiang Yang, Caelum Forder,
+  et~al.
+\newblock Coral discovery: The division of cognitive labor in autonomous
+  research, 2026.
+\newblock URL \url{https://arxiv.org/abs/2610.33281}.
+
+\bibitem[Russo et~al.(2018)Russo, Van~Roy, Kazerouni, Osband, and
+  Wen]{russo2018thompson}
+Daniel Russo, Benjamin Van~Roy, Abbas Kazerouni, Ian Osband, and Zheng Wen.
+\newblock A tutorial on {Thompson} sampling.
+\newblock \emph{Foundations and Trends in Machine Learning}, 11\penalty0
+  (1):\penalty0 1--96, 2018.
+\newblock URL \url{https://arxiv.org/abs/1707.02038}.
+
+\bibitem[Rzhetsky et~al.(2015)Rzhetsky, Foster, Foster, and
+  Evans]{rzhetsky2015}
+Andrey Rzhetsky, Jacob~G. Foster, Ian~T. Foster, and James~A. Evans.
+\newblock Choosing experiments to accelerate collective discovery.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 112\penalty0
+  (47):\penalty0 14569--14574, 2015.
+\newblock \doi{10.1073/pnas.1509757112}.
+\newblock URL \url{https://doi.org/10.1073/pnas.1509757112}.
+
+\bibitem[Salganik et~al.(2006)Salganik, Dodds, and Watts]{salganik2006}
+Matthew~J. Salganik, Peter~Sheridan Dodds, and Duncan~J. Watts.
+\newblock Experimental study of inequality and unpredictability in an
+  artificial cultural market.
+\newblock \emph{Science}, 311\penalty0 (5762):\penalty0 854--856, 2006.
+\newblock \doi{10.1126/science.1121066}.
+\newblock URL \url{https://doi.org/10.1126/science.1121066}.
+
+\bibitem[Si et~al.(2024)Si, Yang, and Hashimoto]{si2024}
+Chenglei Si, Diyi Yang, and Tatsunori Hashimoto.
+\newblock Can {LLMs} generate novel research ideas? {A} large-scale human study
+  with 100+ {NLP} researchers, 2024.
+\newblock URL \url{https://arxiv.org/abs/2409.04109}.
+
+\bibitem[Si et~al.(2025)Si, Hashimoto, and Yang]{si2025execution}
+Chenglei Si, Tatsunori Hashimoto, and Diyi Yang.
+\newblock The ideation-execution gap: Execution outcomes of {LLM}-generated
+  versus human research ideas, 2025.
+\newblock URL \url{https://arxiv.org/abs/2506.20803}.
+
+\bibitem[Simpson(1949)]{simpson1949}
+E.~H. Simpson.
+\newblock Measurement of diversity.
+\newblock \emph{Nature}, 163\penalty0 (4148):\penalty0 688, 1949.
+\newblock \doi{10.1038/163688a0}.
+\newblock URL \url{https://doi.org/10.1038/163688a0}.
+
+\bibitem[Strevens(2003)]{strevens2003}
+Michael Strevens.
+\newblock The role of the priority rule in science.
+\newblock \emph{The Journal of Philosophy}, 100\penalty0 (2):\penalty0 55--79,
+  2003.
+\newblock \doi{10.5840/jphil2003100224}.
+\newblock URL \url{https://doi.org/10.5840/jphil2003100224}.
+
+\bibitem[Tang and Yang(2026)]{tang2026narrow}
+Yixuan Tang and Yi~Yang.
+\newblock {AI} research agents narrow scientific exploration, 2026.
+\newblock URL \url{https://arxiv.org/abs/2605.27905}.
+
+\bibitem[Terwiesch et~al.(2026)Terwiesch, Meincke, Girotra, Mollick, Nave, and
+  Ulrich]{terwiesch2026productideas}
+Christian Terwiesch, Lennart Meincke, Karan Girotra, Ethan Mollick, Gideon
+  Nave, and Karl~T. Ulrich.
+\newblock {AI} and its impact on creativity and diversity: An empirical study
+  of {LLM}-generated product ideas, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.27553}.
+
+\bibitem[Thoma(2015)]{thoma2015}
+Johanna Thoma.
+\newblock The epistemic division of labor revisited.
+\newblock \emph{Philosophy of Science}, 82\penalty0 (3):\penalty0 454--472,
+  2015.
+\newblock \doi{10.1086/681768}.
+\newblock URL \url{https://doi.org/10.1086/681768}.
+
+\bibitem[Thompson(1933)]{thompson1933}
+William~R. Thompson.
+\newblock On the likelihood that one unknown probability exceeds another in
+  view of the evidence of two samples.
+\newblock \emph{Biometrika}, 25\penalty0 (3-4):\penalty0 285--294, 1933.
+\newblock \doi{10.1093/biomet/25.3-4.285}.
+\newblock URL \url{https://doi.org/10.1093/biomet/25.3-4.285}.
+
+\bibitem[Trehan and Chopra(2026)]{trehan2026taste}
+Dhruv Trehan and Paras Chopra.
+\newblock Eliciting research taste in {LLMs} through future research direction
+  choice, 2026.
+\newblock URL \url{https://arxiv.org/abs/2611.19794}.
+
+\bibitem[Van~Koevering and Kleinberg(2024)]{vankoevering2024coinflips}
+Katherine Van~Koevering and Jon Kleinberg.
+\newblock Heads, tails, and {AI} fails: {LLMs}, randomness, and human
+  judgments, 2024.
+\newblock URL \url{https://arxiv.org/abs/2406.00092}.
+
+\bibitem[Wang et~al.(2026)Wang, Dutta~Chowdhury, Leiter, and Eger]{wang2026}
+Zhipin Wang, Koel Dutta~Chowdhury, Christoph Leiter, and Steffen Eger.
+\newblock Tracing the influence of retrieved literature on scientific ideation
+  in {LLMs}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2610.39060}.
+
+\bibitem[Weisberg and Muldoon(2009)]{weisberg2009}
+Michael Weisberg and Ryan Muldoon.
+\newblock Epistemic landscapes and the division of cognitive labor.
+\newblock \emph{Philosophy of Science}, 76\penalty0 (2):\penalty0 225--252,
+  2009.
+\newblock \doi{10.1086/644786}.
+\newblock URL \url{https://doi.org/10.1086/644786}.
+
+\bibitem[Wen et~al.(2026)Wen, Qiu, Benton, Kirchner, and Leike]{wen2026}
+Jiaxin Wen, Liang Qiu, Joe Benton, Jan~Hendrik Kirchner, and Jan Leike.
+\newblock Automated weak-to-strong researcher.
+\newblock Anthropic Alignment Science Blog, 2026.
+\newblock URL
+  \url{https://alignment.anthropic.com/2026/automated-w2s-researcher/}.
+
+\bibitem[Weng et~al.(2025)Weng, Chen, and Wang]{weng2025conformity}
+Zhiyuan Weng, Guikun Chen, and Wenguan Wang.
+\newblock Do as we do, not as you think: the conformity of large language
+  models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2501.13381}.
+
+\bibitem[Wenger and Kenett(2025)]{wenger2025homogeneity}
+Emily Wenger and Yoed Kenett.
+\newblock We're different, we're the same: Creative homogeneity across {LLMs},
+  2025.
+\newblock URL \url{https://arxiv.org/abs/2501.19361}.
+
+\bibitem[Xu et~al.(2026)Xu, Wang, Tao, Xuan, and Luo]{xu2026}
+Rui Xu, Yunke Wang, Linwei Tao, Wenjie Xuan, and Yong Luo.
+\newblock Diversifying personalized research ideation against {AI}-induced
+  homogenization, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.28087}.
+
+\bibitem[Yamada et~al.(2025)Yamada, Lange, Lu, Hu, Lu, Foerster, Clune, and
+  Ha]{yamada2025aiscientistv2}
+Yutaro Yamada, Robert~Tjarko Lange, Cong Lu, Shengran Hu, Chris Lu, Jakob
+  Foerster, Jeff Clune, and David Ha.
+\newblock The {AI} {Scientist}-v2: Workshop-level automated scientific
+  discovery via agentic tree search, 2025.
+\newblock URL \url{https://arxiv.org/abs/2504.08066}.
+
+\bibitem[Zhang et~al.(2025{\natexlab{a}})Zhang, Yu, Chong, Sicilia, Tomz,
+  Manning, and Shi]{zhang2025verbalized}
+Jiayi Zhang, Simon Yu, Derek Chong, Anthony Sicilia, Michael~R. Tomz,
+  Christopher~D. Manning, and Weiyan Shi.
+\newblock Verbalized sampling: How to mitigate mode collapse and unlock {LLM}
+  diversity, 2025{\natexlab{a}}.
+\newblock URL \url{https://arxiv.org/abs/2510.01171}.
+
+\bibitem[Zhang et~al.(2025{\natexlab{b}})Zhang, Diddee, Holm, Liu, Liu, Samuel,
+  Wang, and Ippolito]{zhang2025noveltybench}
+Yiming Zhang, Harshita Diddee, Susan Holm, Hanchen Liu, Xinyue Liu, Vinay
+  Samuel, Barry Wang, and Daphne Ippolito.
+\newblock {NoveltyBench}: Evaluating language models for humanlike diversity,
+  2025{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2504.05228}.
+
+\bibitem[Zhao et~al.(2026)Zhao, Du, and Wang]{zhao2026dice}
+Minda Zhao, Yilun Du, and Mengyu Wang.
+\newblock Large language models are bad dice players: {LLMs} struggle to
+  generate random numbers from statistical distributions, 2026.
+\newblock URL \url{https://arxiv.org/abs/2601.05414}.
+
+\bibitem[Zhong et~al.(2026)Zhong, Xu, Ning, Liu, Kumar, and Xiong]{zhong2026}
+Shanshan Zhong, Chen Xu, Jingjie Ning, Zhengzhong Liu, Aviral Kumar, and
+  Chenyan Xiong.
+\newblock {IdeaTaste}: Do {LLMs} share the research taste of human
+  researchers?, 2026.
+\newblock URL \url{https://arxiv.org/abs/2611.03424}.
+
+\bibitem[Zhou et~al.(2026)Zhou, Yang, Wang, Zhuang, Wang, Yu,
+  et~al.]{zhou2026alphaidea}
+Shunchao Zhou, Chang Yang, Jingrui Wang, Shuxin Zhuang, Rundong Wang, Runsheng
+  Yu, et~al.
+\newblock {AlphaIdeaBench}: Benchmarking automated research idea generation
+  under feasibility constraints with peer review alignment, 2026.
+\newblock URL \url{https://arxiv.org/abs/2610.33644}.
+
+\bibitem[Zollman(2010)]{zollman2010}
+Kevin J.~S. Zollman.
+\newblock The epistemic benefit of transient diversity.
+\newblock \emph{Erkenntnis}, 72\penalty0 (1):\penalty0 17--35, 2010.
+\newblock \doi{10.1007/s10670-009-9194-6}.
+\newblock URL \url{https://doi.org/10.1007/s10670-009-9194-6}.
+
+\end{thebibliography}

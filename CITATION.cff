@@ -1,11 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this data or code, please cite it as below."
-title: "Do AI Research Agents All Choose the Same Safety Project?"
+title: "Many Agents, Few Projects: Measuring and Reducing Convergence in AI Research Agents' Choice of Safety Research"
 type: dataset
 authors:
   - family-names: Fantl
     given-names: Jason
     affiliation: Averroes Labs
+url: "https://averroeslabs.org/blog/many-agents-few-projects/"
+repository-code: "https://github.com/AverroesLabs/ai-research-agent-diversity"
 date-released: 2026-11-18
 year: 2026
 license:
