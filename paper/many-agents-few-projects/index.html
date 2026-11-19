@@ -593,9 +593,10 @@ real fleet running many copies of one configuration would be more
 crowded still. The field also crowds onto two problems, with 59% of
 agents choosing AI control (38% without search) and another 26%
 chain-of-thought monitoring.</p>
-<p>So AI agents’ judgements vary little, in the sense of Figure 3. In
-the simple setup, changing models, instructions or harnesses one at a
-time added only a little variety (<a
+<p>So AI agents’ judgements vary little, in the sense of Figure 3.
+Agents from different labs judge differently, but within a lab they vary
+little, and there are few labs. In the simple setup, changing models,
+instructions or harnesses one at a time added only a little variety (<a
 href="#appendix-the-simple-setup">appendix</a>). The next two parts
 therefore test Figure 3’s other two rules.</p>
 <h2 id="part-2-taking-turns-with-a-registry">Part 2: taking turns with a
@@ -830,21 +831,23 @@ agreed with experienced researchers’ judgements 60% of the time, against
 an estimated 77% for the researchers themselves (<a
 href="https://alignment.anthropic.com/2026/taste/">Baig et al.,
 2026</a>).</p>
-<p>We tested seven models from four families and no Google models. No
-group of people answered our exact brief. SPAR mentors answer the same
-question implicitly, what a researcher should work on next in AI safety,
-but they wrote for a program, and we do not know whether it screens
-proposals for overlap, which would raise their number. Teams at four
-broad-theme hackathons, whom no one screens, still behave like about 530
-projects, far above agents choosing on their own. Search used our own
-frozen copy of the literature, and temperature stayed at the provider
-default. Our registries held at most 100 entries, and we do not know how
-a registry behaves beyond 100 entries. It could become less effective,
-for example if agents read less of a long list, or agents could start
-copying each other more as more of the field is visible to them. We have
-not tested this. The arms without search, with the novelty sentence, and
-with agents taking the best option at each level ran a day after the
-arms they are compared with.</p>
+<p>We tested seven models from four families and no Google models. The
+frontier field had only two labs, so we cannot tell how much more labs
+would add (appendix Figure A4). No group of people answered our exact
+brief. SPAR mentors answer the same question implicitly, what a
+researcher should work on next in AI safety, but they wrote for a
+program, and we do not know whether it screens proposals for overlap,
+which would raise their number. Teams at four broad-theme hackathons,
+whom no one screens, still behave like about 530 projects, far above
+agents choosing on their own. Search used our own frozen copy of the
+literature, and temperature stayed at the provider default. Our
+registries held at most 100 entries, and we do not know how a registry
+behaves beyond 100 entries. It could become less effective, for example
+if agents read less of a long list, or agents could start copying each
+other more as more of the field is visible to them. We have not tested
+this. The arms without search, with the novelty sentence, and with
+agents taking the best option at each level ran a day after the arms
+they are compared with.</p>
 <h2 id="related-work">Related work</h2>
 <p>Language models give similar answers to open-ended questions, across
 runs and across model families (<a
@@ -1294,8 +1297,10 @@ or fewer within a lab.</p>
 lab. More labs would raise it only if their models differ as much as
 Anthropic’s and OpenAI’s do. In the simple setup, with seven models from
 four labs, agents from different labs also rarely chose the same
-project, but on the pilot brief Claude, GLM and DeepSeek agents
-overlapped more, so not every pair of labs is this distinct. <a
+project. The mix there still reached only about 37 projects, because
+some models crowd heavily on their own (GPT-6 Astra behaves like 4). And
+on the pilot brief, Claude, GLM and DeepSeek agents overlapped more, so
+not every pair of labs is this distinct. <a
 href="https://github.com/AverroesLabs/ai-research-agent-diversity/blob/main/analysis/sources_of_diversity.py">analysis/sources_of_diversity.py</a>
 recomputes these numbers from the released data.</p>
 <h3 id="what-do-searching-agents-read">What do searching agents
