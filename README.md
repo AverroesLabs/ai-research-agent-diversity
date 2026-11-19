@@ -253,7 +253,7 @@ Models from the same company choose similar projects. The two GPT models pick th
 
 ![Effective number of projects among pairs of agents from different labs, from one lab with different models, from one model with different launch prompts, and from one model and launch prompt](figures/fig-sources.png)
 
-**Figure A4.** Each row is one kind of pair of agents, from pairs that differ most (models from different labs) to pairs that differ least (same model and launch prompt), with the effective number of projects among those pairs alone. The agents are Figure 4's 120 searching agents choosing alone. $n$ is the number of pairs, and intervals are 95%, from resampling agents.
+**Figure A4.** Each row takes one kind of pair of agents and gives the effective number of projects among those pairs alone. The top row uses only pairs with one Anthropic agent and one OpenAI agent; pairs of two agents from the same lab are split over the next three rows, by whether the two share a model and a launch prompt. The last row is every pair together, the field's number. The agents are Figure 4's 120 searching agents choosing alone. $n$ is the number of pairs, and intervals are 95%, from resampling agents.
 
 Almost all of the field's spread comes from having two labs. Two agents from different labs, Anthropic and OpenAI, rarely chose the same project: their pairs behave like about 300 projects. Two agents from the same lab behave like 41 projects or fewer, however else they differ.
 
