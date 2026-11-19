@@ -1,6 +1,6 @@
 # How the experiments were run
 
-This file is for anyone who wants to run the experiments of [Do AI Research Agents All Choose the Same Safety Project?](README.md) again, with our setup or their own. It describes each experiment the post reports in enough detail to reproduce it: which agents ran, what text and tools they got, in what order, how their picks were judged, and how each number was computed. The prompts are printed in [prompts/README.md](prompts/README.md), the released data is described in [DATA.md](DATA.md), and [replicate/](replicate/README.md) holds small reference implementations of our tools, judge and agent loop, a driver that runs any frontier condition over its slots ([replicate/run_frontier.py](replicate/run_frontier.py)), and a worked example.
+This file is for anyone who wants to run the experiments of [Many Agents, Few Projects](README.md) again, with our setup or their own. It describes each experiment the post reports in enough detail to reproduce it: which agents ran, what text and tools they got, in what order, how their picks were judged, and how each number was computed. The prompts are printed in [prompts/README.md](prompts/README.md), the released data is described in [DATA.md](DATA.md), and [replicate/](replicate/README.md) holds small reference implementations of our tools, judge and agent loop, a driver that runs any frontier condition over its slots ([replicate/run_frontier.py](replicate/run_frontier.py)), and a worked example.
 
 All runs took place between 8 and 18 November 2026. The models we used will be updated or retired, and the harnesses change from version to version, so a rerun should not expect our exact numbers. What a rerun can test is whether the pattern holds within our intervals: agents choosing alone crowd onto a few projects, a registry of earlier projects stops repeats, and random draws down a tree spread agents many times wider.
 
@@ -103,7 +103,7 @@ Four frontier models in the harnesses they run in, twelve launch texts ([prompts
 - **Question.** How spread out is a field of frontier agents that each take the project they judge best?
 - **Agents.** The 120 slots, seeds 2026111600 + 1000p + i, launch prompts with the tools sentence, search and read only. Answer-line follow-up only. Run on 16 November. Data: `frontier_max`.
 - **Judging.** Every pair of the 120 agents (7,140 pairs), DeepInfra pin.
-- **Number.** 1/p over all pairs, agent bootstrap seed 20261116. The per-model cells of Figure A2 count only pairs within one model. Figure A4 divides the duplicate share of pairs that share a model, launch prompt or harness by that of pairs that do not, with an agent bootstrap. Figure A5 counts documents opened in the search tool's logs (`reading_frontier_max.jsonl`).
+- **Number.** 1/p over all pairs, agent bootstrap seed 20261116. The per-model cells of Figure A2 count only pairs within one model. Figure A4 divides the duplicate share of pairs that share a model, launch prompt or harness by that of pairs that do not, with an agent bootstrap. Figure A6 counts documents opened in the search tool's logs (`reading_frontier_max.jsonl`).
 
 ### No search (Figure 6)
 
@@ -111,7 +111,7 @@ Four frontier models in the harnesses they run in, twelve launch texts ([prompts
 - **Agents.** The same 120 slots and seeds as Max, with no tools at all: the memory form of each launch prompt (our brief without its two tool sentences; the others with "Today is 2026-11-08." alone before the answer lines). Claude Code ran in chat mode (`--tools ""`), Codex and opencode with every tool we could turn off turned off, our loop with no tools declared. Codex still offered its MCP-resource tools: 12 of these sessions called them and got empty lists. The answer-line follow-up carries the no-tools paragraph. Run on 17 November, a day after Max. Data: `frontier_no_search`.
 - **Judging and number.** As Max.
 
-### Registry in populations of 20: earlier projects, placebo and agenda counts (Result 2 text, Figures A7, A8)
+### Registry in populations of 20: earlier projects, placebo and agenda counts (Result 2 text, Figures A8, A9)
 
 - **Question.** Does a shared registry of what earlier agents chose stop them repeating each other? This was the preregistered test of Result 2.
 - **Agents.** The 120 slots per arm, seeds 2026111300 + 1000p + i, registry seed 2026111300 + 1000p, with search and the registry tool, and the registry sentence after the tools sentence. The arms share slots and seeds, so slot (p, i) has the same model, harness, launch prompt and seed in every arm. Earlier projects and placebo ran on 14 November; agenda counts, added later as an exploratory arm, on 16 November.
@@ -153,7 +153,7 @@ The novelty sentence after the tools sentence, otherwise as Max. Run on 17 Novem
 - **Judging.** Every pair of agents on the same model among the 120 handed the most-read, sabotage or on-topic theory paper (1,753 pairs), DeepInfra pin. Pairs across models, and the 40 agents handed the off-topic paper, were not judged for duplicates. Whether each of the 160 picks built on its assigned paper was judged separately by DeepSeek V4.1 Flash and GLM-5.3-flash.
 - **Number.** The ratio of the duplicate share among same-model pairs handed the same paper to pairs handed different papers, combined across models (Mantel-Haenszel); the value and interval are in `experiments.json`.
 
-### Earlier groups of 80 (Figure A13's bottom rows)
+### Earlier groups of 80 (Figure A14's bottom rows)
 
 Two groups of 80 frontier agents run on 11 November, one with our brief and one with the brief narrowed to mechanistic interpretability ([prompts section 3](prompts/README.md#3-the-brief-narrowed-to-mechanistic-interpretability)), with search. Slots drawn with `"20261111:p13:field"` and `"20261111:p13:subfield"`, seeds 2026111100 + 1000s + k (s = 0 for the field, 1 for interpretability). Harness sessions got no follow-up turns and loop sessions the answer-line follow-up. Screened judging over all pairs. Data: `frontier_earlier_groups`.
 
@@ -161,13 +161,13 @@ Two groups of 80 frontier agents run on 11 November, one with our brief and one 
 
 GLM-5.3-flash pinned to Z.AI, in our minimal loop, with our brief ([prompts section 1](prompts/README.md#1-our-brief-as-used-in-step-one-of-the-simple-setup)), answering from memory unless the condition says otherwise. Agents in different cells share seeds by position, so cells are paired agent by agent.
 
-### Step one (Figures A11, A13, A15)
+### Step one (Figures A12, A14, A16)
 
 - **Question.** The preregistered first experiment: how spread are agents from memory, after an assigned reading list, and after searching with more or less randomness?
 - **Agents.** Groups of 20. Agent a of group r has seed 20261109 + 10000r + a (plus 500,000 for the interpretability brief), also the search tool's noise seed. Cells: from memory (6 groups, 120 agents); an assigned reading list of 88 papers and posts, skewed (each agenda in proportion to its share of the literature) or uniform across agendas, one fresh list per group with its order shuffled per agent ([prompts section 6a](prompts/README.md#6a-assigned-reading)); search with no, moderate or high noise ([prompts section 6b](prompts/README.md#6b-search)). Reading-list agents made one call with no tools. The two search cells without and with high noise ran 12 groups (240 agents) for a preregistered test. Run 9 to 11 November. Data: `simple_step_one`.
 - **Judging.** Screened, every valid pair counted. The preregistered analysis counted pairs within groups and gives the same picture with wider intervals.
 
-### Model, instructions and harness, one change at a time (Figure A11)
+### Model, instructions and harness, one change at a time (Figure A12)
 
 - Models: the first 40 agents (groups 0 and 1, same seeds) of the from-memory cell for each of the seven models, with the routes in the [model table](#agents).
 - Instructions: GLM-5.3-flash with the novelty sentence, the Claude Code launch prompt (V01) or AI Scientist's (V08) ([prompts section 4](prompts/README.md#4-other-instructions-in-the-simple-setup-figure-a11)), 40 agents each, same seeds.
@@ -175,18 +175,18 @@ GLM-5.3-flash pinned to Z.AI, in our minimal loop, with our brief ([prompts sect
 - Every change at once: 120 agents, each drawing one cell uniformly from the feasible products of 7 models, 4 instructions and 3 harnesses with `random.Random("20261110:p12")`, seeds 2026111000 + k. In Codex and opencode the instruction's system line was not sent.
 - Judging: screened, every pair. Data: `simple_one_change` and the from-memory cells of the reading experiments.
 
-### Reading conditions for every model (Figure A13)
+### Reading conditions for every model (Figure A14)
 
 Step one's cells (from memory, skewed list, uniform list, search at three noise levels) re-run for GLM-5.3, DeepSeek V4.1 Flash, Claude Sonnet 5.5, Claude Opus 5.5, GPT-6 Astra and GPT-6.1 Sol in our loop, on groups 0 and 1 of step one with the same seeds, reading lists and noise, 40 agents per cell. The GPT models also ran the interpretability brief. Screened judging; in assigned-reading cells only pairs that read the same list count. Data: `simple_reading_models`, `simple_reading_gpt`. Two follow-ups reported in the text re-ran cells after removing documents from the corpus: 60 GLM-5.3-flash interpretability searchers with the same seeds (`simple_interp_overview_removed`) and 40 Claude Sonnet 5.5 agents in Claude Code on the pilot brief with 40 same-day controls (`simple_sonnet_claude_code_texts_removed`), both screened with the judge pinned to DeepInfra.
 
-### Registry, first stage (Figure A15)
+### Registry, first stage (Figure A16)
 
 - **Question.** The preregistered first test of the three registries, from memory.
 - **Agents.** GLM-5.3-flash from memory with the registry tool as its only tool and the registry sentence after the brief's first sentence ([prompts section 8a](prompts/README.md#8a-the-registrys-first-stage-in-the-simple-setup)). Earlier projects and agenda counts: four populations of 100 each, population p seeded 25261112 + 100p, agent k seed population seed + k, agents in position order. Placebo: 200 independent agents, positions 0 to 99 twice, seeded like populations 0 and 1. Tool output as in the frontier setup. In this stage a pick was registered whenever a DIRECTION line was parsed, even if other answer lines were missing; the frontier setup registered only complete answers. The follow-up texts are the tools form, since the registry counts as a tool. All 1,000 agents called the tool on their first turn. Run 12 and 13 November. Data: `simple_registry_stage1`.
 - **Judging.** Screened, within populations (preregistered); the earlier-projects arm also every pair within populations.
 - **Number.** Preregistered: 1/p from the mean over populations of the duplicate share, with a jackknife interval for placebo. The agent bootstrap is given beside them.
 
-### Tree protocol with GLM-5.3-flash and with Claude Sonnet 5.5 (Figure A15)
+### Tree protocol with GLM-5.3-flash and with Claude Sonnet 5.5 (Figure A16)
 
 - **Question.** The preregistered test of random draws, from memory, and its repeat on a frontier model.
 - **Agents.** The protocol as its own paragraph after the brief's first sentence and `random_choice` as the only tool ([prompts section 9a](prompts/README.md#9a-in-the-simple-setup-figure-a15)); the comparison arm is the unchanged memory-form brief with no tool. GLM-5.3-flash: 300 tree agents, seeds 33261114 + 5000 + k, of which the first 120 usable by index are the reported group (all 299 usable ones in the text); 120 comparison agents, seeds 31261113 + 4000 + k, with one replacement per unusable agent at seed + 10,000. Claude Sonnet 5.5, pinned to Anthropic: seeds 35261114 + 5000 + k (tree) and 35261114 + 4000 + k (comparison); an unusable agent was followed by agent 120, 121 and so on. Tree agents got the tools-form follow-ups. GLM tree run 14 November (comparison 13 November); Sonnet 14 November.
@@ -199,7 +199,7 @@ random[_ ]choice|\brandom(ly)? (draw|drew|drawn|choice|walk|number)|\bdraws?\b(?
 
 ### Agenda labeller
 
-Figures A6, A7 and A8 put each pick into one of 45 agendas merged from the [2025 Shallow Review](https://www.greaterwrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2) ([prompts section 11](prompts/README.md#11-agenda-labeller-figures-a6-and-a7-and-the-agenda-counts-registry), [replicate/labeller.py](replicate/labeller.py)). The labeller sees the DIRECTION line, " Why: " and the WHY THIS line. For the figures, GLM-5.3-flash pinned to Z.AI at temperature 0 labels batches of five, in three shuffles seeded 1, 2 and 3, and takes the majority label, else the first valid one. The agenda-counts registry labelled each pick alone with `qwen/qwen3.8-flash` pinned to Alibaba. The prompt carried a short excerpt of the Shallow Review's description of each agenda; that text is not ours, so [replicate/agendas.json](replicate/agendas.json) has our ids, names, groups and rules and leaves the descriptions for you to add.
+Figures A7, A8 and A9 put each pick into one of 45 agendas merged from the [2025 Shallow Review](https://www.greaterwrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2) ([prompts section 11](prompts/README.md#11-agenda-labeller-figures-a6-and-a7-and-the-agenda-counts-registry), [replicate/labeller.py](replicate/labeller.py)). The labeller sees the DIRECTION line, " Why: " and the WHY THIS line. For the figures, GLM-5.3-flash pinned to Z.AI at temperature 0 labels batches of five, in three shuffles seeded 1, 2 and 3, and takes the majority label, else the first valid one. The agenda-counts registry labelled each pick alone with `qwen/qwen3.8-flash` pinned to Alibaba. The prompt carried a short excerpt of the Shallow Review's description of each agenda; that text is not ours, so [replicate/agendas.json](replicate/agendas.json) has our ids, names, groups and rules and leaves the descriptions for you to add.
 
 ## People
 
