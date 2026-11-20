@@ -371,7 +371,10 @@ Anthropic's models or within OpenAI's. With search, agents converge on
 one broad problem, AI control, and differ within it. Measured by agenda,
 meaning one of the 45 research areas in the 2025 Shallow
 Review~\citep{shallow2025}, agents who search are about half as spread
-as agents who do not.
+as agents who do not. Our reading is that agents bring the area with
+them, asking about monitoring and control before they see any result,
+and search then gives each a different handful of recent papers in it to
+build on (\hyperref[how-search-shaped-the-choices]{appendix}).
 
 Each model alone behaves like 23 to 45 projects, and four models
 together like about 60. With about 30 agents per model, these intervals
@@ -425,7 +428,9 @@ a list, and only the list's content differs. A third arm shows only how
 many agents work in each agenda. This tells agents how crowded each area
 is, much like the signal tested in the closest earlier study,
 IdeaTaste~\citep{zhong2026}. Every agent read the registry without being
-reminded.
+reminded, before its first search, and a registry of earlier projects
+sent agents' searches in different directions from the start (appendix
+Figure A6).
 
 \begin{figure}
 \centering
@@ -836,33 +841,33 @@ Agents
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-A11, A13, A15 & Step one, the simple setup's first experiment:
+A12, A14, A16 & Step one, the simple setup's first experiment:
 GLM-5.3-flash, minimal loop, our brief; from memory, two assigned
 reading lists, and search with three levels of randomness & 120 per
 cell, 240 in two search cells \\
-A11 & One change at a time from step one's memory cell: seven models;
+A12 & One change at a time from step one's memory cell: seven models;
 our loop, Codex CLI, opencode; four launch prompts; and every change at
 once & 40 per group, 120 for every change at once \\
-A13 & Step one's reading conditions for six more models & 40 per cell \\
-A13 & The frontier setup: four frontier models, each in the harnesses it
+A14 & Step one's reading conditions for six more models & 40 per cell \\
+A14 & The frontier setup: four frontier models, each in the harnesses it
 runs in, eleven launch prompts (our brief, counting its two slightly
 different lengths as one, and ten others), search & 80, plus 80 with the
 interpretability brief (appendix) \\
-A15 & Registry, first stage: GLM-5.3-flash from memory; registry of
+A16 & Registry, first stage: GLM-5.3-flash from memory; registry of
 earlier projects, agenda counts, placebo & \(4 \times 100\) per
 registry, 200 placebo \\
-A15 & The first stage's registry of earlier projects re-judged on every
+A16 & The first stage's registry of earlier projects re-judged on every
 pair & \(4 \times 100\) \\
-A8, text & Registry, first frontier test: registry of earlier projects
+A9, text & Registry, first frontier test: registry of earlier projects
 against placebo & \(6 \times 20\) per arm \\
 text & Registry, first frontier test: agenda counts (run 16 November) &
 \(6 \times 20\) \\
-2, 4, 6, 8, 9, 12, A2-A5, A7 & The frontier setup with no added tool:
+2, 4, 6, 8, 9, 12, A2-A6, A8 & The frontier setup with no added tool:
 the same 120 combinations of model, launch prompt and harness as the
 frontier registry test, with no added tool (run 16 November) & 120 \\
-A15 & Tree protocol in the simple setup: GLM-5.3-flash from memory, with
+A16 & Tree protocol in the simple setup: GLM-5.3-flash from memory, with
 and without the protocol & 120 per arm, plus 179 more agents with it \\
-A15 & Repeat of the simple setup with Claude Sonnet 5.5: about 16
+A16 & Repeat of the simple setup with Claude Sonnet 5.5: about 16
 projects without the protocol (12 to 21), about 550 with it (250 to
 2,400), 34 times as many (15 to 170) & 120 per arm \\
 6, A4 & The frontier setup's same 120 combinations of model, launch
@@ -871,9 +876,9 @@ prompt and harness with no search tools (run 17 November) & 120 \\
 and harness with the novelty sentence, and with the tree protocol but
 the agent taking the best option at each level instead of drawing (run
 17 November) & 120 per arm \\
-4, 8, 9 & Registry in the frontier setup, populations of 100: registry
-of earlier projects, agenda counts and placebo (run 17 November) &
-\(3 \times 100\) per arm \\
+4, 8, 9, A6 & Registry in the frontier setup, populations of 100:
+registry of earlier projects, agenda counts and placebo (run 17
+November) & \(3 \times 100\) per arm \\
 A5 text & Assigned first document: the frontier setup's same 120
 combinations of model, launch prompt and harness plus 40 more, each
 handed one of four papers as the top result of its first search (run 18
@@ -897,8 +902,8 @@ duplicate when both say same project, or one says same project and the
 other same direction. To save cost, pairs whose texts are far apart by a
 small embedding model are counted as different without asking the judge.
 The main text judged every pair of agents, which catches more
-duplicates. In the simple setup, Figures A11 and A13 and one row of
-Figure A15 use the screened judging. Shorter texts look more alike to
+duplicates. In the simple setup, Figures A12 and A14 and one row of
+Figure A16 use the screened judging. Shorter texts look more alike to
 the judge, so drawn projects, which are written more briefly, are if
 anything counted as duplicates more often.
 
@@ -997,7 +1002,7 @@ projects?}\label{do-different-models-choose-the-same-projects}
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={How alike two models' choices are in the frontier setup's no-tool run, about 30 agents per model, each with its own launch prompts and harnesses, and searching. Each cell is the chance that an agent of one model and an agent of the other match, divided by the geometric mean of the chance that two agents of each model match each other. That is the similarity of the two models' choice distributions: 1 means they pick from the same distribution, 0 that they never pick the same thing. Left, matching on projects as the judge decides; right, matching on agendas, with the labels of Figure A6. Outlines mark model families. Values can slightly exceed 1 by chance.}]{figures/fig-A-field-triangles.png}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={How alike two models' choices are in the frontier setup's no-tool run, about 30 agents per model, each with its own launch prompts and harnesses, and searching. Each cell is the chance that an agent of one model and an agent of the other match, divided by the geometric mean of the chance that two agents of each model match each other. That is the similarity of the two models' choice distributions: 1 means they pick from the same distribution, 0 that they never pick the same thing. Left, matching on projects as the judge decides; right, matching on agendas, with the labels of Figure A7. Outlines mark model families. Values can slightly exceed 1 by chance.}]{figures/fig-A-field-triangles.png}}
 \caption{How alike two models' choices are in the frontier setup's
 no-tool run, about 30 agents per model, each with its own launch prompts
 and harnesses, and searching. Each cell is the chance that an agent of
@@ -1006,7 +1011,7 @@ of the chance that two agents of each model match each other. That is
 the similarity of the two models' choice distributions: 1 means they
 pick from the same distribution, 0 that they never pick the same thing.
 Left, matching on projects as the judge decides; right, matching on
-agendas, with the labels of Figure A6. Outlines mark model families.
+agendas, with the labels of Figure A7. Outlines mark model families.
 Values can slightly exceed 1 by chance.}\label{fig:A3}
 \end{figure}
 
@@ -1063,8 +1068,30 @@ not every pair of labs is this distinct.
 \href{https://github.com/AverroesLabs/ai-research-agent-diversity/blob/main/analysis/sources_of_diversity.py}{analysis/sources\_of\_diversity.py}
 recomputes these numbers from the released data.
 
-\subsection{What do searching agents
-read?}\label{what-do-searching-agents-read}
+\subsection{How search shaped the
+choices}\label{how-search-shaped-the-choices}
+
+Search changed agents' choices in three steps: what they asked for, what
+the search engine gave back, and what they built on. The numbers in this
+section come from the released transcripts
+(\href{https://github.com/AverroesLabs/ai-research-agent-diversity/blob/main/analysis/search_dynamics.py}{analysis/search\_dynamics.py}).
+
+Agents arrived with a topic in mind. Before seeing any result, 77\% of
+the no-tool run's first queries were about monitoring or control, and
+71\% asked for work from 2026. Two agents' first queries shared 17\% of
+their words on average, against 3\% for two of their queries picked at
+random.
+
+The engine then sent them to the same few papers, by two routes. The
+most-read paper, on training models to keep their chain of thought
+monitorable, came up for 78 agents, and 56 opened it. The queries that
+found it were near copies of each other, such as ``chain-of-thought
+monitorability 2026'', and shared 57\% of their words. Papers on AI
+control came up through varied queries instead. One benchmark of
+sabotage and monitoring in automated AI research came up for 65 agents
+through 154 different queries, sharing 30\% of their words, because the
+literature on AI control has a handful of recent papers that match
+almost any query in the area.
 
 \begin{figure}
 \centering
@@ -1102,18 +1129,62 @@ always ignored an on-topic theory paper outside their usual interests,
 and an off-topic paper. So what agents read first does steer what they
 pick, as long as it fits what they were already inclined to do.
 
+Search doubled the effective number of projects but halved the spread
+over agendas (Section 5). Our reading, which we have not tested, is that
+agents bring the area with them, and search then gives each agent a
+different handful of recent papers in it to build on. Agents opened 257
+different documents, 146 of them opened by only one agent, so their
+projects differ while their agendas narrow. Without search, each lab's
+agents fall back on a few favourite projects, spread over more agendas
+but repeated more often. The literature alone does not explain the
+narrowing. Titles about monitoring or control make up 4\% of the 2026
+documents in our copy of the literature, up from 1 to 2\% in earlier
+years, far below the 59\% of searching agents who chose AI control.
+
+\begin{figure}
+\centering
+\pandocbounded{\includegraphics[keepaspectratio,alt={The first search query of every agent, with no registry (Figure 4's searching agents choosing alone) and in each list's three populations of 100 (Figures 8 and 9). Left, the share of first queries about monitoring or control. Right, the average share of words two agents' first queries have in common, leaving out words almost every query uses, such as ``AI'', ``safety'' and ``2026''. Bars are the value and lines the 95\% interval, from resampling agents.}]{figures/fig-A-first-queries.png}}
+\caption{The first search query of every agent, with no registry (Figure
+4's searching agents choosing alone) and in each list's three
+populations of 100 (Figures 8 and 9). Left, the share of first queries
+about monitoring or control. Right, the average share of words two
+agents' first queries have in common, leaving out words almost every
+query uses, such as ``AI'', ``safety'' and ``2026''. Bars are the value
+and lines the 95\% interval, from resampling agents.}\label{fig:A6}
+\end{figure}
+
+A list changes where agents start searching. Every agent in the registry
+and placebo populations of 100 read its list as its first tool call,
+before searching. With the placebo list, agents started from the same
+place as agents with no registry. With the registry of earlier projects,
+30\% of first queries were about monitoring or control, against 71\%
+with the placebo list, and two agents' first queries shared 3\% of their
+words, against 16\% (Figure A6). The registry acts before an agent has
+any idea, by sending its search somewhere else.
+
+Agenda counts sent agents' searches away from the crowded agendas, but
+into a new shared place. Only 15\% of first queries were about
+monitoring or control. But Claude Opus agents, searching instead around
+reward hacking and training, often reached one paper on ``generalization
+hacking'': it came up for 42 of 81 Opus agents, against 27 with the
+placebo list and 17 with the registry. In the first test, with
+populations of 20, all 13 agents who chose a project on it were Opus
+agents who had opened it, and most of the repeats left under agenda
+counts in populations of 100 came from Opus agents building on it
+(Section 6).
+
 \subsection{Where do agents crowd?}\label{where-do-agents-crowd}
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Share of each group's projects in four of 45 agendas from the 2025 Shallow Review, each marked by its own shade and pattern. Ochre rows are people and slate rows are each model's group of 40 answering from memory on our brief in the minimal loop, the model rows of Figure A11. The same chart on the earlier, pilot version of the brief, with five models and Sonnet and Opus in Claude Code, is here.}]{figures/fig-A1-agendas.png}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Share of each group's projects in four of 45 agendas from the 2025 Shallow Review, each marked by its own shade and pattern. Ochre rows are people and slate rows are each model's group of 40 answering from memory on our brief in the minimal loop, the model rows of Figure A12. The same chart on the earlier, pilot version of the brief, with five models and Sonnet and Opus in Claude Code, is here.}]{figures/fig-A1-agendas.png}}
 \caption{Share of each group's projects in four of 45 agendas from the
 2025 Shallow Review~\citep{shallow2025}, each marked by its own shade
 and pattern. Ochre rows are people and slate rows are each model's group
 of 40 answering from memory on our brief in the minimal loop, the model
-rows of Figure A11. The same chart on the earlier, pilot version of the
+rows of Figure A12. The same chart on the earlier, pilot version of the
 brief, with five models and Sonnet and Opus in Claude Code, is
-\href{https://github.com/AverroesLabs/ai-research-agent-diversity/blob/main/figures/fig-A1-agendas-pilot-brief.png}{here}.}\label{fig:A6}
+\href{https://github.com/AverroesLabs/ai-research-agent-diversity/blob/main/figures/fig-A1-agendas-pilot-brief.png}{here}.}\label{fig:A7}
 \end{figure}
 
 Between about half and nine tenths of each of these seven models' picks
@@ -1127,13 +1198,13 @@ reasonable, but they are the same few.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Drawn as Figure A6, for the frontier setup under each rule, every arm on the same 120 combinations of model, launch prompt and harness. Every arm searched. Picks are labelled as in Figure A6, except in the agenda-counts registry, which labelled each pick live as it was made with a different labelling model, so its row is less comparable.}]{figures/fig-A-field-agendas.png}}
-\caption{Drawn as Figure A6, for the frontier setup under each rule,
+\pandocbounded{\includegraphics[keepaspectratio,alt={Drawn as Figure A7, for the frontier setup under each rule, every arm on the same 120 combinations of model, launch prompt and harness. Every arm searched. Picks are labelled as in Figure A7, except in the agenda-counts registry, which labelled each pick live as it was made with a different labelling model, so its row is less comparable.}]{figures/fig-A-field-agendas.png}}
+\caption{Drawn as Figure A7, for the frontier setup under each rule,
 every arm on the same 120 combinations of model, launch prompt and
-harness. Every arm searched. Picks are labelled as in Figure A6, except
+harness. Every arm searched. Picks are labelled as in Figure A7, except
 in the agenda-counts registry, which labelled each pick live as it was
 made with a different labelling model, so its row is less
-comparable.}\label{fig:A7}
+comparable.}\label{fig:A8}
 \end{figure}
 
 Left alone, 88\% of the field's picks fall in these four agendas, most
@@ -1282,7 +1353,7 @@ right, the share in the two agendas that dominate the placebo arm, AI
 control and chain-of-thought monitoring. Bars give the share and lines
 the 95\% interval. Placebo agents saw an unrelated list, so they show
 what the field does without seeing anyone. The agenda-counts arm was
-labelled live by a different labelling model.}\label{fig:A8}
+labelled live by a different labelling model.}\label{fig:A9}
 \end{figure}
 
 The agents did the opposite of copying. Placebo agents land in an agenda
@@ -1328,7 +1399,7 @@ option, divided by the weight every option would get if all were equal
 (1 means all equal; with seven options, 7 would mean all weight on one).
 The black line is each row's median. The top two rows are the simple
 setup, answering from memory; the bottom four are the frontier setup's
-tree arm, by model.}\label{fig:A9}
+tree arm, by model.}\label{fig:A10}
 \end{figure}
 
 Every model weights its options nearly evenly: the top option gets about
@@ -1348,7 +1419,7 @@ shown their choices \citep{hashemi2026}, and non-reasoning models
 converged on more similar hypotheses than reasoning models in one
 comparison \citep{bao2026}. In our own data the most capable models were
 not the most spread: from memory, the GPT models behaved like 4 to 9
-projects and the open models like 7 to 32 (Figure A11). If future models
+projects and the open models like 7 to 32 (Figure A12). If future models
 do judge promise more sharply, the tree will concentrate their draws on
 the projects they rate highest. Agents would then spread less than here,
 but in proportion to that judgement, as the protocol intends.
@@ -1389,7 +1460,7 @@ gives both where both were run. The simple setup shows the same pattern
 as the frontier setup from a lower start. Judged on every pair, 120
 agents taking what they judge best behave like about 13 projects, a
 registry of earlier projects left 2 duplicate pairs among 19,800, and
-random draws spread the agents to about 380 (Figure A15). Randomness in
+random draws spread the agents to about 380 (Figure A16). Randomness in
 sampling changes how an agent reasons and writes, but rarely which
 project it chooses.
 
@@ -1398,11 +1469,11 @@ harness}\label{model-instructions-and-harness}
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={The setup for Figure A11, drawn as Figure 1. Each part varies over these options, one part at a time from the simple setup, and in the last row of Figure A11 every agent drew all three at random.}]{figures/fig-A-setup-mix.png}}
-\caption{The setup for Figure A11, drawn as Figure 1. Each part varies
+\pandocbounded{\includegraphics[keepaspectratio,alt={The setup for Figure A12, drawn as Figure 1. Each part varies over these options, one part at a time from the simple setup, and in the last row of Figure A12 every agent drew all three at random.}]{figures/fig-A-setup-mix.png}}
+\caption{The setup for Figure A12, drawn as Figure 1. Each part varies
 over these options, one part at a time from the simple setup, and in the
-last row of Figure A11 every agent drew all three at
-random.}\label{fig:A10}
+last row of Figure A12 every agent drew all three at
+random.}\label{fig:A11}
 \end{figure}
 
 \begin{figure}
@@ -1420,7 +1491,7 @@ separate group of 120 in which every agent drew all three parts at
 random. Model boxes are bold because every model samples its answer. The
 baseline uses the first 40 of step one's 120 agents, which read 26 where
 all 120 read 21. Every pair of agents is counted, with screening, and
-intervals are 95\%, from resampling agents.}\label{fig:A11}
+intervals are 95\%, from resampling agents.}\label{fig:A12}
 \end{figure}
 
 Every model behaves like 32 projects or fewer, from 4 for GPT-6 Astra, 7
@@ -1454,7 +1525,7 @@ from 7 to 60 on the pilot brief. The intervals overlap on this brief but
 not on the pilot one. The sentence is the same for every agent, so it
 adds no randomness. Our guess is that it pushes agents away from the
 most obvious project, so that randomness in their sampling carries them
-further apart. It did nothing for the GPT models (Figure A16). In the
+further apart. It did nothing for the GPT models (Figure A17). In the
 frontier setup, with search, launch prompts and harnesses, the same
 sentence did not spread projects (Section 7).
 
@@ -1477,13 +1548,13 @@ only within one setup.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={The setup for Figure A13, drawn as Figure 1: seven models, with our brief or with the brief narrowed to mechanistic interpretability, in our loop. Agents read nothing, an assigned list of 88 papers and posts shared by a group, skewed or uniform across topics, or search with no, moderate or high randomness in its results. Search with random results is a source of randomness, so those boxes are bold.}]{figures/fig-A-setup-read.png}}
-\caption{The setup for Figure A13, drawn as Figure 1: seven models, with
+\pandocbounded{\includegraphics[keepaspectratio,alt={The setup for Figure A14, drawn as Figure 1: seven models, with our brief or with the brief narrowed to mechanistic interpretability, in our loop. Agents read nothing, an assigned list of 88 papers and posts shared by a group, skewed or uniform across topics, or search with no, moderate or high randomness in its results. Search with random results is a source of randomness, so those boxes are bold.}]{figures/fig-A-setup-read.png}}
+\caption{The setup for Figure A14, drawn as Figure 1: seven models, with
 our brief or with the brief narrowed to mechanistic interpretability, in
 our loop. Agents read nothing, an assigned list of 88 papers and posts
 shared by a group, skewed or uniform across topics, or search with no,
 moderate or high randomness in its results. Search with random results
-is a source of randomness, so those boxes are bold.}\label{fig:A12}
+is a source of randomness, so those boxes are bold.}\label{fig:A13}
 \end{figure}
 
 \begin{figure}
@@ -1506,7 +1577,7 @@ interpretability. The bottom two rows are earlier groups of 80 from the
 frontier setup, with our brief and with the interpretability brief,
 which ran only with search. Step one's original analysis, which counts
 pairs only within each group, gives the same picture with wider
-intervals.}\label{fig:A13}
+intervals.}\label{fig:A14}
 \end{figure}
 
 For GLM-5.3-flash, the top row, search spreads agents two to several
@@ -1569,12 +1640,12 @@ agents, gives about 63 (Figure 6).
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={The setup for Figure A15, drawn as Figure 1: the simple setup with no registry or one of three, or with the tree protocol and the random-draw tool. Claude Sonnet 5.5 repeated only the tree test. The random-draw tool is bold because it contains randomness; the protocol's text does not.}]{figures/fig-A-setup-int.png}}
-\caption{The setup for Figure A15, drawn as Figure 1: the simple setup
+\pandocbounded{\includegraphics[keepaspectratio,alt={The setup for Figure A16, drawn as Figure 1: the simple setup with no registry or one of three, or with the tree protocol and the random-draw tool. Claude Sonnet 5.5 repeated only the tree test. The random-draw tool is bold because it contains randomness; the protocol's text does not.}]{figures/fig-A-setup-int.png}}
+\caption{The setup for Figure A16, drawn as Figure 1: the simple setup
 with no registry or one of three, or with the tree protocol and the
 random-draw tool. Claude Sonnet 5.5 repeated only the tree test. The
 random-draw tool is bold because it contains randomness; the protocol's
-text does not.}\label{fig:A14}
+text does not.}\label{fig:A15}
 \end{figure}
 
 \begin{figure}
@@ -1589,7 +1660,7 @@ the registry's first stage. Registry agents chose in four populations of
 100, so only pairs within a population count; placebo agents chose
 independently, 200 in all; the other cells are groups of 120. ``Not
 judged this way'' marks a cell judged only under the other rule, and
-``not run'' an arm that model did not run.}\label{fig:A15}
+``not run'' an arm that model did not run.}\label{fig:A16}
 \end{figure}
 
 This was the registry's first stage. Its curves over 100 agents look
@@ -1620,7 +1691,7 @@ minimal loop, and our brief in Codex CLI. A shaded box is the setting
 that differs from our brief in the minimal loop. Each circle is an
 effective number of projects, with the ends of its 95\% interval either
 side and \(n\) below, with 40 agents per cell. The model headings are
-bold because every model samples its answer.}\label{fig:A16}
+bold because every model samples its answer.}\label{fig:A17}
 \end{figure}
 
 The novelty sentence did nothing for the GPT models, and AI Scientist's

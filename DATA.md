@@ -8,29 +8,29 @@ Each experiment is one set of agents run under one setup. Names start with `fron
 
 | Experiment | What varies | Agents | Figures | Preregistered |
 |---|---|---|---|---|
-| `frontier_max` | nothing added: each agent takes the project it judges best | 120 | 2, 4, 6, 8, 9, 12, A2-A5, A7 | no |
+| `frontier_max` | nothing added: each agent takes the project it judges best | 120 | 2, 4, 6, 8, 9, 12, A2-A6, A8 | no |
 | `frontier_no_search` | the same 120 combinations of model, launch prompt and harness, without search | 120 | 6, A4 | no, extension preregistered before running |
 | `frontier_novelty` | adds one sentence asking for the most novel direction | 120 | 12 | no, as above |
 | `frontier_tree_take_best` | tree protocol, but the agent takes its best option at each level | 120 | 12 | no, as above |
-| `frontier_tree` | tree protocol with the random-draw tool | 120 | 4, 10, 12, A7, A9 | yes |
-| `frontier_registry_20_placebo` | registry tool listing unrelated projects, 6 populations of 20 | 120 | Results 2 and 3 text, A7, A8 | yes |
-| `frontier_registry_20_projects` | registry of earlier agents' projects, 6 populations of 20 | 120 | Result 2 text, A7, A8 | yes |
-| `frontier_registry_20_agenda_counts` | registry of agenda counts, 6 populations of 20 | 120 | Result 2 text, A7, A8 | no |
-| `frontier_registry_100_placebo` | placebo list, 3 populations of 100 | 300 | 8, 9 | no, extension preregistered before running |
-| `frontier_registry_100_projects` | registry of earlier projects, 3 populations of 100 | 300 | 4, 8, 9 | no, as above |
-| `frontier_registry_100_agenda_counts` | agenda counts, 3 populations of 100 | 300 | 8, 9 | no, as above |
+| `frontier_tree` | tree protocol with the random-draw tool | 120 | 4, 10, 12, A8, A10 | yes |
+| `frontier_registry_20_placebo` | registry tool listing unrelated projects, 6 populations of 20 | 120 | Results 2 and 3 text, A8, A9 | yes |
+| `frontier_registry_20_projects` | registry of earlier agents' projects, 6 populations of 20 | 120 | Result 2 text, A8, A9 | yes |
+| `frontier_registry_20_agenda_counts` | registry of agenda counts, 6 populations of 20 | 120 | Result 2 text, A8, A9 | no |
+| `frontier_registry_100_placebo` | placebo list, 3 populations of 100 | 300 | 8, 9, A6 | no, extension preregistered before running |
+| `frontier_registry_100_projects` | registry of earlier projects, 3 populations of 100 | 300 | 4, 8, 9, A6 | no, as above |
+| `frontier_registry_100_agenda_counts` | agenda counts, 3 populations of 100 | 300 | 8, 9, A6 | no, as above |
 | `frontier_assigned_reading` | one assigned paper returned first by the agent's first search, 4 papers × 40 agents | 160 | A5 text | no, as above |
-| `frontier_earlier_groups` | the frontier setup's earlier groups of 80, with our brief and with the interpretability brief | 160 | A13 | no |
-| `simple_step_one` | step one: GLM-5.3-flash under six reading conditions, with our brief and the interpretability brief | 1,692 | A11, A13, A15 | yes (design); the every-pair counting reported is exploratory |
-| `simple_reading_models` | step one's reading conditions for GLM-5.3, DeepSeek V4.1 Flash, Claude Sonnet 5.5 and Claude Opus 5.5 | 961 | A3 text, A11, A13 | no |
-| `simple_reading_gpt` | step one's reading conditions for GPT-6 Astra and GPT-6.1 Sol, both briefs | 1,040 | 2, A11, A13 | no |
-| `simple_one_change` | one change at a time to the instructions or harness, and every change at once | 320 | A6, A11 | no |
-| `simple_pilot_brief` | the pilot brief, with its extra paragraph on resources: seven models, three other instructions, two other harnesses, every change at once | 1,045 | A6 (pilot-brief chart), A11 text, A16, judge appendix | no |
-| `simple_interp_overview_removed` | step one's interpretability search cell re-run after removing the overview post most searchers opened first | 60 | A13 text | no, follow-up preregistered before running |
-| `simple_sonnet_claude_code_texts_removed` | Claude Sonnet 5.5 in Claude Code, with the two most-read chain-of-thought texts removed or in place | 80 | A13 text | no, as above |
-| `simple_registry_stage1` | the registry's first stage: earlier projects and agenda counts (4 populations of 100 each), placebo (200) | 1,000 | A15 | yes |
-| `simple_tree_glm` | GLM-5.3-flash with and without the tree protocol | 420 | A9, A15 | yes (first 120 tree agents) |
-| `simple_tree_sonnet` | Claude Sonnet 5.5 with and without the tree protocol | 240 | A9, A15 | yes |
+| `frontier_earlier_groups` | the frontier setup's earlier groups of 80, with our brief and with the interpretability brief | 160 | A14 | no |
+| `simple_step_one` | step one: GLM-5.3-flash under six reading conditions, with our brief and the interpretability brief | 1,692 | A12, A14, A16 | yes (design); the every-pair counting reported is exploratory |
+| `simple_reading_models` | step one's reading conditions for GLM-5.3, DeepSeek V4.1 Flash, Claude Sonnet 5.5 and Claude Opus 5.5 | 961 | A3 text, A12, A14 | no |
+| `simple_reading_gpt` | step one's reading conditions for GPT-6 Astra and GPT-6.1 Sol, both briefs | 1,040 | 2, A12, A14 | no |
+| `simple_one_change` | one change at a time to the instructions or harness, and every change at once | 320 | A7, A12 | no |
+| `simple_pilot_brief` | the pilot brief, with its extra paragraph on resources: seven models, three other instructions, two other harnesses, every change at once | 1,045 | A7 (pilot-brief chart), A12 text, A17, judge appendix | no |
+| `simple_interp_overview_removed` | step one's interpretability search cell re-run after removing the overview post most searchers opened first | 60 | A14 text | no, follow-up preregistered before running |
+| `simple_sonnet_claude_code_texts_removed` | Claude Sonnet 5.5 in Claude Code, with the two most-read chain-of-thought texts removed or in place | 80 | A14 text | no, as above |
+| `simple_registry_stage1` | the registry's first stage: earlier projects and agenda counts (4 populations of 100 each), placebo (200) | 1,000 | A16 | yes |
+| `simple_tree_glm` | GLM-5.3-flash with and without the tree protocol | 420 | A10, A16 | yes (first 120 tree agents) |
+| `simple_tree_sonnet` | Claude Sonnet 5.5 with and without the tree protocol | 240 | A10, A16 | yes |
 
 `data/experiments.json` gives, for each experiment, a description, the figures it fills, whether it was preregistered, run dates, numbers of agents, pair rows and duplicates, the list of its files, and one or more **measures**. A measure is one effective number as reported, with what is needed to recompute it: the agents file and the filters that pick its agents (`condition`, `model`, `populations`, `batch`, and `only_analysed`), the pairs file and judging rule, whether pairs are counted among all agents (`all_pairs`) or only within each population (`within_population`), the interval method, the bootstrap seed and the agent order. `reported_ratios`, `reported_cells`, `reported_counts` and `reported_extra` hold other numbers quoted in the post; a ratio with a `check` (the tree against the placebo registry) is recomputed by `reproduce.py` with `effnum.joint_ratio`. `people` describes the people's groups.
 
@@ -78,8 +78,8 @@ There are two judging rules.
 
 The effective number is 1 / p, where p is the share of pairs that are duplicates, counted among all agents or only within populations as the measure says. Three interval methods appear in `ci_method`.
 
-- `agent_bootstrap`, used for every frontier number and the simple-setup interventions of Figure A15: 2,000 draws that resample the agents with replacement (within each population for within-population measures), weight each pair by w_i w_j, drop the pairs of an agent with its own copies, floor a draw with no duplicate at half a pair, and take the 2.5th and 97.5th percentiles of 1 / p* as order statistics. `effnum.summarise` implements it.
-- `stratified_agent_bootstrap`, used for the simple-setup grids of Figures A11 and A13: the same resampling done within each group of 20, with pairs counted across groups, the percentiles taken with linear interpolation and no floor. `effnum.stratified_bootstrap` implements it.
+- `agent_bootstrap`, used for every frontier number and the simple-setup interventions of Figure A16: 2,000 draws that resample the agents with replacement (within each population for within-population measures), weight each pair by w_i w_j, drop the pairs of an agent with its own copies, floor a draw with no duplicate at half a pair, and take the 2.5th and 97.5th percentiles of 1 / p* as order statistics. `effnum.summarise` implements it.
+- `stratified_agent_bootstrap`, used for the simple-setup grids of Figures A12 and A14: the same resampling done within each group of 20, with pairs counted across groups, the percentiles taken with linear interpolation and no floor. `effnum.stratified_bootstrap` implements it.
 - A delete-one-agent jackknife on the logit of the duplicate share, which several appendix figures drew, and a few preregistered methods (a t interval over populations, a jackknife over agents, a mean over populations). For these, `reproduce.py` checks the point estimate and prints its own bootstrap beside the reported interval. Where a cell also recorded an agent bootstrap with its seed (`reported_bootstrap_ci95`), that one is recomputed and compared.
 
 With the seed in `experiments.json` and the agent order the measure names, the script reproduces every reported point estimate and every bootstrap interval. People's numbers pool 16 random groups of 40 items from one source: 1 / mean duplicate share over the groups, with the middle 95% of the groups' own values as its range. The four broad-theme hackathons weight each event equally and take the range over all 64 groups.
@@ -160,7 +160,7 @@ The per-pair verdicts of the four broad-theme Apart hackathons (Global South AI 
 
 ## Numbers that cannot be recomputed from these files
 
-- The pooled rows of Figure A11 (seven models, four instructions, three harnesses, and the one-change groups without the GPT models) mix agents from several experiments. Pairs between agents of different experiments were not kept, so `simple_one_change` gives these pools as `reported_cells` only. The same holds for the mixed row of Figure A13.
+- The pooled rows of Figure A12 (seven models, four instructions, three harnesses, and the one-change groups without the GPT models) mix agents from several experiments. Pairs between agents of different experiments were not kept, so `simple_one_change` gives these pools as `reported_cells` only. The same holds for the mixed row of Figure A14.
 - The control arm of `simple_interp_overview_removed` (step one's first 60 agents of that cell, re-judged with the judge pinned to DeepInfra) is reported in `reported_extra`; its re-judged verdicts were not kept.
 - `frontier_assigned_reading` reports a ratio of duplicate rates in the text. Its pairs are released, but not as an effective number. They cover the 120 agents handed the most-read, sabotage or on-topic theory paper, same-model pairs only; the 40 agents handed the off-topic paper were not judged for duplicates.
 

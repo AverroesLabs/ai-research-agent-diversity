@@ -102,7 +102,7 @@ This session is being continued from an earlier conversation whose context was c
 
 ## 2. The pilot brief
 
-The post's pilot setup, used for Figure A16 and the pilot-brief comparisons, had one more paragraph in the brief, about the resources available. Answering from memory, the agents received these messages.
+The post's pilot setup, used for Figure A17 and the pilot-brief comparisons, had one more paragraph in the brief, about the resources available. Answering from memory, the agents received these messages.
 
 **system** message:
 
@@ -146,7 +146,7 @@ The system message, token limit and caps were the same as in step one, so the re
 
 ## 3. The brief narrowed to mechanistic interpretability
 
-Figure A13's interpretability rows, and the interpretability groups of the frontier setup, replace "in AI safety" with "in mechanistic interpretability" and change nothing else. In the launch prompts of section 7 the phrase "AI safety" becomes "mechanistic interpretability" in the same way.
+Figure A14's interpretability rows, and the interpretability groups of the frontier setup, replace "in AI safety" with "in mechanistic interpretability" and change nothing else. In the launch prompts of section 7 the phrase "AI safety" becomes "mechanistic interpretability" in the same way.
 
 Answering from memory:
 
@@ -190,9 +190,9 @@ FIRST EXPERIMENT: what you will run first
 WHY THIS: why it is the most promising, and why it has not already been done
 ````
 
-## 4. Other instructions in the simple setup (Figure A11)
+## 4. Other instructions in the simple setup (Figure A12)
 
-Figure A11's instructions panel compares our brief with three other instructions. Each group is 40 GLM-5.3-flash agents in the minimal loop, answering from memory.
+Figure A12's instructions panel compares our brief with three other instructions. Each group is 40 GLM-5.3-flash agents in the minimal loop, answering from memory.
 
 ### 4a. "Most novel"
 
@@ -276,7 +276,7 @@ WHY THIS: why it is the most promising, and why it has not already been done
 
 ### 4d. Every change at once
 
-In Figure A11's last row each agent drew one of the four instructions (our brief of section 1 and the three above), one of seven models and one of three harnesses. In the minimal loop it got the instruction's system and user messages. In Codex CLI and opencode it got the harness's own default system prompt and only the instruction's user message, so the AI Scientist system sentence was not sent there. opencode sessions that ended without answer lines got the no-tools follow-up of section 1 once.
+In Figure A12's last row each agent drew one of the four instructions (our brief of section 1 and the three above), one of seven models and one of three harnesses. In the minimal loop it got the instruction's system and user messages. In Codex CLI and opencode it got the harness's own default system prompt and only the instruction's user message, so the AI Scientist system sentence was not sent there. opencode sessions that ended without answer lines got the no-tools follow-up of section 1 once.
 
 ## 5. Harnesses
 
@@ -292,10 +292,10 @@ The other three harnesses kept their own default system prompts, which we do not
 
 Our text entered them in two ways.
 
-- In Figure A11's harness rows (GLM-5.3-flash in Codex CLI or opencode, pinned to Z.AI), the harness kept its default system prompt, and the memory-form user message of section 1 was the prompt. Our system line "You are an autonomous AI research agent. Today is 2026-11-08." was not sent. Every tool we could turn off was turned off; Codex still offered its tools for listing MCP resources, which 6 sessions called and found empty. opencode got the section-1 follow-up once if it ended without answer lines.
+- In Figure A12's harness rows (GLM-5.3-flash in Codex CLI or opencode, pinned to Z.AI), the harness kept its default system prompt, and the memory-form user message of section 1 was the prompt. Our system line "You are an autonomous AI research agent. Today is 2026-11-08." was not sent. Every tool we could turn off was turned off; Codex still offered its tools for listing MCP resources, which 6 sessions called and found empty. opencode got the section-1 follow-up once if it ended without answer lines.
 - In the frontier setup and the frontier registry test, the instruction's system line, when it had one, was appended to the harness's default system prompt (Claude Code `--append-system-prompt`, Codex `developer_instructions`, an opencode instructions file), and the instruction's user message was the prompt. Our search tool was served as a local MCP server named `survey`, so agents saw its tools under names such as `mcp__survey__search` in Claude Code and `survey_search` in opencode. A few built-in tools of Codex and opencode stayed available (opencode's to-do list, file search in an empty directory, Codex's MCP-resource listing); [EXPERIMENTS.md](../EXPERIMENTS.md#harnesses) counts their use.
 
-## 6. Reading conditions in the simple setup (Figure A13)
+## 6. Reading conditions in the simple setup (Figure A14)
 
 ### 6a. Assigned reading
 
@@ -910,7 +910,7 @@ End of registry.
 
 ## 9. Tree protocol (Result 3)
 
-### 9a. In the simple setup (Figure A15)
+### 9a. In the simple setup (Figure A16)
 
 The protocol is inserted as its own paragraph right after the brief's first sentence. The control without the protocol is the memory form of section 1, unchanged. GLM-5.3-flash and Claude Sonnet 5.5, the latter pinned to Anthropic on OpenRouter, received identical messages.
 
@@ -1065,11 +1065,11 @@ For agents, `{a}` and `{b}` are the PROJECT line and the QUESTION line of the an
 
 People's groups (Figure A1) are not in project-and-question form. For them `{a}` and `{b}` are the title, `". "`, and the first 55 words of the abstract, proposal or text, followed by " ..." when cut.
 
-## 11. Agenda labeller (Figures A6 and A7, and the agenda-counts registry)
+## 11. Agenda labeller (Figures A7 and A8, and the agenda-counts registry)
 
 The labeller puts each pick into one of 45 agendas merged from the [2025 Shallow Review of technical AI safety](https://www.greaterwrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2), or one of four special labels. It is sent one user message at temperature 0, with up to 5 picks per batch in a seeded random order. The text of a pick is its DIRECTION line, " Why: " and its WHY THIS line.
 
-For Figure A6 the labeller is `z-ai/glm-5.3-flash`, pinned to Z.AI with no fallbacks and reasoning at the provider's default. Each pick is labelled in three different batchings, with shuffle seeds 1, 2 and 3, and takes the majority label. When there is no majority it takes the first valid label and is flagged. The agenda-counts registry used one call to `qwen/qwen3.8-flash`, pinned to Alibaba. People's rows in Figure A6 use the GLM route on a paper's title and abstract, or on a SPAR proposal's title, summary and about section, cut to the first 150 words. If a reply cannot be parsed, the prompt is sent again with `\n(attempt 1)` or `\n(attempt 2)` appended.
+For Figure A7 the labeller is `z-ai/glm-5.3-flash`, pinned to Z.AI with no fallbacks and reasoning at the provider's default. Each pick is labelled in three different batchings, with shuffle seeds 1, 2 and 3, and takes the majority label. When there is no majority it takes the first valid label and is flagged. The agenda-counts registry used one call to `qwen/qwen3.8-flash`, pinned to Alibaba. People's rows in Figure A7 use the GLM route on a paper's title and abstract, or on a SPAR proposal's title, summary and about section, cut to the first 150 words. If a reply cannot be parsed, the prompt is sent again with `\n(attempt 1)` or `\n(attempt 2)` appended.
 
 The full prompt for a batch follows, with the picks shown as placeholders. In the prompt we sent, each line of the CATEGORIES list carried, after the dash, up to the first 120 characters or so of the Shallow Review's description of each agenda merged into that line, joined by semicolons. Those descriptions are the Shallow Review's text, so each is replaced here by `<Shallow Review description(s)>`. The ids, merged names, groups in brackets and RULE texts are ours and are printed as sent.
 
@@ -1283,6 +1283,6 @@ Figure A1's judge reads people's own text, as described in section 10, so no lan
 
 The checks that use no judge send no prompts. They measure how far apart picks sit in the embedding spaces of `sentence-transformers/all-MiniLM-L6-v2` and a bge model, and count agendas from the labels of section 11.
 
-### 13d. Pilot-brief rows (Figure A16)
+### 13d. Pilot-brief rows (Figure A17)
 
 These rows use the pilot brief of section 2, and the V01, V08 and "most novel" texts of section 4 with the resources paragraph of section 2 added as its own paragraph before the answer lines.

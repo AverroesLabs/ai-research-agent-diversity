@@ -13,7 +13,8 @@
     "A3",
     "A4",
     "A5",
-    "A7"
+    "A6",
+    "A8"
    ],
    "preregistered": false,
    "run_dates": [
@@ -200,8 +201,8 @@
     "4",
     "10",
     "12",
-    "A7",
-    "A9"
+    "A8",
+    "A10"
    ],
    "preregistered": true,
    "run_dates": [
@@ -268,8 +269,8 @@
    "figures": [
     "Result 2 text",
     "Result 3 text",
-    "A7",
-    "A8"
+    "A8",
+    "A9"
    ],
    "preregistered": true,
    "run_dates": [
@@ -396,8 +397,8 @@
    "description": "Frontier registry test: agents read a shared registry of earlier agents' projects (PROJECT: QUESTION); 6 populations of 20, each pick added before the next agent starts.",
    "figures": [
     "Result 2 text",
-    "A7",
-    "A8"
+    "A8",
+    "A9"
    ],
    "preregistered": true,
    "run_dates": [
@@ -501,8 +502,8 @@
    "description": "Frontier registry test, agenda-counts arm: the registry lists only how many earlier agents work in each agenda (labelled live by a language model); 6 populations of 20. Exploratory extension run two days after the other two arms.",
    "figures": [
     "Result 2 text",
-    "A7",
-    "A8"
+    "A8",
+    "A9"
    ],
    "preregistered": false,
    "run_dates": [
@@ -573,7 +574,8 @@
    "description": "Frontier setup, placebo registry list, 3 populations of 100 agents choosing in sequence. Exploratory extension, preregistered before any session.",
    "figures": [
     "8",
-    "9"
+    "9",
+    "A6"
    ],
    "preregistered": false,
    "run_dates": [
@@ -620,7 +622,8 @@
    "figures": [
     "4",
     "8",
-    "9"
+    "9",
+    "A6"
    ],
    "preregistered": false,
    "run_dates": [
@@ -666,7 +669,8 @@
    "description": "Frontier setup, agenda-counts registry, 3 populations of 100 agents choosing in sequence. Exploratory extension, preregistered before any session.",
    "figures": [
     "8",
-    "9"
+    "9",
+    "A6"
    ],
    "preregistered": false,
    "run_dates": [
@@ -749,7 +753,7 @@
   "frontier_earlier_groups": {
    "description": "The frontier setup's earlier groups of 80 (four frontier models, launch prompts and harnesses, with search), with our AI safety brief and with the brief narrowed to mechanistic interpretability. Run on 11 November, before the 120-agent frontier runs. Exploratory.",
    "figures": [
-    "A13"
+    "A14"
    ],
    "preregistered": false,
    "run_dates": [
@@ -790,7 +794,7 @@
      ],
      "reported_bootstrap_seed": 20261111,
      "figures": [
-      "A13 (bottom rows)"
+      "A14 (bottom rows)"
      ]
     },
     {
@@ -820,7 +824,7 @@
      ],
      "reported_bootstrap_seed": 20261111,
      "figures": [
-      "A13 (bottom rows)"
+      "A14 (bottom rows)"
      ]
     }
    ],
@@ -831,9 +835,9 @@
   "simple_step_one": {
    "description": "Step one, the simple setup's first preregistered experiment: GLM-5.3-flash in our minimal loop with our brief (AI safety, or narrowed to mechanistic interpretability), reading nothing, an assigned list of 88 papers and posts (skewed or uniform across topics, one list per group of 20), or searching our copy of the literature with no, moderate or high randomness in the results. Groups of 20; 120 agents per cell, 240 in two search cells. The numbers released here count every valid pair (an exploratory recount); the preregistered within-group analysis gives the same picture with wider intervals.",
    "figures": [
-    "A11",
-    "A13",
-    "A15"
+    "A12",
+    "A14",
+    "A16"
    ],
    "preregistered": "design yes; the every-pair recount reported here is exploratory",
    "run_dates": [
@@ -872,8 +876,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A15 (screened row, no tool)"
+      "A14",
+      "A16 (screened row, no tool)"
      ]
     },
     {
@@ -900,7 +904,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -927,7 +931,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -962,7 +966,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -989,7 +993,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1024,7 +1028,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1051,7 +1055,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13 caption and text (all twelve groups)"
+      "A14 caption and text (all twelve groups)"
      ]
     },
     {
@@ -1078,7 +1082,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13 caption and text (all twelve groups)"
+      "A14 caption and text (all twelve groups)"
      ]
     },
     {
@@ -1105,7 +1109,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1132,7 +1136,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1159,7 +1163,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1186,7 +1190,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1213,7 +1217,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1240,7 +1244,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1274,7 +1278,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11 (baseline row)"
+      "A12 (baseline row)"
      ]
     }
    ],
@@ -1286,8 +1290,8 @@
    "description": "Step one's reading conditions (AI safety brief) for GLM-5.3, DeepSeek V4.1 Flash, Claude Sonnet 5.5 and Claude Opus 5.5 in our minimal loop, 40 agents per cell in two groups of 20. Exploratory.",
    "figures": [
     "A3 (text)",
-    "A11",
-    "A13"
+    "A12",
+    "A14"
    ],
    "preregistered": false,
    "run_dates": [
@@ -1327,8 +1331,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A11 (model rows)"
+      "A14",
+      "A12 (model rows)"
      ]
     },
     {
@@ -1356,7 +1360,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1384,7 +1388,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1412,7 +1416,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1440,7 +1444,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1468,7 +1472,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1496,8 +1500,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A11 (model rows)"
+      "A14",
+      "A12 (model rows)"
      ]
     },
     {
@@ -1525,7 +1529,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1553,7 +1557,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1581,7 +1585,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1609,7 +1613,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1637,7 +1641,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1665,8 +1669,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A11 (model rows)"
+      "A14",
+      "A12 (model rows)"
      ]
     },
     {
@@ -1694,7 +1698,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1722,7 +1726,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1750,7 +1754,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1778,7 +1782,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1806,7 +1810,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1834,8 +1838,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A11 (model rows)"
+      "A14",
+      "A12 (model rows)"
      ]
     },
     {
@@ -1863,7 +1867,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1891,7 +1895,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1919,7 +1923,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1947,7 +1951,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -1975,7 +1979,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     }
    ],
@@ -2047,7 +2051,7 @@
      "n_duplicates": null
     }
    ],
-   "reported_cells_note": "Figure A13's mixed row pools 40 agents of each of the seven models from simple_step_one, simple_reading_models and simple_reading_gpt; pairs between agents of different experiments were not kept, so it cannot be recomputed from the released files.",
+   "reported_cells_note": "Figure A14's mixed row pools 40 agents of each of the seven models from simple_step_one, simple_reading_models and simple_reading_gpt; pairs between agents of different experiments were not kept, so it cannot be recomputed from the released files.",
    "n_pairs": 6823,
    "n_duplicates": 1980,
    "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
@@ -2056,8 +2060,8 @@
    "description": "Step one's reading conditions for GPT-6 Astra and GPT-6.1 Sol in our minimal loop, with our AI safety brief and the brief narrowed to mechanistic interpretability, 40 agents per cell in two groups of 20; plus 80 more GPT-6 Astra agents from memory that bring that cell to 120 (Figure 2's 'one model'). Exploratory.",
    "figures": [
     "2",
-    "A11",
-    "A13"
+    "A12",
+    "A14"
    ],
    "preregistered": false,
    "run_dates": [
@@ -2101,8 +2105,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A11 (model rows)"
+      "A14",
+      "A12 (model rows)"
      ]
     },
     {
@@ -2130,7 +2134,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2158,7 +2162,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2186,7 +2190,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2214,7 +2218,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2242,7 +2246,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2302,8 +2306,8 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13",
-      "A11 (model rows)"
+      "A14",
+      "A12 (model rows)"
      ]
     },
     {
@@ -2331,7 +2335,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2359,7 +2363,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2387,7 +2391,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2415,7 +2419,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2443,7 +2447,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "stratum then id",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2474,7 +2478,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2500,7 +2504,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2526,7 +2530,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2557,7 +2561,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2588,7 +2592,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2619,7 +2623,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2650,7 +2654,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2676,7 +2680,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2702,7 +2706,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2733,7 +2737,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2764,7 +2768,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     },
     {
@@ -2795,7 +2799,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A13"
+      "A14"
      ]
     }
    ],
@@ -2804,10 +2808,10 @@
    "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
   },
   "simple_one_change": {
-   "description": "One change at a time from step one's memory cell (GLM-5.3-flash, our brief, minimal loop), 40 agents each: the most-novel sentence, the Claude Code prompt (V01), AI Scientist's prompt (V08), Codex CLI and opencode; and 120 agents each drawing model, instruction and harness at random. The model rows of Figure A11 are the first 40 agents of the from-memory cells of simple_step_one, simple_reading_models and simple_reading_gpt. Exploratory.",
+   "description": "One change at a time from step one's memory cell (GLM-5.3-flash, our brief, minimal loop), 40 agents each: the most-novel sentence, the Claude Code prompt (V01), AI Scientist's prompt (V08), Codex CLI and opencode; and 120 agents each drawing model, instruction and harness at random. The model rows of Figure A12 are the first 40 agents of the from-memory cells of simple_step_one, simple_reading_models and simple_reading_gpt. Exploratory.",
    "figures": [
-    "A6",
-    "A11"
+    "A7",
+    "A12"
    ],
    "preregistered": false,
    "run_dates": [
@@ -2849,7 +2853,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11"
+      "A12"
      ]
     },
     {
@@ -2879,7 +2883,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11"
+      "A12"
      ]
     },
     {
@@ -2909,7 +2913,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11"
+      "A12"
      ]
     },
     {
@@ -2939,7 +2943,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11"
+      "A12"
      ]
     },
     {
@@ -2969,7 +2973,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11"
+      "A12"
      ]
     },
     {
@@ -2999,7 +3003,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11 (right panel)"
+      "A12 (right panel)"
      ]
     }
    ],
@@ -3049,7 +3053,7 @@
      "n_duplicates": 1652
     }
    ],
-   "reported_cells_note": "The pooled rows of Figure A11 mix agents from several released experiments; pairs between agents of different experiments were not exported, so these pools cannot be recomputed from the released files.",
+   "reported_cells_note": "The pooled rows of Figure A12 mix agents from several released experiments; pairs between agents of different experiments were not exported, so these pools cannot be recomputed from the released files.",
    "n_pairs": 2436,
    "n_duplicates": 592,
    "n_pairs_note": "n_pairs counts the pair rows released; under screened judging, pairs below the screen have no row and count as not duplicates"
@@ -3057,9 +3061,9 @@
   "simple_pilot_brief": {
    "description": "The pilot setup: the same simple setup with an earlier brief that had one more paragraph, on the computing resources available. Seven models answering from memory (the Claude models in Claude Code and in our loop, the GPT models in our loop and in Codex CLI), GLM-5.3-flash under three other instructions and in Codex CLI and opencode (twice), the GPT models under three other instructions, and 119 agents drawing model, instruction and harness at random. 40 agents per cell. Exploratory pilots, reported in the appendix only for comparison.",
    "figures": [
-    "A6 (pilot-brief chart)",
-    "A11 text",
-    "A16",
+    "A7 (pilot-brief chart)",
+    "A12 text",
+    "A17",
     "judge appendix"
    ],
    "preregistered": false,
@@ -3098,8 +3102,8 @@
      "agent_order": "as analysed",
      "figures": [
       "judge appendix",
-      "A11 text",
-      "A6 (pilot-brief chart)"
+      "A12 text",
+      "A7 (pilot-brief chart)"
      ]
     },
     {
@@ -3125,7 +3129,7 @@
      "agent_order": "as analysed",
      "figures": [
       "judge appendix",
-      "A6 (pilot-brief chart)"
+      "A7 (pilot-brief chart)"
      ]
     },
     {
@@ -3151,7 +3155,7 @@
      "agent_order": "as analysed",
      "figures": [
       "judge appendix",
-      "A6 (pilot-brief chart)"
+      "A7 (pilot-brief chart)"
      ]
     },
     {
@@ -3177,7 +3181,7 @@
      "agent_order": "as analysed",
      "figures": [
       "judge appendix",
-      "A6 (pilot-brief chart)"
+      "A7 (pilot-brief chart)"
      ]
     },
     {
@@ -3203,7 +3207,7 @@
      "agent_order": "as analysed",
      "figures": [
       "judge appendix",
-      "A6 (pilot-brief chart)"
+      "A7 (pilot-brief chart)"
      ]
     },
     {
@@ -3228,7 +3232,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3253,7 +3257,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3278,7 +3282,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3303,7 +3307,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3333,7 +3337,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11 text"
+      "A12 text"
      ]
     },
     {
@@ -3363,7 +3367,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11 text"
+      "A12 text"
      ]
     },
     {
@@ -3388,7 +3392,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A11 text"
+      "A12 text"
      ]
     },
     {
@@ -3413,7 +3417,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A11 text (pilot-brief pools)"
+      "A12 text (pilot-brief pools)"
      ]
     },
     {
@@ -3438,7 +3442,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A11 text (pilot-brief pools)"
+      "A12 text (pilot-brief pools)"
      ]
     },
     {
@@ -3468,7 +3472,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3498,7 +3502,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3528,7 +3532,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3558,7 +3562,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3588,7 +3592,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3618,7 +3622,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A16"
+      "A17"
      ]
     },
     {
@@ -3643,7 +3647,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A11 text (pilot-brief pools)"
+      "A12 text (pilot-brief pools)"
      ]
     },
     {
@@ -3668,7 +3672,7 @@
      "ci_method": "delete-one-agent jackknife on the logit of the duplicate share (as drawn in the figure)",
      "agent_order": "as analysed",
      "figures": [
-      "A11 text"
+      "A12 text"
      ]
     },
     {
@@ -3698,7 +3702,7 @@
      ],
      "reported_bootstrap_seed": 20261110,
      "figures": [
-      "A11 text (pilot-brief pools)"
+      "A12 text (pilot-brief pools)"
      ]
     },
     {
@@ -3720,7 +3724,7 @@
      "ci_method": "point only (no interval reported)",
      "agent_order": "file order",
      "figures": [
-      "A11 text"
+      "A12 text"
      ]
     }
    ],
@@ -3731,7 +3735,7 @@
   "simple_interp_overview_removed": {
    "description": "GLM-5.3-flash searching with the interpretability brief and no randomness (step one's cell), re-run for 60 agents with the same seeds after removing from our copy of the literature the overview post that most searchers opened first and a second page that drew the same agents. Exploratory follow-up, preregistered before running. Judged with screening, judge pinned to DeepInfra.",
    "figures": [
-    "A13 text"
+    "A14 text"
    ],
    "preregistered": "exploratory follow-up, preregistered before running",
    "run_dates": [
@@ -3766,7 +3770,7 @@
      "ci_method": "agent bootstrap (seed not recorded); reproduce.py prints its own bootstrap beside it",
      "agent_order": "file order",
      "figures": [
-      "A13 text"
+      "A14 text"
      ]
     }
    ],
@@ -3789,7 +3793,7 @@
   "simple_sonnet_claude_code_texts_removed": {
    "description": "Claude Sonnet 5.5 in Claude Code searching our copy of the literature on the pilot brief: 40 agents after removing the two texts that most such agents read on chain-of-thought monitoring, and 40 control agents run the same day with the texts in place. Exploratory follow-up, preregistered before running. Judged with screening, judge pinned to DeepInfra.",
    "figures": [
-    "A13 text"
+    "A14 text"
    ],
    "preregistered": "exploratory follow-up, preregistered before running",
    "run_dates": [
@@ -3831,7 +3835,7 @@
      "ci_method": "agent bootstrap (seed not recorded); reproduce.py prints its own bootstrap beside it",
      "agent_order": "file order",
      "figures": [
-      "A13 text"
+      "A14 text"
      ]
     },
     {
@@ -3856,7 +3860,7 @@
      "ci_method": "agent bootstrap (seed not recorded); reproduce.py prints its own bootstrap beside it",
      "agent_order": "file order",
      "figures": [
-      "A13 text"
+      "A14 text"
      ]
     }
    ],
@@ -3867,7 +3871,7 @@
   "simple_registry_stage1": {
    "description": "Simple setup (GLM-5.3-flash, minimal loop, from memory), the registry's first preregistered stage: registry of earlier projects and agenda counts in 4 populations of 100 each, and 200 placebo agents choosing independently.",
    "figures": [
-    "A15"
+    "A16"
    ],
    "preregistered": true,
    "run_dates": [
@@ -3984,8 +3988,8 @@
   "simple_tree_glm": {
    "description": "Simple setup (GLM-5.3-flash, minimal loop, from memory), with and without the tree protocol and the random-draw tool. Preregistered on the first 120 tree agents; all 299 usable tree agents were judged afterwards (exploratory extension).",
    "figures": [
-    "A9",
-    "A15"
+    "A10",
+    "A16"
    ],
    "preregistered": true,
    "run_dates": [
@@ -4075,7 +4079,7 @@
      "bootstrap_draws": 2000,
      "agent_order": "file order",
      "figures": [
-      "A15 text"
+      "A16 text"
      ]
     }
    ],
@@ -4093,8 +4097,8 @@
   "simple_tree_sonnet": {
    "description": "Repeat of the simple-setup tree test with Claude Sonnet 5.5 in place of GLM-5.3-flash. Preregistered.",
    "figures": [
-    "A9",
-    "A15"
+    "A10",
+    "A16"
    ],
    "preregistered": true,
    "run_dates": [
