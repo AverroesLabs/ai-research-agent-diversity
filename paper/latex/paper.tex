@@ -7,7 +7,6 @@
 \usepackage{graphicx}
 \usepackage{longtable,booktabs,array,calc}
 \usepackage{float}
-\usepackage[section]{placeins}
 \usepackage[font=small,labelfont=bf,labelsep=period]{caption}
 \usepackage[round]{natbib}
 \usepackage{xcolor}
@@ -18,10 +17,10 @@
 % Prompts given to the agents are shown as framed boxes
 \renewenvironment{quote}{\begin{tcolorbox}[colback=black!3,colframe=black!35,boxrule=0.4pt,arc=1pt,left=6pt,right=6pt,top=4pt,bottom=4pt,fontupper=\small]}{\end{tcolorbox}}
 \makeatletter
-% Figures float (so text fills each page), but never past the next section or subsection heading, so a
-% figure stays near the text that discusses them and later figures do not queue up behind a large one.
+% Figures float so text fills every page. Loose limits below let LaTeX put a figure here or at the top of a
+% page and stack several, so figures stay close to their text without leaving half-empty pages; a figure that
+% should open its section goes right under the heading in the source.
 \def\fps@figure{!htbp}
-\let\Oldsubsection\subsection\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
 \newsavebox\pandoc@box
 \newcommand*\pandocbounded[1]{%
   \sbox\pandoc@box{#1}%
@@ -34,9 +33,9 @@
 \newcounter{none}
 \interfootnotelinepenalty=10000
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.8}
-\renewcommand{\textfraction}{0.07}\renewcommand{\floatpagefraction}{0.75}
-\setcounter{topnumber}{3}\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0.04}\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{4}\setcounter{bottomnumber}{4}\setcounter{totalnumber}{8}
 
 \title{\bfseries Many Agents, Few Projects:\\ Measuring and Reducing
 Convergence in AI Research Agents\textquotesingle{} Choice of Safety
@@ -66,8 +65,7 @@ agents almost never duplicate each other. Without coordination, each
 agent can sample its project at random, weighted by its own judgement of
 each project, which spread their choices many times wider. Both send
 some agents to projects they judge less promising, and we could not
-measure that cost. Letting people point agents at directions should also
-help, but we did not test it.
+measure that cost.
 \end{abstract}
 
 \section{Introduction}\label{why-we-care}
@@ -123,7 +121,7 @@ number of projects.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={The experiment, read top to bottom. Each agent was given, at random, one of four frontier models, one of eleven sets of instructions (our own brief or one of ten that people use to start research agents), and one of the harnesses its model runs in. The GPT models do not run in Claude Code, which supports only Claude models . An agent may search the AI safety literature and read a registry of what other agents chose before naming one project. A judge reads every pair of projects and marks it as duplicate work (\textbackslash approx) or not (\textbackslash not\textbackslash approx), and the share of duplicate pairs becomes one number. A bold outline marks a part that adds randomness of its own, such as the randomness in a model's output, search results in random order, or weighted sampling.}]{figures/fig-01-design-lw.png}}
+\includegraphics[height=0.8\textheight,keepaspectratio,alt={The experiment, read top to bottom. Each agent was given, at random, one of four frontier models, one of eleven sets of instructions (our own brief or one of ten that people use to start research agents), and one of the harnesses its model runs in. The GPT models do not run in Claude Code, which supports only Claude models . An agent may search the AI safety literature and read a registry of what other agents chose before naming one project. A judge reads every pair of projects and marks it as duplicate work (\textbackslash approx) or not (\textbackslash not\textbackslash approx), and the share of duplicate pairs becomes one number. A bold outline marks a part that adds randomness of its own, such as the randomness in a model's output, search results in random order, or weighted sampling.}]{figures/fig-01-design-lw.png}
 \caption{The experiment, read top to bottom. Each agent was given, at
 random, one of four frontier models, one of eleven sets of instructions
 (our own brief or one of ten that people use to start research agents),
