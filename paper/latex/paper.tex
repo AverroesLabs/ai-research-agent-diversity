@@ -17,7 +17,9 @@
 % Prompts given to the agents are shown as framed boxes
 \renewenvironment{quote}{\begin{tcolorbox}[colback=black!3,colframe=black!35,boxrule=0.4pt,arc=1pt,left=6pt,right=6pt,top=4pt,bottom=4pt,fontupper=\small]}{\end{tcolorbox}}
 \makeatletter
-\def\fps@figure{htbp}
+% Figures stay exactly where the text puts them (float package, H), so they read in order next to the
+% text that discusses them; a figure that does not fit moves whole to the next page.
+\floatplacement{figure}{H}
 \newsavebox\pandoc@box
 \newcommand*\pandocbounded[1]{%
   \sbox\pandoc@box{#1}%
