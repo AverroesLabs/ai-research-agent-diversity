@@ -1,9 +1,15 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Anthropic}(2026)]{anthropic2026gateway}
+{Anthropic}.
+\newblock Other {LLM} gateways.
+\newblock Claude Code documentation, 2026.
+\newblock URL \url{https://code.claude.com/docs/en/llm-gateway}.
 
 \bibitem[Audran-Reiss et~al.(2025)Audran-Reiss, Armengol-Estap{\'e},
   Hambardzumyan, Budhiraja, Josifoski, Toledo, et~al.]{audranreiss2025}
@@ -77,11 +83,15 @@ Francesca Carlon, Brecht~F. Verbeken, Vincent Ginis, and Andres Algaba.
   research methods, 2026.
 \newblock URL \url{https://arxiv.org/abs/2606.26130}.
 
-\bibitem[Chen et~al.(2026{\natexlab{a}})Chen, Tong, Yang, He, Zhang, Zou,
-  et~al.]{chen2026}
-Nuo Chen, Yicheng Tong, Yuzhe Yang, Yufei He, Xueyi Zhang, Qingyun Zou, et~al.
+\bibitem[Chen et~al.(2026{\natexlab{a}})Chen, Tong, Yang, He, Zhang, Zou, Wang,
+  and He]{chen2026}
+Nuo Chen, Yicheng Tong, Yuzhe Yang, Yufei He, Xueyi Zhang, Qingyun Zou, Qian
+  Wang, and Bingsheng He.
 \newblock Diversity collapse in multi-agent {LLM} systems: Structural coupling
-  and collective failure in open-ended idea generation, 2026{\natexlab{a}}.
+  and collective failure in open-ended idea generation.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  {ACL} 2026}, pages 251--306, 2026{\natexlab{a}}.
+\newblock \doi{10.18653/v1/2026.findings-acl.13}.
 \newblock URL \url{https://arxiv.org/abs/2604.18005}.
 
 \bibitem[Chen et~al.(2026{\natexlab{b}})Chen, Zhao, and Cohan]{chenzhao2026gap}
@@ -102,6 +112,12 @@ Young-Min Cho, Sharath~Chandra Guntuku, and Lyle Ungar.
 \newblock Herd behavior: Investigating peer influence in {LLM}-based
   multi-agent systems, 2025.
 \newblock URL \url{https://arxiv.org/abs/2505.21588}.
+
+\bibitem[Cortes and Lawrence(2021)]{cortes2021}
+Corinna Cortes and Neil~D. Lawrence.
+\newblock Inconsistency in conference peer review: Revisiting the 2014
+  {NeurIPS} experiment, 2021.
+\newblock URL \url{https://arxiv.org/abs/2109.09774}.
 
 \bibitem[Creel and Hellman(2022)]{creel2022}
 Kathleen Creel and Deborah Hellman.
@@ -154,12 +170,16 @@ Ruijiang Gao and Steven~Chong Xiao.
 \newblock Nonstandard errors in {AI} agents, 2026.
 \newblock URL \url{https://arxiv.org/abs/2603.16744}.
 
-\bibitem[Gaven{\v{c}}iak et~al.(2025)]{shallow2025}
-Tom{\'a}{\v{s}} Gaven{\v{c}}iak et~al.
-\newblock Shallow review of technical {AI} safety, 2025.
-\newblock LessWrong, 2025.
-\newblock URL
-  \url{https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2}.
+\bibitem[Goel et~al.(2025)Goel, Str{\"u}ber, Auzina, Chandra, Kumaraguru,
+  Kiela, Prabhu, Bethge, and Geiping]{goel2025thinkalike}
+Shashwat Goel, Joschka Str{\"u}ber, Ilze~Amanda Auzina, Karuna~K. Chandra,
+  Ponnurangam Kumaraguru, Douwe Kiela, Ameya Prabhu, Matthias Bethge, and Jonas
+  Geiping.
+\newblock Great models think alike and this undermines {AI} oversight.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning}, volume 267 of \emph{Proceedings of Machine Learning Research},
+  pages 19621--19678, 2025.
+\newblock URL \url{https://arxiv.org/abs/2502.04313}.
 
 \bibitem[Hadfield et~al.(2025)Hadfield, Zhang, Lien, Scholz, Fox, and
   Ford]{anthropic2025multiagent}
@@ -244,12 +264,13 @@ Elliot Kim, Avi Garg, Kenny Peng, and Nikhil Garg.
   Learning (ICML)}, 2025.
 \newblock URL \url{https://arxiv.org/abs/2506.07962}.
 
-\bibitem[Kirk et~al.(2023)Kirk, Mediratta, Nalmpantis, Luketina, Hambro,
+\bibitem[Kirk et~al.(2024)Kirk, Mediratta, Nalmpantis, Luketina, Hambro,
   Grefenstette, and Raileanu]{kirk2024rlhf}
 Robert Kirk, Ishita Mediratta, Christoforos Nalmpantis, Jelena Luketina, Eric
   Hambro, Edward Grefenstette, and Roberta Raileanu.
 \newblock Understanding the effects of {RLHF} on {LLM} generalisation and
-  diversity, 2023.
+  diversity.
+\newblock In \emph{International Conference on Learning Representations}, 2024.
 \newblock URL \url{https://arxiv.org/abs/2310.06452}.
 
 \bibitem[Kitcher(1990)]{kitcher1990}
@@ -277,6 +298,14 @@ Jon Kleinberg and Manish Raghavan.
   (22):\penalty0 e2018340118, 2021.
 \newblock \doi{10.1073/pnas.2018340118}.
 \newblock URL \url{https://doi.org/10.1073/pnas.2018340118}.
+
+\bibitem[Leech et~al.(2025)Leech, Gaven{\v{c}}iak, McAleese,
+  et~al.]{shallow2025}
+Gavin Leech, Tom{\'a}{\v{s}} Gaven{\v{c}}iak, Stephen McAleese, et~al.
+\newblock Shallow review of technical {AI} safety, 2025.
+\newblock LessWrong, 2025.
+\newblock URL
+  \url{https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2}.
 
 \bibitem[Li et~al.(2026)Li, Zoumpoulis, Puranam, et~al.]{li2026}
 Ke~Li, Spyros~I. Zoumpoulis, Phanish Puranam, et~al.
@@ -361,17 +390,19 @@ Matthew~J. Salganik, Peter~Sheridan Dodds, and Duncan~J. Watts.
 \newblock \doi{10.1126/science.1121066}.
 \newblock URL \url{https://doi.org/10.1126/science.1121066}.
 
-\bibitem[Si et~al.(2024)Si, Yang, and Hashimoto]{si2024}
-Chenglei Si, Diyi Yang, and Tatsunori Hashimoto.
-\newblock Can {LLMs} generate novel research ideas? {A} large-scale human study
-  with 100+ {NLP} researchers, 2024.
-\newblock URL \url{https://arxiv.org/abs/2409.04109}.
-
-\bibitem[Si et~al.(2025)Si, Hashimoto, and Yang]{si2025execution}
+\bibitem[Si et~al.(2025{\natexlab{a}})Si, Hashimoto, and Yang]{si2025execution}
 Chenglei Si, Tatsunori Hashimoto, and Diyi Yang.
 \newblock The ideation-execution gap: Execution outcomes of {LLM}-generated
-  versus human research ideas, 2025.
+  versus human research ideas, 2025{\natexlab{a}}.
 \newblock URL \url{https://arxiv.org/abs/2506.20803}.
+
+\bibitem[Si et~al.(2025{\natexlab{b}})Si, Yang, and Hashimoto]{si2024}
+Chenglei Si, Diyi Yang, and Tatsunori Hashimoto.
+\newblock Can {LLMs} generate novel research ideas? {A} large-scale human study
+  with 100+ {NLP} researchers.
+\newblock In \emph{International Conference on Learning Representations},
+  2025{\natexlab{b}}.
+\newblock URL \url{https://arxiv.org/abs/2409.04109}.
 
 \bibitem[Simpson(1949)]{simpson1949}
 E.~H. Simpson.
@@ -458,11 +489,12 @@ Zhiyuan Weng, Guikun Chen, and Wenguan Wang.
   (ICLR)}, 2025.
 \newblock URL \url{https://arxiv.org/abs/2501.13381}.
 
-\bibitem[Wenger and Kenett(2025)]{wenger2025homogeneity}
-Emily Wenger and Yoed Kenett.
-\newblock We're different, we're the same: Creative homogeneity across {LLMs},
-  2025.
-\newblock URL \url{https://arxiv.org/abs/2501.19361}.
+\bibitem[Wenger and Kenett(2026)]{wenger2025homogeneity}
+Emily Wenger and Yoed~N. Kenett.
+\newblock Large language models are homogeneously creative.
+\newblock \emph{PNAS Nexus}, 5\penalty0 (3):\penalty0 pgag042, 2026.
+\newblock \doi{10.1093/pnasnexus/pgag042}.
+\newblock URL \url{https://doi.org/10.1093/pnasnexus/pgag042}.
 
 \bibitem[Xu et~al.(2026)Xu, Wang, Tao, Xuan, and Luo]{xu2026}
 Rui Xu, Yunke Wang, Linwei Tao, Wenjie Xuan, and Yong Luo.
@@ -497,7 +529,11 @@ Yiming Zhang, Harshita Diddee, Susan Holm, Hanchen Liu, Xinyue Liu, Vinay
 \bibitem[Zhao et~al.(2026)Zhao, Du, and Wang]{zhao2026dice}
 Minda Zhao, Yilun Du, and Mengyu Wang.
 \newblock Large language models are bad dice players: {LLMs} struggle to
-  generate random numbers from statistical distributions, 2026.
+  generate random numbers from statistical distributions.
+\newblock In \emph{Proceedings of the 64th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 22942--22959,
+  2026.
+\newblock \doi{10.18653/v1/2026.acl-long.1051}.
 \newblock URL \url{https://arxiv.org/abs/2601.05414}.
 
 \bibitem[Zhong et~al.(2026)Zhong, Xu, Ning, Liu, Kumar, and Xiong]{zhong2026}
