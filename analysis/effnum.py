@@ -127,7 +127,7 @@ def joint_ratio(keys, pairs_a, pairs_b, groups=None, seed=0, draws=DRAWS):
             "ci95": [float(np.quantile(r, 0.025, method="lower")), float(np.quantile(r, 0.975, method="higher"))]}
 
 def stratified_bootstrap(D, valid, strata, seed=0, draws=DRAWS):
-    """The interval used for the simple setup's grids (Figures A11 and A13). Agents are resampled with replacement
+    """The interval used for the simple setup's grids (Figures A10 and A12). Agents are resampled with replacement
     within each stratum (their group of 20, or one stratum for a single group), strata taken in sorted order of their
     names; a pair counts with weight w_i w_j if it is valid (valid[i, j] is 1: both agents shared the setting, and for
     assigned lists read the same list); p* = sum w_i w_j D_ij / sum w_i w_j valid_ij. The interval is the 2.5th and
