@@ -810,7 +810,7 @@ The tool's output has the same form in every arm. A header line `Shared registry
 
 - **Registry of earlier projects:** one line per earlier agent in the population, its PROJECT line, a colon and its QUESTION line.
 - **Agenda counts:** one line per agenda that has at least one earlier agent, `- {agenda name}: {n} agent(s)`. Each earlier pick was labelled by `qwen/qwen3.8-flash`, pinned to Alibaba at temperature 0, with the labeller prompt of section 11 applied to the pick's DIRECTION line, " Why: " and its WHY THIS line. The names are the merged agenda names of section 11.
-- **Placebo list:** n lines drawn without replacement from a fixed list of 267 off-topic machine-learning projects that we generated, longest first, cut like the project lines. They do not depend on other agents.
+- **Placebo registry:** n lines drawn without replacement from a fixed list of 267 off-topic machine-learning projects that we generated, longest first, cut like the project lines. They do not depend on other agents.
 
 Real examples, for the agent at position 4 of the first population, rebuilt from the recorded picks:
 
@@ -835,7 +835,7 @@ Shared registry of active work (4 earlier agents):
 End of registry.
 ````
 
-Placebo list:
+Placebo registry:
 
 ````text
 Shared registry of active work (4 earlier agents):
@@ -898,7 +898,7 @@ Shared registry of active work (3 earlier agents):
 End of registry.
 ````
 
-Placebo list:
+Placebo registry:
 
 ````text
 Shared registry of active work (3 earlier agents):

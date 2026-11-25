@@ -16,7 +16,7 @@ Each experiment is one set of agents run under one setup. Names start with `fron
 | `frontier_registry_20_placebo` | registry tool listing unrelated projects, 6 populations of 20 | 120 | Results 2 and 3 text, A7, A8 | yes |
 | `frontier_registry_20_projects` | registry of earlier agents' projects, 6 populations of 20 | 120 | Result 2 text, A7, A8 | yes |
 | `frontier_registry_20_agenda_counts` | registry of agenda counts, 6 populations of 20 | 120 | Result 2 text, A7, A8 | no |
-| `frontier_registry_100_placebo` | placebo list, 3 populations of 100 | 300 | 9, 10, A5 | no, extension preregistered before running |
+| `frontier_registry_100_placebo` | placebo registry, 3 populations of 100 | 300 | 9, 10, A5 | no, extension preregistered before running |
 | `frontier_registry_100_projects` | registry of earlier projects, 3 populations of 100 | 300 | 4, 9, 10, A5 | no, as above |
 | `frontier_registry_100_agenda_counts` | agenda counts, 3 populations of 100 | 300 | 9, 10, A5 | no, as above |
 | `frontier_assigned_reading` | one assigned paper returned first by the agent's first search, 4 papers × 40 agents | 160 | A5 text | no, as above |
@@ -46,7 +46,7 @@ Agent ids carry short codes for the arm they ran in. They are labels only; the `
 | `TT_pop<p>_a<i>` | `frontier_tree` | the tree protocol with random draws |
 | `TW_pop<p>_a<i>` | `frontier_tree_take_best` | the tree protocol, taking the best option |
 | `D_pop<p>_a<i>` | `frontier_registry_20_projects`, `frontier_registry_100_projects` | registry of earlier projects |
-| `P_pop<p>_a<i>` | `frontier_registry_20_placebo`, `frontier_registry_100_placebo` | placebo list |
+| `P_pop<p>_a<i>` | `frontier_registry_20_placebo`, `frontier_registry_100_placebo` | placebo registry |
 | `C_pop<p>_a<i>` | `frontier_registry_20_agenda_counts`, `frontier_registry_100_agenda_counts` | agenda counts |
 | `NA_pop<p>_a<i>`, `NA_pop<p>_a<i>_x` | `frontier_assigned_reading` | assigned first document; `_x` marks the 40 slots drawn a second time |
 | `ai_safety/field_a<k>`, `mech_interp/subfield_a<k>` | `frontier_earlier_groups` | our brief, and the brief narrowed to interpretability |
