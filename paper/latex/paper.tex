@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{longtable,booktabs,array,calc}
 \usepackage{float}
+\usepackage[section]{placeins}
 \usepackage[font=small,labelfont=bf,labelsep=period]{caption}
 \usepackage[round]{natbib}
 \usepackage{xcolor}
@@ -17,9 +18,10 @@
 % Prompts given to the agents are shown as framed boxes
 \renewenvironment{quote}{\begin{tcolorbox}[colback=black!3,colframe=black!35,boxrule=0.4pt,arc=1pt,left=6pt,right=6pt,top=4pt,bottom=4pt,fontupper=\small]}{\end{tcolorbox}}
 \makeatletter
-% Figures stay exactly where the text puts them (float package, H), so they read in order next to the
-% text that discusses them; a figure that does not fit moves whole to the next page.
-\floatplacement{figure}{H}
+% Figures float (so text fills each page), but never past the next section or subsection heading, so a
+% figure stays near the text that discusses them and later figures do not queue up behind a large one.
+\def\fps@figure{!htbp}
+\let\Oldsubsection\subsection\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
 \newsavebox\pandoc@box
 \newcommand*\pandocbounded[1]{%
   \sbox\pandoc@box{#1}%
